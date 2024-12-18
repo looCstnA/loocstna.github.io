@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
   function addLangData(block) {
     var outer = block.parentElement.parentElement.parentElement;
     var lang = block.getAttribute('data-lang');
+    var bagde = lang;
     for (var i = 0; i < outer.classList.length; i++) {
       var cls = outer.classList[i];
       if (cls.startsWith('language-')) {
@@ -39,12 +40,21 @@ document.addEventListener('DOMContentLoaded', function(event) {
     if (!lang) {
       cls = block.getAttribute('class');
       lang = cls ? cls.replace('hljs ', '') : '';
+      bagde = '';
     }
     if (lang.startsWith('language-')) {
       lang = lang.substr(9);
     }
+    if (lang.startsWith('Humain')) {
+      bagde = lang;
+      lang = 'text';
+    }
+    if (lang.startsWith('ChatGPT')) {
+      bagde = lang;
+      lang = 'text';
+    }
     block.setAttribute('class', 'hljs ' + lang);
-    block.parentNode.setAttribute('data-lang', lang);
+    block.parentNode.setAttribute('data-lang', bagde);
   }
 
   function addBadge(block) {
@@ -88,4 +98,10 @@ document.addEventListener('DOMContentLoaded', function(event) {
   code > table pre::before {
     display: none;
   }
+
+  pre {
+    white-space: pre-wrap; // wrap text
+  }
+
+
 </style>

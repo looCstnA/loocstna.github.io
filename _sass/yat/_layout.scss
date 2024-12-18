@@ -88,6 +88,10 @@ html {
 
   .site-header-inner {
     position: relative;
+    max-width: 920px;
+    margin: auto;
+    padding-right: 30px;
+    padding-left: 30px;
   }
 }
 
@@ -97,8 +101,8 @@ html {
 
   .site-brand-inner {
     @include relative-font-size(1.125);
-    font-weight: $base-font-weight;
-    letter-spacing: -1px;
+    font-weight: $base-font-weight * 1.5;
+    letter-spacing: 0px;
     transition: 0.1s filter color;
 
     &, &:visited {
@@ -107,7 +111,7 @@ html {
 
     .site-favicon {
       display: inline-block;
-      height: divide($header-height, 1.5);
+      height: divide($header-height, 2);
       margin-right: 5px;
     }
   }
@@ -251,6 +255,7 @@ html {
   -ms-flex: none; /* <-- Fix IE footer issue */
   padding: $spacing-unit * 2 0;
   padding-top: 72px;
+  font-size: $base-font-size * 1.2;
 }
 
 .page-heading {
@@ -350,7 +355,7 @@ html {
   }
 
   .post-text {
-    color: $grey-color;
+    color: $grey-color-dark;
     word-break: break-word;
     overflow-wrap: break-word;
     flex: 1;
@@ -359,9 +364,9 @@ html {
   .post-tags .post-tag {
     display: inline-block;
     text-decoration: none;
-    border: 1px solid;
+    // border: 1px solid;
     padding: 2px 4px;
-    border-radius: 2px;
+    border-radius: 20px;
     transition: color 0.2s;
     margin-bottom: 8px;
 
@@ -370,7 +375,8 @@ html {
     }
 
     &:hover {
-      color: #787878;
+      color: $selection-color;
+      background: $selection-background-color;
     }
   }
 
@@ -805,8 +811,8 @@ html {
 .post-badge {
   display: none;
   padding: 0px 3px;
-  background-color: $brand-color;
-  color: #fff;
+  background-color: $selection-background-color;
+  color: $selection-color;
   font-size: 10px;
   font-weight: 600;
   border-radius: 2px;

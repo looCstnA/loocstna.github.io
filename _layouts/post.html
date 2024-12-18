@@ -25,6 +25,7 @@ sidebar:
 
     {%- include views/article.html -%}
 
+    <!-- 
     {%- assign result = hidden | where_exp: "item", "item == 'navigator'" -%}
     {%- if result.size == 0 -%}
     <div class="post-nav">
@@ -42,7 +43,9 @@ sidebar:
       {%- endif -%}
     </div>
     {%- endif -%}
-
+     -->
+    <br><hr><br>
+    
     {%- assign result = hidden | where_exp: "item", "item == 'related_posts'" -%}
     {%- if result.size == 0 -%}
     <div class="post-related">

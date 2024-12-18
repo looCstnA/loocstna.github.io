@@ -106,7 +106,7 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: $brand-color;
+  color: #953dff;
   text-decoration: none;
 
   &:hover {
@@ -162,7 +162,7 @@ pre {
   background-color: #f0f0f0;
 
   > code {
-    display: inline-block;
+    display: block;
     padding: 20px!important;
     background-color: transparent;
     border: 0;

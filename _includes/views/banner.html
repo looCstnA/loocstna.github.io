@@ -16,6 +16,13 @@
 {%- include functions.html func='get_banner' -%}
 
 {%- if has_banner -%}
+            <style type="text/css">
+              /* Cursor */
+              .typed-cursor {
+                color: white;
+                text-shadow: none;
+              }
+            </style>
   {%- if banner_background -%}
   <style>
     html .page-banner {
@@ -115,12 +122,27 @@
         {%- else -%}
 
           <div class="page-banner-default">
-            <h1 class="page-banner-heading">
+            
+            <!-- <h1 class="page-banner-heading">
               {{ heading | default: page.title | escape }}
+            </h1> -->
+
+
+            <h1 class="page-banner-heading">
+              <span id="element"></span>
             </h1>
+            <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+            <script>
+              var typed = new Typed('#element', {
+                strings: [{{ heading | default: page.title }}],
+                typeSpeed: 40,
+              });
+            </script>
+
             <h2 class="page-banner-subheading">
               {{ subheading | default: page.subtitle | escape }}
             </h2>
+
           </div>
 
         {%- endif -%}

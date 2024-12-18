@@ -1,4 +1,4 @@
 home:
-  heading: "Your awesome heading"
-  subheading: "Your awesome subheading"
-  banner: "Your image url"
+  heading: '"Art", "Nature", "Technology", "Science","Mathematics","Philosophy", "Anything"'
+  subheading: "is cool, at home or in schools"
+  banner: "/assets/images/main_header_background.png"
