@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="fr"><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://loocstna.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://loocstna.github.io/" rel="alternate" type="text/html" hreflang="fr" /><updated>2024-12-18T19:20:43+00:00</updated><id>https://loocstna.github.io/feed.xml</id><title type="html">Antscool</title><subtitle>Apprendre l'intelligence artificielle à l'école ou la maison.</subtitle><author><name>Antscool</name></author><entry><title type="html">Liste Curative de Ressources Educationelles en Intelligence Artificielle</title><link href="https://loocstna.github.io/liste-curative-education-ia/" rel="alternate" type="text/html" title="Liste Curative de Ressources Educationelles en Intelligence Artificielle" /><published>2024-12-14T17:00:00+00:00</published><updated>2024-12-14T17:00:00+00:00</updated><id>https://loocstna.github.io/AI-curated-list</id><content type="html" xml:base="https://loocstna.github.io/liste-curative-education-ia/"><![CDATA[<!-- Meta
+	artificial intelligence
+	ai
+	ai art
+	ai chatbot
+	ai education
+	ai project
+	ai resource
+	ai course
+	ai training
+	ai essentials
+	ai techniques
+	ai applications
+	ai ethics
+	ai frameworks
+	ai regulation
+	ai history
+	ai philosophy
+	ai future
+	
+	ai classroom
+	ai readyness
+
+	ai for educators
+	ai in education
+	ai in schools
+
+
+	learn ai
+	teach ai
+
+	learning with ai
+	teaching with ai
+
+	chatgpt
+
+-->
+
+<pre><code class="language-text">⚠️ Cette page est encore en construction.
+📣 N'hésitez pas à me faire parvenir vos commentaires.
+
+Gautier
+</code></pre>
+<p><br /></p>
+
+<p>Découvrez l’intelligence artificielle via ces ressources et ces projets à suivre et à faire à l’école ou à la maison.</p>
+
+<h2 id="art">Art</h2>
+
+<ul>
+  <li>Art Génératif</li>
+  <li>Composition Musicale</li>
+  <li>Design Graphique et Visuel</li>
+  <li>Ecriture</li>
+</ul>
+
+<h2 id="programmation">Programmation</h2>
+
+<ul>
+  <li>Orienté Object (paradigme)</li>
+  <li>Fonctionelle (paradigme)</li>
+  <li>Scratch (programming through a GUI, a Graphical User Interface)</li>
+  <li><a href="/python/">Python</a> (language)</li>
+  <li>Javascript (language)</li>
+</ul>
+
+<h2 id="mathématiques--sciences">Mathématiques &amp; Sciences</h2>
+
+<ul>
+  <li>Logique</li>
+  <li>Algebre Linéaire</li>
+  <li>Statistiques</li>
+  <li>Méthode Scientifique</li>
+</ul>
+
+<h2 id="technologie--ingénieurie">Technologie &amp; Ingénieurie</h2>
+
+<ul>
+  <li>Arduino</li>
+  <li>Electronique</li>
+  <li>Mécanique</li>
+  <li>Micro-Ordinateurs</li>
+  <li>Ordinateurs</li>
+  <li>Raspberry Pi</li>
+</ul>
+
+<h2 id="philosophie--science-fiction">Philosophie &amp; Science-Fiction</h2>
+
+<ul>
+  <li>Alan Turing et le teste de Turing</li>
+  <li>Fondation de Isaac Asimov</li>
+  <li>1984 de George Orwell</li>
+</ul>
+
+<h2 id="outils--platformes">Outils &amp; Platformes</h2>
+
+<ul>
+  <li>Codecademy</li>
+  <li>Coursera</li>
+  <li>Git et Github</li>
+</ul>
+
+<h2 id="tutoriels">Tutoriels</h2>
+
+<ul>
+  <li>Une introduction à Antscool et les Technologies utilisées (github, antscool, etc.)</li>
+</ul>]]></content><author><name>Gautier</name></author><category term="Liste" /><category term="Intelligence Artificielle" /><category term="Education" /><summary type="html"><![CDATA[Cette liste fournit de nombreuses sources d'information et d'éducation en intelligence artificielle à découvrir et à suivre à la maison ou à l'école.]]></summary></entry><entry><title type="html">Comprendre le Fonctionnement Humain grâce à l’Intelligence Artificielle</title><link href="https://loocstna.github.io/comprendre-intelligence-humaine/" rel="alternate" type="text/html" title="Comprendre le Fonctionnement Humain grâce à l’Intelligence Artificielle" /><published>2024-12-07T17:00:00+00:00</published><updated>2024-12-07T17:00:00+00:00</updated><id>https://loocstna.github.io/Understanding-Intelligence</id><content type="html" xml:base="https://loocstna.github.io/comprendre-intelligence-humaine/"><![CDATA[<p>L’<strong>intelligence artificielle</strong> nous permet de mieux comprendre l’<strong>intelligence humaine</strong> et comment celle-ci fonctionne. Ici, en utilisant <a href="/chatgpt/">ChatGPT</a>, nous pouvons observer <strong>différentes réponses à la même question posée différemment</strong>, et en déduire des hypothèses qu’il s’agirat ensuite de tester et de valider avec des données réelles, ces hypothèses sont présentées comme conclusions préliminaires à la fin de cet article.</p>
+
+<h2 id="recherche">Recherche</h2>
+
+<p>Le cas que nous allons voir ici est le suivant: en écrivant la définition du terme <code>prédiction</code>, j’omet un mot.</p>
+
+<pre><code class="language-text">le fait de prédire quelque chose, peu importe quoi, que ce soit la météo, le nombre d’élève dans une certaine classe l’année prochaine ou le mot à la fin de cette
+</code></pre>
+
+<p>Peu importe que ce soit un oubli ou mon intention, le résultat est le même: il manque un mot. Lequel? Nous y reviendrons un peu plus loin.</p>
+
+<h3 id="répond-moi">Répond moi</h3>
+
+<p>Je commence ma discussion avec ChatGPT de manière brève, sans lui donner d’indication à part le faite que je m’attend à recevoir un seul mot:</p>
+
+<pre><code class="language-Humain">Répond par un seul mot:
+
+le fait de prédire quelque chose, peu importe quoi, que ce soit la météo, le nombre d’élève dans une certaine classe l’année prochaine ou le mot à la fin de cette
+</code></pre>
+<pre><code class="language-ChatGPT">Prédiction.
+</code></pre>
+
+<p>ChatGPT nous répond ici le terme que cette phrase définit, et non le terme manquant. Pour comprendre pourquoi cela, intéressons nous au contexte:</p>
+
+<ul>
+  <li>ChatGPT est une application basée sur GPT, qui lui est un modèle (de prédiction).</li>
+  <li>Un chat, une discussion, c’est une série de textes qui se suivent et qui sont en lien direct ou indirect avec ce qui précède; une question, une réponse, un commentaire, une opinion, etc.</li>
+</ul>
+
+<p>Compléter la phrase de l’autre semble ne pas (ou peu) être le but d’une discussion.</p>
+
+<h3 id="un-mot-manquant">Un mot manquant</h3>
+
+<p>Je recommence, cette fois-ci en lui indiquant que je cherche un mot manquant.</p>
+
+<pre><code class="language-Humain">Trouve le mot manquant:
+
+le fait de prédire quelque chose, peu importe quoi, que ce soit la météo, le nombre d’élève dans une certaine classe l’année prochaine ou le mot à la fin de cette
+</code></pre>
+<pre><code class="language-ChatGPT">Le mot manquant est "prédiction".
+</code></pre>
+
+<p>He bien, cette machine est tétue. Celle-ci semble vouloir deviner de quoi je parle plutôt que de me donner le mot manquant dans mon énnoncé.</p>
+
+<p>Je recommence cette fois-ci en complétant ma phrase, non seulement en y ajoutant le terme définit, son pronom, un verbe et une majuscule: <code>Une prédiction est</code>. Je complète ainsi mon énnoncé:</p>
+
+<pre><code class="language-Humain">Trouve le mot manquant:
+
+Une prédiction est le fait de prédire quelque chose, peu importe quoi, que ce soit la météo, le nombre d’élève dans une certaine classe l’année prochaine ou le mot à la fin de cette
+</code></pre>
+<pre><code class="language-ChatGPT">phrase.
+</code></pre>
+
+<p>Ah, enfin.</p>
+
+<ul>
+  <li>Trouver de quoi l’on parle et trouver un mot manquant semblent être deux tâches similaires.</li>
+  <li>Nos intentions lorsque nous posons une question sont inconnues lorsque ces intentions ne sont pas énnoncées ou que nos questions sont présentées sans contexte.</li>
+  <li>La manière dont nous posons une question peut influencer, voire déterminer sa réponse.</li>
+</ul>]]></content><author><name>Gautier</name></author><category term="Comprendre" /><category term="Intelligence" /><category term="Education" /><category term="ChatGPT" /><category term="LLM" /><summary type="html"><![CDATA[Analyser l'intelligence artificielle afin de comprendre comment fonctionne l'intelligence humaine.]]></summary></entry><entry><title type="html">Taxonomie de l’Intelligence Artificielle</title><link href="https://loocstna.github.io/taxonomie-intelligence-artificielle/" rel="alternate" type="text/html" title="Taxonomie de l’Intelligence Artificielle" /><published>2024-12-01T08:00:00+00:00</published><updated>2024-12-01T08:00:00+00:00</updated><id>https://loocstna.github.io/AI-taxonomy</id><content type="html" xml:base="https://loocstna.github.io/taxonomie-intelligence-artificielle/"><![CDATA[<!-- Meta
+	artificial intelligence
+	ai
+	ai art
+	ai chatbot
+	ai education
+	ai project
+	ai resource
+	ai course
+	ai training
+	ai essentials
+	ai techniques
+	ai applications
+	ai ethics
+	ai frameworks
+	ai regulation
+	ai history
+	ai philosophy
+	ai future
+	
+	ai classroom
+	ai readyness
+
+	ai for educators
+	ai in education
+	ai in schools
+
+
+	learn ai
+	teach ai
+
+	learning with ai
+	teaching with ai
+
+	chatgpt
+
+-->
+
+<pre><code class="language-text">⚠️ Cette page est encore en construction.
+📣 N'hésitez pas à me faire parvenir vos commentaires.
+
+Gautier
+</code></pre>
+<p><br /></p>
+
+<p>Afin de comprendre de quoi nous parlons lorsque nous parlons d’intelligence artificielle, voici une taxonomie (une liste de liste) ou liste (non-exhaustive) de tout ce qui attrait à l’intelligence artificielle.</p>
+
+<!--more-->
+
+<h2 id="intelligence-artificielle">Intelligence Artificielle</h2>
+
+<ul>
+  <li><strong>Application</strong>, terme introduit dans les années 2000 afin de remplacer le terme “programme”. Aujourd’hui, nous entendons principalement le terme “Application”, tandis qu’auparavant, nous parlions de “programmes” informatiques.</li>
+  <li><strong>Apprentissage Machine</strong> (Machine learning en Anglais): Déterminer un ensemble de règles basées sur des données.</li>
+  <li><strong>Automatisation</strong>: le fait d’automatiser, ou de rendre automatique un processus, un acte ou une décision.</li>
+  <li><strong>Prédiction</strong>: le fait de prédire quelque chose, peu importe quoi, que ce soit la météo, le nombre d’élève dans une certaine classe l’année prochaine ou le mot à la fin de cette _____.</li>
+  <li><strong>Régression Linéaire</strong>: Technique mathématique destinée à déterminer la relation entre deux variables.</li>
+</ul>
+
+<h2 id="langages-de-programmation">Langages de programmation</h2>
+
+<ul>
+  <li><strong>Javascript</strong>: le langage des interfaces web.</li>
+  <li><a href="/python/"><strong>Python</strong></a>: le langage à tout faire.</li>
+  <li><strong>Scratch</strong>: le langage informatique pour enfant.</li>
+</ul>
+
+<h2 id="les-fondamentaux">Les fondamentaux</h2>
+
+<ul>
+  <li>Algèbre linéaire</li>
+  <li>Histoire l’information et des technologies</li>
+  <li>Logique</li>
+  <li>Mathématique</li>
+  <li>Science</li>
+  <li>Ingénieurie</li>
+  <li>Statistique</li>
+  <li>Philosophie</li>
+</ul>]]></content><author><name>Gautier</name></author><category term="Taxonomie" /><category term="Intelligence Artificielle" /><category term="Taxonomie" /><summary type="html"><![CDATA[Taxonomie et glossaire de l'Intelligence Artificielle.]]></summary></entry></feed>
