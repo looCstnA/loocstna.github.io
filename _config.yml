@@ -43,7 +43,7 @@ author: Antscool
 copyright: "Antscool ASBL (cleft) 2017-{currentYear} {author}"
 
 description: >- # this means to ignore newlines until "baseurl:"
-  Artificial intelligence at home and in schools
+  Apprendre l'intelligence artificielle à l'école ou la maison.
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://loocstna.github.io" # the base hostname & protocol for your site, e.g. https://example.com
@@ -139,7 +139,7 @@ selection:
 # it will be always kept on every visit (i.e. no matter
 # the browser is closed or not)
 #
-# night_mode: "auto"
+night_mode: "off"
 
 # Code badge setting
 # You can enable or disable the code badge and so on

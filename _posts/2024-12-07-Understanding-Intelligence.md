@@ -12,8 +12,6 @@ tags: [Intelligence, Education, ChatGPT, LLM]
 excerpt_image: "/assets/images/icons/brain_muscle_icon.gif"
 ---
 
-## Introduction
-
 L'**intelligence artificielle** nous permet de mieux comprendre l'**intelligence humaine** et comment celle-ci fonctionne. Ici, en utilisant [ChatGPT](/chatgpt/), nous pouvons observer **différentes réponses à la même question posée différemment**, et en déduire des hypothèses qu'il s'agirat ensuite de tester et de valider avec des données réelles, ces hypothèses sont présentées comme conclusions préliminaires à la fin de cet article.
 
 ## Recherche
@@ -75,7 +73,6 @@ phrase.
 Ah, enfin.
 
 
-## Conclusions
-
+- Trouver de quoi l'on parle et trouver un mot manquant semblent être deux tâches similaires.
 - Nos intentions lorsque nous posons une question sont inconnues lorsque ces intentions ne sont pas énnoncées ou que nos questions sont présentées sans contexte.
 - La manière dont nous posons une question peut influencer, voire déterminer sa réponse.
