@@ -61,21 +61,84 @@ Gautier
 
 Afin de comprendre de quoi nous parlons lorsque nous parlons d'intelligence artificielle, voici une taxonomie (une liste de liste) ou liste (non-exhaustive) de tout ce qui attrait à l'intelligence artificielle.
 
+Nous vous recommandons dans ce labyrinthe de suivre les liens présent dans le texte même ou les flèches `>` et de commencer ici: [> Intelligence Artificielle](#h-intelligence-artificielle)
+
 <!--more-->
+
+## Application
+
+Terme introduit dans les années 2000 afin de remplacer le terme "programme". Aujourd'hui, nous entendons principalement le terme "Application", tandis qu'auparavant, nous parlions de "programmes" informatiques.  
+
+
+## Apprentissage Machine
+
+(Machine learning en Anglais)
+
+Ensemble de techniques destinées à apprendre ou déterminer des règles ou des vérités basées sur des données.
+
+## Automatisation
+
+Le fait d'automatiser, ou de rendre automatique un processus, un acte ou une décision.
+
+## Générative (IA)
+
+Les GPT et autres modèle d'intelligence artificielle qui servent à générer du contenu.
+
+## GPT 
+
+Un modèle d'intelligence artificielle générative.
+
 
 ## Intelligence Artificielle
 
-- **Application**, terme introduit dans les années 2000 afin de remplacer le terme "programme". Aujourd'hui, nous entendons principalement le terme "Application", tandis qu'auparavant, nous parlions de "programmes" informatiques.  
-- **Apprentissage Machine** (Machine learning en Anglais): Déterminer un ensemble de règles basées sur des données.
-- **Automatisation**: le fait d'automatiser, ou de rendre automatique un processus, un acte ou une décision.
-- **Prédiction**: le fait de prédire quelque chose, peu importe quoi, que ce soit la météo, le nombre d'élève dans une certaine classe l'année prochaine ou le mot à la fin de cette _____.
-- **Régression Linéaire**: Technique mathématique destinée à déterminer la relation entre deux variables.
+Reproduire l'intelligence humaine, ou celle de tout être vivant.
 
-## Langages de programmation
+[> Automatiser](#h-automatisation) et [> prédire](#h-prédiction).
 
-- **Javascript**: le langage des interfaces web.
-- [**Python**](/python/): le langage à tout faire.
-- **Scratch**: le langage informatique pour enfant.
+## Modèle
+
+Un modèle mathématique, statistique, déterministique ou tout simplement d'intelligence artificielle, sert à résoudre un problème. Nous parlerons souvent de modèle de prédiction.
+
+## Prédiction 
+
+Le fait de prédire quelque chose, peu importe quoi, que ce soit la météo, le nombre d'élève dans une certaine classe l'année prochaine ou le mot à la fin de cette _____.
+
+## Régression Linéaire
+
+Technique mathématique destinée à déterminer la relation entre deux variables.
+
+## Langage
+
+### Marqueur 
+
+Markup languages en anglais. Il s'agit d'un langage souvent simple à apprendre, qui sert littéralement à marquer du texte. Par exemple, barrer un ~~mot~~.
+
+Ils sont très utiles pour partager du code, ici en du code Python rendu dans du HTML (que compose cette page):
+
+```python
+print("Je suis du code")
+```
+
+Sont des langages marqueurs:
+
+- **HTML**: le langage "marqueur" du web.
+- [**Markdown**](https://learnmarkdown.com/){:target="_blank"}: le langage marqueur de texte.
+
+Il en existe d'autres, plus avancés:
+
+- [LaTeX](https://www.latex-project.org/get/){:target="_blank"}, le langage marqueur scientifique.
+
+### de Programmation 
+
+Les langages qui permettent de programmer, d'automatiser réellement des chose, comme l'écriture de texte.
+
+Communément appelé le code.
+
+Sont des langages de programmation:
+
+- **Javascript**: le langage de programmation des interfaces web.
+- [**Python**](/python/){:target="_blank"}: le langage de programmation à tout faire.
+- **Scratch**: le langage de programmation informatique visuel pour enfant.
 
 ## Les fondamentaux
 

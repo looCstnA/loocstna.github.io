@@ -9,7 +9,7 @@ author: Gautier
 date: 2024-12-14 18:00:00 +0100
 categories: [Liste]
 tags: [Intelligence Artificielle, Education]
-top: 1
+top: 3
 excerpt_image: "/assets/images/icons/study_icon.gif"
 ---
 
@@ -67,11 +67,13 @@ Découvrez l'intelligence artificielle via ces ressources et ces projets à suiv
 - Composition Musicale
 - Design Graphique et Visuel
 - Ecriture
+- Enigmes et Casse-têtes
 
 ## Programmation
 
 - Orienté Object (paradigme)
 - Fonctionelle (paradigme)
+- [Markdown](https://learnmarkdown.com/){:target="_blank"} (Langage marqueur)
 - Scratch (programming through a GUI, a Graphical User Interface)
 - [Python](/python/) (language)
 - Javascript (language)
@@ -102,6 +104,7 @@ Découvrez l'intelligence artificielle via ces ressources et ces projets à suiv
 
 - Codecademy
 - Coursera
+- [Enigmatik.net](https://enigmatik.net)
 - Git et Github
 
 ## Tutoriels

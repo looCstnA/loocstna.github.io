@@ -31,7 +31,7 @@ Je commence ma discussion avec ChatGPT de manière brève, sans lui donner d'ind
 ```Humain
 Répond par un seul mot:
 
-le fait de prédire quelque chose, peu importe quoi, que ce soit la météo, le nombre d’élève dans une certaine classe l’année prochaine ou le mot à la fin de cette
+le fait de prédire quelque chose, peu importe quoi, que ce soit la météo, le nombre d’élèves dans une certaine classe l’année prochaine ou le mot à la fin de cette
 ```
 ```ChatGPT
 Prédiction.
