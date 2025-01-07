@@ -6,3 +6,5 @@ _site
 Gemfile.lock
 .obsidian
 *.obsidian*
+_posts/.obsidian/app.json
+_posts/.obsidian/core-plugins.json
