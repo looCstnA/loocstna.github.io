@@ -29,9 +29,9 @@ Gautier
 
 Tout d'abord, l'aaplication principale dont tout le monde a entendu parlé aujourd'hui, le chat.
 
-![[openAI_playground.png]]
+![[../assets/images/openAI_playground.png]]
 
-Mais nous y trouvons aussi 
+Mais nous y trouvons aussi :
 
 - **Realtime** l'équivalent parlé de ChatGPT. 
 - **Assistants** qui permet aujourd'hui trois choses: l'interprétation de code, la recherche de fichier, ou recherche sémantique, et l'appel de fonction.
