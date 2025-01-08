@@ -35,6 +35,8 @@ Nous y trouvons :
 - **TTS**, l'acronyme de Text-To-Speech en anglais, ou la génération de parole (audio) à partir de texte.
 - **Completions**, qui n'est finalement que le chat présenté différement et qui est voué à disparaître du playground, cette partie sera néanmoins toujours disponible via l'API de OpenAI.
 
+<img src="/assets/images/openAI_playground.png">
+
 Nous développerons ici plus bas le Chat, nous développerons les autres fonctionnalités, plus avancées ou plus technique, dans un un article future.
 
 Nous y trouvons aussi l'accès à un forum de practiciens et ingénieurs et des [cookbooks](https://cookbook.openai.com/) ou recettes en français a diverses fins:
@@ -56,8 +58,7 @@ Prenons par exemple cet article, [Custom LLM as a Judge](https://cookbook.openai
 
 Nous allons donc tout d'abord nous intéresser à l'application principale, qui est le point de départ des autres fonctionalités disponibles, le **chat**.
 
-![[/assets/images/openAI_playground.png]]
-
+<img src="/assets/images/openAI_playground.png">
 
 Nous y trouvons deux éléments prinicpaux:
 
