@@ -69,6 +69,7 @@ Nous vous recommandons dans ce labyrinthe de suivre les liens présent dans le t
 
 Terme introduit dans les années 2000 afin de remplacer le terme "programme". Aujourd'hui, nous entendons principalement le terme "Application", tandis qu'auparavant, nous parlions de "programmes" informatiques.  
 
+Dans le jargon technique, application peut signifier simplement à quoi est appliqué un modèle, son application, et non une "app" disponible sur nos téléphone.
 
 ## Apprentissage Machine
 
@@ -78,16 +79,19 @@ Ensemble de techniques destinées à apprendre ou déterminer des règles ou des
 
 ## Automatisation
 
-Le fait d'automatiser, ou de rendre automatique un processus, un acte ou une décision.
+Le fait d'automatiser, ou de rendre automatique, un processus, un acte ou une décision.
 
 ## Générative (IA)
 
-Les GPT et autres modèle d'intelligence artificielle qui servent à générer du contenu.
+Les modèles génératifs tels que les modèles GPTs d'OpenAI ou autres modèles d'intelligence artificielle qui servent à générer du contenu.
 
 ## GPT 
 
-Un modèle d'intelligence artificielle générative.
+Un modèle d'intelligence artificielle générative. GPT est l'acronyme de **Generative Pre-trained Transformer**, un Transformeur Pré-entraîné Génératif.
 
+- Transformeur: un algorithm qui transforme du texte, des phrases, des mots ou des tokens en vecteurs mathématiques et ce afin de pouvoir les comparer.
+- Pré-entraîné: il a vu, ou "lu" beaucoup de textes, de discussions et de questions et réponses afin de se créer une réprésentation du langage et de nos connaissances explicites.
+- Génératif: comme tout modèle d'intelligence artificielle, on cherche à prédire quelque chose, GPT cherche à prédire les prochains tokens, mots, phrases et textes.
 
 ## Intelligence Artificielle
 
