@@ -71,5 +71,8 @@ Nous ne le voyons pas encore sur la capture d'écran ci-dessus, mais la discussi
 - l'utilisateur (nous ici)
 - l'assistant (voir la capture suivante)
 
-
 <img src="/assets/images/openai_chat_assistant.png">
+
+Avez-vous trouvé la différence avec la capture précédente?
+
+Nous nous mettons ici dans le rôle de l'assistant, c'est-à-dire que nous allons nous définir la réponse de ChatGPT aux questions ou discussion.
