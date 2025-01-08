@@ -7,7 +7,7 @@ description: Découverte de l'application ChatGPT et l'entreprise derrière cell
 author: Gautier
 date: 2024-12-21 18:00:00 +0100
 categories:
-  - Liste
+  - Découverte
 tags:
   - Intelligence
   - Artificielle
