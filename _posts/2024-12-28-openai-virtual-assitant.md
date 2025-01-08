@@ -29,7 +29,7 @@ Gautier
 
 Tout d'abord, l'aaplication principale dont tout le monde a entendu parlé aujourd'hui, le chat.
 
-![[assets/images/openAI_playground.png]]
+<img src="/assets/images/openAI_playground.png">
 
 Mais nous y trouvons aussi :
 
