@@ -1,16 +1,19 @@
 ---
 layout: post
-title: Comment Créer un Assisant Personel
+title: ChatGPT, l'application d'OpenAI qui a pris le monde par surprise
 subtitle: 
-permalink: /assistant-virtuel/
-description: >-
-  Guide sur la création d'assisant personel avec OpenAI et ChatGPT
+permalink: /openai-chatgpt/
+description: Découverte de l'application ChatGPT et l'entreprise derrière celle-ci
 author: Gautier
 date: 2024-12-21 18:00:00 +0100
-categories: [Liste]
-tags: [Intelligence Artificielle, Education]
-top: 1
-excerpt_image: "/assets/images/icons/schoolbus_icon.gif"
+categories:
+  - Liste
+tags:
+  - Intelligence
+  - Artificielle
+  - ChatGPT
+top: 
+excerpt_image: /assets/images/icons/backpack_icon.gif
 ---
 
 
