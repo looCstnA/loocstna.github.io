@@ -69,7 +69,7 @@ Nous vous recommandons dans ce labyrinthe de suivre les liens présent dans le t
 
 Terme introduit dans les années 2000 afin de remplacer le terme "programme". Aujourd'hui, nous entendons principalement le terme "Application", tandis qu'auparavant, nous parlions de "programmes" informatiques.  
 
-Dans le jargon technique, application peut signifier simplement à quoi est appliqué un modèle, son application, et non une "app" disponible sur nos téléphone.
+Dans le jargon technique, application peut signifier simplement le processus ou l'activité à laquelle est appliqué un modèle. Son application donc, et non une "app" disponible sur nos téléphones.
 
 ## Apprentissage Machine
 
