@@ -23,22 +23,24 @@ Dernière mise à jour: 07/01/2025
 Gautier
 ```
 
-ChatGPT, l'application qui a pris le monde par surprise.
+## ChatGPT
+
+L'application qui a pris le monde par surprise.
 
 <img src="/assets/images/application_chatgpt.jpg">
 
 Deux points important à retenir ici: 
 
-- ChatGPT peut "halluciner", c'est-à-dire inventer des choses et ce à chaque instant. 
-- ChatGPT comme beaucoup d'application collecte vos données et ce à chaque instant aussi.
+- ChatGPT peut **halluciner**, c'est-à-dire inventer des choses et ce à chaque instant. 
+- ChatGPT, comme beaucoup d'applications, **collecte vos données** et ce à chaque instant aussi.
 
-N'oubliez jamais qu'il a été entrainer sur les données "publiques" trouvées sur internet et sur internet, depuis son avenement commercial en 1993, [personne ne sait que vous êtes un chien](https://fr.wikipedia.org/wiki/On_the_Internet,_nobody_knows_you%27re_a_dog){:target="_blank"}.
+N'oubliez jamais qu'il a été entrainé sur les données "publiques" trouvées sur internet et sur internet, depuis son avenement commercial en 1993, [personne ne sait que vous êtes un chien](https://fr.wikipedia.org/wiki/On_the_Internet,_nobody_knows_you%27re_a_dog){:target="_blank"}.
 
 <img src="https://upload.wikimedia.org/wikipedia/en/f/f8/Internet_dog.jpg">
 
 En bref, sur internet, n'importe qui peut poster n'importe quoi. Ceci reste vrai sur votre téléphone. Il existe aujourd'hui de nombreuses applications de Chat ou autres qui se basent sur les modèles GPT d'OpenAI (voir la capture suivante), et celles-ci ont la main mise sur toutes les données qui transitent entre vous et ChatGPT, veillez donc à sélectionner cautioneusement les applications que vous utilisez.
 
-<img src="assets/images/chatgpt_on_play.jpg">
+<img src="/assets/images/chatgpt_on_play.jpg">
 
 Mais revenons à ChatGPT, celui-ci offre par défault tout une série d'applications, ou d'utilisations pour ne pas confondre avec l'application même, de ses modèle GPTX.
 
@@ -49,8 +51,9 @@ Mais revenons à ChatGPT, celui-ci offre par défault tout une série d'applicat
 - Création de plan
 - Echange d'idées
 
+## Terrain de Jeu
 
-[OpenAI.com](https://openai.com), la société derrière ChatGPT fourni un terrain de jeux pour quiconque (nous verrons que ce n'est pas encore réellement pour n'importe qui) désirant mettre en place diverses fonctions ou applications en lien avec les modèles que OpenAI offre.
+[OpenAI.com](https://openai.com), la société derrière ChatGPT fourni un terrain de jeu pour quiconque (nous verrons que ce n'est pas encore réellement pour n'importe qui) désirant mettre en place diverses fonctions ou applications en lien avec les modèles que OpenAI offre.
 
 Que trouve-t-on dans la platforme mise à disposition par OpenAI?
 
@@ -81,7 +84,7 @@ Prenons par exemple cet article, [Custom LLM as a Judge](https://cookbook.openai
 
 - Parlez vous Python, ou n'importe quel langage de programmation?
 
-## Le Chat
+### Chat, ou Discussion
 
 Nous allons donc tout d'abord nous intéresser à l'application principale, qui est le point de départ des autres fonctionalités disponibles, le **chat**.
 
