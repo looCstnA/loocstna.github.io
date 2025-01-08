@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="fr"><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://loocstna.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://loocstna.github.io/" rel="alternate" type="text/html" hreflang="fr" /><updated>2025-01-08T10:12:34+00:00</updated><id>https://loocstna.github.io/feed.xml</id><title type="html">Antscool</title><subtitle>Apprendre l'intelligence artificielle à l'école ou la maison.</subtitle><author><name>Antscool</name></author><entry><title type="html">Le Guide de l’Intelligence Artificielle en Pente Douce</title><link href="https://loocstna.github.io/guide-intelligence-artificielle/" rel="alternate" type="text/html" title="Le Guide de l’Intelligence Artificielle en Pente Douce" /><published>2024-12-21T17:00:00+00:00</published><updated>2024-12-21T17:00:00+00:00</updated><id>https://loocstna.github.io/beginners-guide</id><content type="html" xml:base="https://loocstna.github.io/guide-intelligence-artificielle/"><![CDATA[<pre><code class="language-text">⚠️ Cette page est encore en construction.
+📣 N'hésitez pas à me faire parvenir vos commentaires.
+
+Gautier
+</code></pre>
+
+<p>L’intelligence artificielle, ou IA, qu’est-ce que c’est?</p>
+
+<p>L’intelligence artificielle c’est aujourd’hui beaucoup de choses, d’éléments, qui proviennent de domaines différents. De manière générale, c’est reproduire artificiellement, c’est-à-dire créée ou construite par l’humain une certaine forme d’intelligence.</p>
+
+<p>Ce guide en “pente douce” aidera celles et ceux qui souhaitent découvrir l’intelliegence artificielle sans trop se casser la tête. Nous ne parlerons ici ni de programmation, ni trop de mathématiques, mais bien d’intelligence et à cette fin, rien de mieux que de commencer par un casse-tête. Car pour résoudre un casse-tête, c’est bien d’intelligence que nous avons besoin. Nous parlerons alors de raisonment, de logique, ou encore de déduction.</p>
+
+<p><br /></p>
+
+<h2 id="vous-cassez-vous-souvent-le-tête">Vous cassez-vous souvent le tête?</h2>
+
+<p>L’intelligence artificielle, c’est résoudre des casse-têtes.</p>
+
+<p>Lorsque que l’on étudie l’intelligence artificielle, on commence généralement par un casse-tête.</p>
+
+<p>En effet, on ne parle ni de programmation (bien que nous pouvons évidemment le programmer), ni de machine (bien que l’on en aura souvent besoin), mais bien de reproduire afin de comprendre l’intelligence et plus particulièrement l’intelligence humaine, bien que les animaux, les plantes et tous les systèmes vivant présentent certaine(s) forme(s) d’intelligence qui sont tout aussi intéressante(s) à reproduire et que nous, humains, reproduisons d’ailleur.</p>
+
+<p>Commençons donc par un casse tête. Nous verrons ensuite les outils et les techniques que nous, humains, avons créés et développés afin de résoudre ces casse-têtes.</p>
+
+<pre><code class="language-markdown">Un paysan part en voyage avec un renard, une oie et un sac de haricots.
+Il arrive face à une rivière qu'il doit traverser à l'aide d'un petit bateau qu'il trouve sur la berge.
+
+Malheureusement, le bateau est trop petit pour acceuillir tous ce petit monde. Il ne peut faire traverser qu'un seul élément à la fois et ce avec deux contraintes: 
+
+- si laissés ensemble, le renard mangera l'oie, 
+- et de la même manière, l'oie mangera les haricots.
+
+Comment faire?
+
+</code></pre>
+
+<h3 id="létat-initial-conceptualiser">L’état initial: Conceptualiser</h3>
+
+<blockquote>
+  <p>En logique, un concept est un <strong>contenu de pensée</strong>, qui, lorsqu’il est appliqué à un objet, peut former une proposition. […] Le concept est un terme abstrait qui se distingue donc de la chose désignée par ce concept. Le terme lui-même est introduit au Moyen Âge (conceptus) par Thomas d’Aquin […]. Il vient du latin conceptus qui signifie « action de contenir, de tenir ensemble, de recevoir », dérivé du verbe concipere signifiant « concevoir ». - <a href="https://fr.wikipedia.org/wiki/Concept_(philosophie)" target="_blank">Wikipedia</a></p>
+</blockquote>
+
+<p>Comment faire plus abstrait? 🤔</p>
+
+<p>Nous retiendrons que conceptualiser, c’est <strong>définir un contenu de pensée</strong>.</p>
+
+<p>Un paysan 🧑‍🌾, accompagné d’un renard 🦊, d’une oie 🪿, et d’un sac de haricots 🫘	se retrouve face à une rivière 🛶.</p>
+
+<p><img class="mermaid" src="https://mermaid.ink/svg/eyJjb2RlIjoiZmxvd2NoYXJ0IExSXG5zXzBbXCLwn6eR4oCN8J-MviDwn6aKIPCfqr8g8J-rmFx0IPCfm7Yg8J-rmFwiXVxuJSUtIiwibWVybWFpZCI6bnVsbH0" /></p>
+
+<h3 id="la-première-étape-schématiser">La première étape: Schématiser</h3>
+
+<blockquote>
+  <p>Le schéma du grec ancien σχῆμα / skhễma (« manière d’être », « forme », « figure », « extérieur », « apparence », « faux-semblant ») est une <strong>représentation</strong> de données <strong>simplifiée</strong> servant de vecteur de communication et souvent <strong>codifié ou symbolisé</strong>. Le mot prend généralement le sens de graphe selon le domaine dont on parle […] - <a href="https://fr.wikipedia.org/wiki/Sch%C3%A9ma" target="_blank">Wikipedia</a></p>
+</blockquote>
+
+<p>On parle en général d’une représentation graphique simplifiée, mais c’est aussi:</p>
+
+<ul>
+  <li>un <strong>objet</strong> de la géométrie algébrique en mathématiques</li>
+  <li>une <strong>structure</strong> de l’information en informatique</li>
+  <li>un certain type de <strong>représentations mentales</strong> en psychologie</li>
+  <li>etc.</li>
+</ul>
+
+<p>Face à la rivière, notre voyageur ne peut laisser seul ni le renard avec l’oie, ni l’oie avec le sac de haricots.</p>
+
+<p><img class="mermaid" src="https://mermaid.ink/svg/eyJjb2RlIjoiZmxvd2NoYXJ0IExSXG5zXzBbXCLwn6eR4oCN8J-MviDwn6aKIPCfqr8g8J-rmFx0IPCfm7Yg8J-TjVwiXVxuc18wMVtcIvCfpoog8J-rmFx0IPCfm7Yg8J-nkeKAjfCfjL4g8J-qv_Cfk41cIl1cbnNfMVtcIvCfp5HigI3wn4y-IPCfpoog8J-rmFx0IPCfm7Yg8J-qv_Cfk41cIl1cbnNfMCAtLSDwn6eR4oCN8J-MvvCfqr8tLT4gc18wMVxuc18wMSAtLSDwn6eR4oCN8J-MviAtLT4gc18xXG4lJS0iLCJtZXJtYWlkIjpudWxsfQ" /></p>
+
+<h3 id="la-deuxième-étape-le-choix">La deuxième étape: le choix</h3>
+
+<p>Ici vient un choix qui, au final, n’aura pas d’incidence sur le résultat.</p>
+
+<p><img class="mermaid" src="https://mermaid.ink/svg/eyJjb2RlIjoiZmxvd2NoYXJ0IFREXG5zXzFbXCLwn6eR4oCN8J-MviDwn6aKIPCfq5hcdCDwn5u2IPCfqr_wn5ONXCJdXG5zXzIxW1wiIPCfq5hcdCDwn5u2IPCfp5HigI3wn4y-IPCfporwn6q_8J-TjVwiXVxuc18yMltcIiDwn6aKXHQg8J-btiDwn6eR4oCN8J-MviDwn6uY8J-qv_Cfk41cIl1cbnNfMSAtLSDwn6eR4oCN8J-MvvCfpootLT4gc18yMVxuc18xIC0tIPCfp5HigI3wn4y-8J-rmFx0LS0-IHNfMjIiLCJtZXJtYWlkIjpudWxsfQ" /></p>
+
+<p>Découvrons un peu plus à ce qu’est ou ce que représente réellement un choix.</p>
+
+<blockquote>
+  <p>Un choix résulte de la <strong>décision</strong> d’un <strong>individu ou d’un groupe</strong> confronté à une <strong>situation ou à un système</strong> offrant une ou plusieurs options. Le terme « choix » pouvant désigner le <strong>processus</strong> par lequel cette opération est menée à bien et/ou le <strong>résultat</strong> de ladite opération. - <a href="https://fr.wikipedia.org/wiki/Choix" target="_blank">Wikipedia</a></p>
+</blockquote>
+
+<p>Nous pouvons ici nous intéresser aux différents éléments que compose cette définition:</p>
+
+<ul>
+  <li>L’intelligence artificielle, c’est prendre des décisions, ou tout simplement prend des décisions.</li>
+  <li>Un individu ou un groupe d’invidu, nous appelons ça en intelligence artificielle un ou des agents intelligents.</li>
+  <li>L’intelligence artificielle désigne à la fois un processus et son résultat.</li>
+</ul>
+
+<p>A noter aussi que sans différentes options qui se présentent à nous, nous n’avons pas de choix.</p>
+
+<h3 id="le-déroulement">Le déroulement</h3>
+
+<p>Une foix notre choix effectué, la solution ne reste plus qu’à être déroulée.</p>
+
+<p><img class="mermaid" src="https://mermaid.ink/svg/eyJjb2RlIjoiZmxvd2NoYXJ0IFREXG5zXzIxW1wiIPCfq5hcdCDwn5u2IPCfp5HigI3wn4y-IPCfporwn6q_8J-TjVwiXVxuc18yMltcIiDwn6aKXHQg8J-btiDwn6eR4oCN8J-MviDwn6uY8J-qv_Cfk41cIl1cbnNfMzFbXCIg8J-nkeKAjfCfjL7wn6q_8J-rmCDwn5u2IPCfporwn5ONXCJdXG5zXzMyW1wiIPCfp5HigI3wn4y-8J-milx08J-qvyDwn5u2IPCfq5jwn5ONXCJdXG5zXzIxIC0tIPCfp5HigI3wn4y-8J-qvy0tPiBzXzMxXG5zXzIyIC0tIPCfp5HigI3wn4y-8J-qvy0tPiBzXzMyXG5zXzRbXCIg8J-nkeKAjfCfjL7wn6q_IPCfm7Yg8J-mivCfq5jwn5ONXCJdXG5zXzMxIC0tIPCfp5HigI3wn4y-8J-rmC0tPiBzXzRcbnNfMzIgLS0g8J-nkeKAjfCfjL7wn6aKXHQtLT4gc180XG5zXzRbXCIg8J-qvyDwn5u2IPCfp5HigI3wn4y-8J-mivCfq5jwn5ONXCJdXG5zXzVbXCIg8J-nkeKAjfCfjL7wn6q_IPCfm7Yg8J-mivCfq5jwn5ONXCJdXG5zXzQgLS0g8J-nkeKAjfCfjL4tLT4gc181XG5zXzUxW1wiIPCfm7Yg8J-nkeKAjfCfjL7wn6aK8J-qv_Cfq5jwn5ONXCJdXG5zXzUgLS0g8J-nkeKAjfCfjL7wn6q_LS0-IHNfNTEiLCJtZXJtYWlkIjpudWxsfQ" /></p>
+
+<p>En intelligence artificielle, nous travaillons la conceptualisation, la schématisation, l’analyse et la synthèse. Nous développerons ces deux derniers dans la section suivante.</p>
+
+<h2 id="le-schéma-complet">Le schéma complet</h2>
+
+<p>Visualiser le schéma dans son ensemble nous permet de se rendre compte de quelques spécificités présentes dans notre problème.</p>
+
+<p><img class="mermaid" src="https://mermaid.ink/svg/eyJjb2RlIjoiZmxvd2NoYXJ0IFREXG5zXzBbXCLwn6eR4oCN8J-MviDwn6aKIPCfqr8g8J-rmFx0IPCfm7Yg8J-TjVwiXVxuc18wMVtcIvCfpoog8J-rmFx0IPCfm7Yg8J-nkeKAjfCfjL4g8J-qv_Cfk41cIl1cbnNfMVtcIvCfp5HigI3wn4y-IPCfpoog8J-rmFx0IPCfm7Yg8J-qv_Cfk41cIl1cbnNfMCAtLSDwn6eR4oCN8J-MvvCfqr8tLT4gc18wMVxuc18wMSAtLSDwn6eR4oCN8J-MviAtLT4gc18xXG5zXzIxW1wiIPCfq5hcdCDwn5u2IPCfp5HigI3wn4y-IPCfporwn6q_8J-TjVwiXVxuc18yMltcIiDwn6aKXHQg8J-btiDwn6eR4oCN8J-MviDwn6uY8J-qv_Cfk41cIl1cbnNfMSAtLSDwn6eR4oCN8J-MvvCfpootLT4gc18yMVxuc18xIC0tIPCfp5HigI3wn4y-8J-rmFx0LS0-IHNfMjJcbnNfMzFbXCIg8J-nkeKAjfCfjL7wn6q_8J-rmCDwn5u2IPCfporwn5ONXCJdXG5zXzMyW1wiIPCfp5HigI3wn4y-8J-milx08J-qvyDwn5u2IPCfq5jwn5ONXCJdXG5zXzIxIC0tIPCfp5HigI3wn4y-8J-qvy0tPiBzXzMxXG5zXzIyIC0tIPCfp5HigI3wn4y-8J-qvy0tPiBzXzMyXG5zXzRbXCIg8J-nkeKAjfCfjL7wn6q_IPCfm7Yg8J-mivCfq5jwn5ONXCJdXG5zXzMxIC0tIPCfp5HigI3wn4y-8J-rmC0tPiBzXzRcbnNfMzIgLS0g8J-nkeKAjfCfjL7wn6aKXHQtLT4gc180XG5zXzRbXCIg8J-qvyDwn5u2IPCfp5HigI3wn4y-8J-mivCfq5jwn5ONXCJdXG5zXzVbXCIg8J-nkeKAjfCfjL7wn6q_IPCfm7Yg8J-mivCfq5jwn5ONXCJdXG5zXzQgLS0g8J-nkeKAjfCfjL4tLT4gc181XG5zXzUxW1wiIPCfm7Yg8J-nkeKAjfCfjL7wn6aK8J-qv_Cfq5jwn5ONXCJdXG5zXzUgLS0g8J-nkeKAjfCfjL7wn6q_LS0-IHNfNTEiLCJtZXJtYWlkIjpudWxsfQ" /></p>
+
+<ul>
+  <li>Le paysan effectuera toujours deux trajets seul, le deuxième et l’avant-dernier trajet, il n’en est pas possible autrement.</li>
+  <li>L’étape centrale sera toujours, dans tous les cas, un trajet avec l’oie. Celle-ci est en effet le coeur du problème.</li>
+</ul>
+
+<p><strong>Le schéma simplifié</strong></p>
+
+<p>Nous pouvons simplier le schéma, car au final, ce qui nous intéresse, ce sont les différents états dans lequel nous nous trouvons à chaque instant.</p>
+
+<p><img class="mermaid" src="https://mermaid.ink/svg/eyJjb2RlIjoiZmxvd2NoYXJ0IFREXG5zXzBbXCLwn6eR4oCN8J-MviDwn6aKIPCfqr8g8J-rmFx0IPCfm7Yg8J-TjVwiXVxuc18xW1wi8J-nkeKAjfCfjL4g8J-miiDwn6uYXHQg8J-btiDwn6q_8J-TjVwiXVxuc18wIC0tPiBzXzFcbnNfMjFbXCIg8J-rmFx0IPCfm7Yg8J-nkeKAjfCfjL4g8J-mivCfqr_wn5ONXCJdXG5zXzIyW1wiIPCfpopcdCDwn5u2IPCfp5HigI3wn4y-IPCfq5jwn6q_8J-TjVwiXVxuc18xIC0tPiBzXzIxXG5zXzEgLS0-IHNfMjJcbnNfMzFbXCIg8J-nkeKAjfCfjL7wn6q_8J-rmCDwn5u2IPCfporwn5ONXCJdXG5zXzMyW1wiIPCfp5HigI3wn4y-8J-milx08J-qvyDwn5u2IPCfq5jwn5ONXCJdXG5zXzIxIC0tPiBzXzMxXG5zXzIyIC0tPiBzXzMyXG5zXzRbXCIg8J-nkeKAjfCfjL7wn6q_IPCfm7Yg8J-mivCfq5jwn5ONXCJdXG5zXzMxIC0tPiBzXzRcbnNfMzIgLS0-IHNfNFxuc181W1wiIPCfm7Yg8J-nkeKAjfCfjL7wn6aK8J-qv_Cfq5jwn5ONXCJdXG5zXzQgLS0-IHNfNSIsIm1lcm1haWQiOm51bGx9" /></p>
+
+<h2 id="récapitulons">Récapitulons</h2>
+
+<p>L’intelligence artificielle:</p>
+
+<ul>
+  <li>résoud des casse-têtes et prend des décisions,</li>
+  <li>c’est résoudre des casse-têtes et prendre des décisions,</li>
+  <li>représente à la fois un <strong>processus</strong> et son <strong>résultat</strong>.</li>
+</ul>
+
+<p>Un agent intelligent est tout individu ou groupe d’individu confronté à un problème.</p>
+
+<p>En intelligence artificielle, nous étudions et travaillons:</p>
+
+<ul>
+  <li>la <strong>conceptualisation</strong>: définir un contenu de pensée.</li>
+  <li>la <strong>schématisation</strong>: représentation simplifié, codifiée ou symbolisée.</li>
+  <li>l’<strong>analyse</strong>: déduire ou détecter des “vérités”.</li>
+  <li>la <strong>synthèse</strong>: définir un problème, déterminer de quoi avons nous réellement besoin, quelles sont nos contraintes et nos solutions.</li>
+</ul>]]></content><author><name>Gautier</name></author><category term="Liste" /><category term="Intelligence Artificielle" /><category term="Education" /><summary type="html"><![CDATA[Cette liste fournit de nombreuses sources d'information et d'éducation en intelligence artificielle à découvrir et à suivre à la maison ou à l'école.]]></summary></entry><entry><title type="html">ChatGPT, l’application d’OpenAI qui a pris le monde par surprise</title><link href="https://loocstna.github.io/openai-chatgpt/" rel="alternate" type="text/html" title="ChatGPT, l’application d’OpenAI qui a pris le monde par surprise" /><published>2024-12-21T17:00:00+00:00</published><updated>2024-12-21T17:00:00+00:00</updated><id>https://loocstna.github.io/openai-chatgpt</id><content type="html" xml:base="https://loocstna.github.io/openai-chatgpt/"><![CDATA[<pre><code class="language-text">⚠️ Cette page est encore en construction.
+📣 N'hésitez pas à me faire parvenir vos commentaires.
+
+Dernière mise à jour: 07/01/2025
+
+Gautier
+</code></pre>
+
+<h2 id="chatgpt">ChatGPT</h2>
+
+<p>L’application, qui a pris le monde par surprise, offre par défault tout une série d’applications, ou d’utilisations pour ne pas confondre avec l’application même, de ses modèle GPTX.</p>
+
+<ul>
+  <li>Création d’image</li>
+  <li>Résumer un text ou un document</li>
+  <li>Rédaction de contenu</li>
+  <li>Recommandations ou avis</li>
+  <li>Création de plan</li>
+  <li>Echange d’idées</li>
+</ul>
+
+<p><img src="/assets/images/application_chatgpt.jpg" /></p>
+
+<p>Avant toute chose, deux points important à retenir ici:</p>
+
+<ul>
+  <li>ChatGPT peut <strong>halluciner</strong>, c’est-à-dire inventer des choses et ce à chaque instant.</li>
+  <li>ChatGPT, comme beaucoup d’applications, <strong>collecte vos données</strong> et ce à chaque instant aussi.</li>
+</ul>
+
+<p>N’oubliez jamais qu’il a été entrainé sur les données “publiques” trouvées sur internet et sur internet, depuis son avènement commercial en 1993, <a href="https://fr.wikipedia.org/wiki/On_the_Internet,_nobody_knows_you%27re_a_dog" target="_blank">personne ne sait que vous êtes un chien</a>.</p>
+
+<p><img src="https://upload.wikimedia.org/wikipedia/en/f/f8/Internet_dog.jpg" /></p>
+
+<p>Sur internet, n’importe qui peut poster n’importe quoi. Ceci reste vrai sur votre téléphone. Il existe aujourd’hui de nombreuses applications de Chat ou autres qui se basent sur les modèles GPT d’OpenAI (voir la capture suivante), et celles-ci ont la main mise sur toutes les données qui transitent entre vous et ChatGPT, veillez donc à sélectionner cautioneusement les applications que vous utilisez.</p>
+
+<p><img src="/assets/images/chatgpt_on_play.jpg" /></p>
+
+<h2 id="terrain-de-jeu">Terrain de Jeu</h2>
+
+<p><a href="https://openai.com">OpenAI.com</a>, la société derrière ChatGPT fourni un terrain de jeu pour quiconque (nous verrons que ce n’est pas encore réellement pour n’importe qui) désirant mettre en place diverses fonctions ou applications en lien avec les modèles que OpenAI offre.</p>
+
+<p>Ici, nous pouvons jouer et expérimenter avec ChatGPT. Que trouve-t-on alors dans la platforme mise à disposition par OpenAI?</p>
+
+<p>Nous y trouvons :</p>
+
+<ul>
+  <li>Le <strong>Chat</strong>: L’équivalent technique ou scientifique de ChatGPT.</li>
+  <li><strong>Realtime</strong>: l’équivalent parlé de ChatGPT.</li>
+  <li><strong>Assistants</strong>: qui permet aujourd’hui trois choses: l’interprétation de code, la recherche de fichier, ou recherche sémantique, et l’appel de fonction.</li>
+  <li><strong>TTS</strong>, l’acronyme de Text-To-Speech en anglais, ou la génération de parole (audio) à partir de texte.</li>
+  <li><strong>Completions</strong>, qui n’est finalement que le chat présenté différement et qui est voué à disparaître du playground, cette partie sera néanmoins toujours disponible via l’API de OpenAI.</li>
+</ul>
+
+<p><img src="/assets/images/openAI_playground.png" /></p>
+
+<p>Nous développerons ici plus bas le Chat, nous développerons les autres fonctionnalités, plus avancées ou plus technique, dans un un article future.</p>
+
+<p>Nous y trouvons aussi l’accès à un forum de practiciens et ingénieurs et des <a href="https://cookbook.openai.com/">cookbooks</a> ou recettes en français a diverses fins:</p>
+
+<ul>
+  <li>traduction de voix en divers langages</li>
+  <li>Narration de vidéo</li>
+  <li>Créer un moteur de recherche de type sémantique</li>
+  <li>des techniques pour améliorer la fiabilité des résultats</li>
+  <li>comment calibrer des modèles de chat</li>
+  <li>etc.</li>
+</ul>
+
+<p>Ces recettes sont très fortement orientées d’un point de vue technique et s’adressent encore à un public technique lui aussi.</p>
+
+<p>Prenons par exemple cet article, <a href="https://cookbook.openai.com/examples/custom-llm-as-a-judge">Custom LLM as a Judge</a> qui décrit comment utiliser un LLM afin de juger (noter) de la qualité de réponse donnée à des questions prédéfinie. Cette recette décrit le code utilisé afin en mettre en palce des technologies qui elles aussi sont principalement des outils d’ingénieurie technique.</p>
+
+<ul>
+  <li>Parlez vous Python, ou n’importe quel langage de programmation?</li>
+</ul>
+
+<h3 id="chat-ou-discussion">Chat, ou Discussion</h3>
+
+<p>Nous allons donc tout d’abord nous intéresser à l’application principale, qui est le point de départ des autres fonctionalités disponibles, le <strong>chat</strong>.</p>
+
+<p><img src="/assets/images/openAI_playground.png" /></p>
+
+<p>Nous y trouvons deux éléments prinicpaux:</p>
+
+<ul>
+  <li>la discussion, au centre de l’écran</li>
+  <li>les paramètres, à droite</li>
+</ul>
+
+<p>Nous ne le voyons pas encore sur la capture d’écran ci-dessus, mais la discussion fait intervernir trois éléments du Chat:</p>
+
+<ul>
+  <li>le système</li>
+  <li>l’utilisateur (nous ici)</li>
+  <li>l’assistant (voir la capture suivante)</li>
+</ul>
+
+<p><img src="/assets/images/openai_chat_assistant.png" /></p>
+
+<p>Avez-vous trouvé la différence avec la capture précédente?</p>
+
+<p>Nous nous mettons ici dans le rôle de l’assistant, c’est-à-dire que nous pouvons nous même définir les réponses de ChatGPT aux questions ou éléments de la discussion.</p>]]></content><author><name>Gautier</name></author><category term="Découverte" /><category term="Intelligence" /><category term="Artificielle" /><category term="ChatGPT" /><summary type="html"><![CDATA[Découverte de l'application ChatGPT et l'entreprise derrière celle-ci]]></summary></entry><entry><title type="html">Liste Curative de Ressources Educationelles en Intelligence Artificielle</title><link href="https://loocstna.github.io/liste-curative-education-ia/" rel="alternate" type="text/html" title="Liste Curative de Ressources Educationelles en Intelligence Artificielle" /><published>2024-12-14T17:00:00+00:00</published><updated>2024-12-14T17:00:00+00:00</updated><id>https://loocstna.github.io/AI-curated-list</id><content type="html" xml:base="https://loocstna.github.io/liste-curative-education-ia/"><![CDATA[<!-- Meta
+	artificial intelligence
+	ai
+	ai art
+	ai chatbot
+	ai education
+	ai project
+	ai resource
+	ai course
+	ai training
+	ai essentials
+	ai techniques
+	ai applications
+	ai ethics
+	ai frameworks
+	ai regulation
+	ai history
+	ai philosophy
+	ai future
+	
+	ai classroom
+	ai readyness
+
+	ai for educators
+	ai in education
+	ai in schools
+
+
+	learn ai
+	teach ai
+
+	learning with ai
+	teaching with ai
+
+	chatgpt
+
+-->
+
+<pre><code class="language-text">⚠️ Cette page est encore en construction.
+📣 N'hésitez pas à me faire parvenir vos commentaires.
+
+Gautier
+</code></pre>
+<p><br /></p>
+
+<p>Découvrez l’intelligence artificielle via ces ressources et ces projets à suivre et à faire à l’école ou à la maison.</p>
+
+<h2 id="art">Art</h2>
+
+<ul>
+  <li>Art Génératif</li>
+  <li>Composition Musicale</li>
+  <li>Design Graphique et Visuel</li>
+  <li>Ecriture</li>
+  <li>Enigmes et Casse-têtes</li>
+</ul>
+
+<h2 id="programmation">Programmation</h2>
+
+<ul>
+  <li>Orienté Object (paradigme)</li>
+  <li>Fonctionelle (paradigme)</li>
+  <li><a href="https://learnmarkdown.com/" target="_blank">Markdown</a> (Langage marqueur)</li>
+  <li>Scratch (programming through a GUI, a Graphical User Interface)</li>
+  <li><a href="/python/">Python</a> (language)</li>
+  <li>Javascript (language)</li>
+</ul>
+
+<h2 id="mathématiques--sciences">Mathématiques &amp; Sciences</h2>
+
+<ul>
+  <li>Logique</li>
+  <li>Algebre Linéaire</li>
+  <li>Statistiques</li>
+  <li>Méthode Scientifique</li>
+</ul>
+
+<h2 id="technologie--ingénieurie">Technologie &amp; Ingénieurie</h2>
+
+<ul>
+  <li>Arduino</li>
+  <li>Electronique</li>
+  <li>Mécanique</li>
+  <li>Micro-Ordinateurs</li>
+  <li>Ordinateurs</li>
+  <li>Raspberry Pi</li>
+</ul>
+
+<h2 id="philosophie--science-fiction">Philosophie &amp; Science-Fiction</h2>
+
+<ul>
+  <li>Alan Turing et le teste de Turing</li>
+  <li>Fondation de Isaac Asimov</li>
+  <li>1984 de George Orwell</li>
+</ul>
+
+<h2 id="outils--platformes">Outils &amp; Platformes</h2>
+
+<ul>
+  <li>Codecademy</li>
+  <li>Coursera</li>
+  <li><a href="https://enigmatik.net">Enigmatik.net</a></li>
+  <li>Git et Github</li>
+</ul>
+
+<h2 id="tutoriels">Tutoriels</h2>
+
+<ul>
+  <li>Une introduction à Antscool et les Technologies utilisées (github, antscool, etc.)</li>
+</ul>]]></content><author><name>Gautier</name></author><category term="Liste" /><category term="Intelligence Artificielle" /><category term="Education" /><summary type="html"><![CDATA[Cette liste fournit de nombreuses sources d'information et d'éducation en intelligence artificielle à découvrir et à suivre à la maison ou à l'école.]]></summary></entry><entry><title type="html">Comprendre le Fonctionnement Humain grâce à l’Intelligence Artificielle</title><link href="https://loocstna.github.io/comprendre-intelligence-humaine/" rel="alternate" type="text/html" title="Comprendre le Fonctionnement Humain grâce à l’Intelligence Artificielle" /><published>2024-12-07T17:00:00+00:00</published><updated>2024-12-07T17:00:00+00:00</updated><id>https://loocstna.github.io/Understanding-Intelligence</id><content type="html" xml:base="https://loocstna.github.io/comprendre-intelligence-humaine/"><![CDATA[<p>L’<strong>intelligence artificielle</strong> nous permet de mieux comprendre l’<strong>intelligence humaine</strong> et comment celle-ci fonctionne. Ici, en utilisant <a href="/chatgpt/">ChatGPT</a>, nous pouvons observer <strong>différentes réponses à la même question posée différemment</strong>, et en déduire des hypothèses qu’il s’agirat ensuite de tester et de valider avec des données réelles, ces hypothèses sont présentées comme conclusions préliminaires à la fin de cet article.</p>
+
+<h2 id="recherche">Recherche</h2>
+
+<p>Le cas que nous allons voir ici est le suivant: en écrivant la définition du terme <code>prédiction</code>, j’omet un mot.</p>
+
+<pre><code class="language-text">le fait de prédire quelque chose, peu importe quoi, que ce soit la météo, le nombre d’élève dans une certaine classe l’année prochaine ou le mot à la fin de cette
+</code></pre>
+
+<p>Peu importe que ce soit un oubli ou mon intention, le résultat est le même: il manque un mot. Lequel? Nous y reviendrons un peu plus loin.</p>
+
+<h3 id="répond-moi">Répond moi</h3>
+
+<p>Je commence ma discussion avec ChatGPT de manière brève, sans lui donner d’indication à part le faite que je m’attend à recevoir un seul mot:</p>
+
+<pre><code class="language-Humain">Répond par un seul mot:
+
+le fait de prédire quelque chose, peu importe quoi, que ce soit la météo, le nombre d’élèves dans une certaine classe l’année prochaine ou le mot à la fin de cette
+</code></pre>
+<pre><code class="language-ChatGPT">Prédiction.
+</code></pre>
+
+<p>ChatGPT nous répond ici le terme que cette phrase définit, et non le terme manquant. Pour comprendre pourquoi cela, intéressons nous au contexte:</p>
+
+<ul>
+  <li>ChatGPT est une application basée sur GPT, qui lui est un modèle (de prédiction).</li>
+  <li>Un chat, une discussion, c’est une série de textes qui se suivent et qui sont en lien direct ou indirect avec ce qui précède; une question, une réponse, un commentaire, une opinion, etc.</li>
+</ul>
+
+<p>Compléter la phrase de l’autre semble ne pas (ou peu) être le but d’une discussion.</p>
+
+<h3 id="un-mot-manquant">Un mot manquant</h3>
+
+<p>Je recommence, cette fois-ci en lui indiquant que je cherche un mot manquant.</p>
+
+<pre><code class="language-Humain">Trouve le mot manquant:
+
+le fait de prédire quelque chose, peu importe quoi, que ce soit la météo, le nombre d’élève dans une certaine classe l’année prochaine ou le mot à la fin de cette
+</code></pre>
+<pre><code class="language-ChatGPT">Le mot manquant est "prédiction".
+</code></pre>
+
+<p>He bien, cette machine est tétue. Celle-ci semble vouloir deviner de quoi je parle plutôt que de me donner le mot manquant dans mon énnoncé.</p>
+
+<p>Je recommence cette fois-ci en complétant ma phrase, non seulement en y ajoutant le terme définit, son pronom, un verbe et une majuscule: <code>Une prédiction est</code>. Je complète ainsi mon énnoncé:</p>
+
+<pre><code class="language-Humain">Trouve le mot manquant:
+
+Une prédiction est le fait de prédire quelque chose, peu importe quoi, que ce soit la météo, le nombre d’élève dans une certaine classe l’année prochaine ou le mot à la fin de cette
+</code></pre>
+<pre><code class="language-ChatGPT">phrase.
+</code></pre>
+
+<p>Ah, enfin.</p>
+
+<ul>
+  <li>Trouver de quoi l’on parle et trouver un mot manquant semblent être deux tâches similaires.</li>
+  <li>Nos intentions lorsque nous posons une question sont inconnues lorsque ces intentions ne sont pas énnoncées ou que nos questions sont présentées sans contexte.</li>
+  <li>La manière dont nous posons une question peut influencer, voire déterminer sa réponse.</li>
+</ul>]]></content><author><name>Gautier</name></author><category term="Comprendre" /><category term="Intelligence" /><category term="Education" /><category term="ChatGPT" /><category term="LLM" /><summary type="html"><![CDATA[Analyser l'intelligence artificielle afin de comprendre comment fonctionne l'intelligence humaine.]]></summary></entry><entry><title type="html">Taxonomie de l’Intelligence Artificielle</title><link href="https://loocstna.github.io/taxonomie-intelligence-artificielle/" rel="alternate" type="text/html" title="Taxonomie de l’Intelligence Artificielle" /><published>2024-12-01T08:00:00+00:00</published><updated>2024-12-01T08:00:00+00:00</updated><id>https://loocstna.github.io/AI-taxonomy</id><content type="html" xml:base="https://loocstna.github.io/taxonomie-intelligence-artificielle/"><![CDATA[<!-- Meta
+	artificial intelligence
+	ai
+	ai art
+	ai chatbot
+	ai education
+	ai project
+	ai resource
+	ai course
+	ai training
+	ai essentials
+	ai techniques
+	ai applications
+	ai ethics
+	ai frameworks
+	ai regulation
+	ai history
+	ai philosophy
+	ai future
+	
+	ai classroom
+	ai readyness
+
+	ai for educators
+	ai in education
+	ai in schools
+
+
+	learn ai
+	teach ai
+
+	learning with ai
+	teaching with ai
+
+	chatgpt
+
+-->
+
+<pre><code class="language-text">⚠️ Cette page est encore en construction.
+📣 N'hésitez pas à me faire parvenir vos commentaires.
+
+Gautier
+</code></pre>
+<p><br /></p>
+
+<p>Afin de comprendre de quoi nous parlons lorsque nous parlons d’intelligence artificielle, voici une taxonomie (une liste de liste) ou liste (non-exhaustive) de tout ce qui attrait à l’intelligence artificielle.</p>
+
+<p>Nous vous recommandons dans ce labyrinthe de suivre les liens présent dans le texte même ou les flèches <code>&gt;</code> et de commencer ici: <a href="#h-intelligence-artificielle">&gt; Intelligence Artificielle</a></p>
+
+<!--more-->
+
+<h2 id="application">Application</h2>
+
+<p>Terme introduit dans les années 2000 afin de remplacer le terme “programme”. Aujourd’hui, nous entendons principalement le terme “Application”, tandis qu’auparavant, nous parlions de “programmes” informatiques.</p>
+
+<p>Dans le jargon technique, application peut signifier simplement le processus ou l’activité à laquelle est appliqué un modèle. Son application donc, et non une “app” disponible sur nos téléphones.</p>
+
+<h2 id="apprentissage-machine">Apprentissage Machine</h2>
+
+<p>(Machine learning en Anglais)</p>
+
+<p>Ensemble de techniques destinées à apprendre ou déterminer des règles ou des vérités basées sur des données.</p>
+
+<h2 id="automatisation">Automatisation</h2>
+
+<p>Le fait d’automatiser, ou de rendre automatique, un processus, un acte ou une décision.</p>
+
+<h2 id="générative-ia">Générative (IA)</h2>
+
+<p>Les modèles génératifs tels que les modèles GPTs d’OpenAI ou autres modèles d’intelligence artificielle qui servent à générer du contenu.</p>
+
+<h2 id="gpt">GPT</h2>
+
+<p>Un modèle d’intelligence artificielle générative. GPT est l’acronyme de <strong>Generative Pre-trained Transformer</strong>, un Transformeur Pré-entraîné Génératif.</p>
+
+<ul>
+  <li>Transformeur: un algorithm qui transforme du texte, des phrases, des mots ou des tokens en vecteurs mathématiques et ce afin de pouvoir les comparer.</li>
+  <li>Pré-entraîné: il a vu, ou “lu” beaucoup de textes, de discussions et de questions et réponses afin de se créer une réprésentation du langage et de nos connaissances explicites.</li>
+  <li>Génératif: comme tout modèle d’intelligence artificielle, on cherche à prédire quelque chose, GPT cherche à prédire les prochains tokens, mots, phrases et textes.</li>
+</ul>
+
+<h2 id="intelligence-artificielle">Intelligence Artificielle</h2>
+
+<p>Reproduire l’intelligence humaine, ou celle de tout être vivant.</p>
+
+<p><a href="#h-automatisation">&gt; Automatiser</a> et <a href="#h-prédiction">&gt; prédire</a>.</p>
+
+<h2 id="modèle">Modèle</h2>
+
+<p>Un modèle mathématique, statistique, déterministique ou tout simplement d’intelligence artificielle, sert à résoudre un problème. Nous parlerons souvent de modèle de prédiction.</p>
+
+<h2 id="prédiction">Prédiction</h2>
+
+<p>Le fait de prédire quelque chose, peu importe quoi, que ce soit la météo, le nombre d’élève dans une certaine classe l’année prochaine ou le mot à la fin de cette _____.</p>
+
+<h2 id="régression-linéaire">Régression Linéaire</h2>
+
+<p>Technique mathématique destinée à déterminer la relation entre deux variables.</p>
+
+<h2 id="langage">Langage</h2>
+
+<h3 id="marqueur">Marqueur</h3>
+
+<p>Markup languages en anglais. Il s’agit d’un langage souvent simple à apprendre, qui sert littéralement à marquer du texte. Par exemple, barrer un <del>mot</del>.</p>
+
+<p>Ils sont très utiles pour partager du code, ici en du code Python rendu dans du HTML (que compose cette page):</p>
+
+<pre><code class="language-python">print("Je suis du code")
+</code></pre>
+
+<p>Sont des langages marqueurs:</p>
+
+<ul>
+  <li><strong>HTML</strong>: le langage “marqueur” du web.</li>
+  <li><a href="https://learnmarkdown.com/" target="_blank"><strong>Markdown</strong></a>: le langage marqueur de texte.</li>
+</ul>
+
+<p>Il en existe d’autres, plus avancés:</p>
+
+<ul>
+  <li><a href="https://www.latex-project.org/get/" target="_blank">LaTeX</a>, le langage marqueur scientifique.</li>
+</ul>
+
+<h3 id="de-programmation">de Programmation</h3>
+
+<p>Les langages qui permettent de programmer, d’automatiser réellement des chose, comme l’écriture de texte.</p>
+
+<p>Communément appelé le code.</p>
+
+<p>Sont des langages de programmation:</p>
+
+<ul>
+  <li><strong>Javascript</strong>: le langage de programmation des interfaces web.</li>
+  <li><a href="/python/" target="_blank"><strong>Python</strong></a>: le langage de programmation à tout faire.</li>
+  <li><strong>Scratch</strong>: le langage de programmation informatique visuel pour enfant.</li>
+</ul>
+
+<h2 id="les-fondamentaux">Les fondamentaux</h2>
+
+<ul>
+  <li>Algèbre linéaire</li>
+  <li>Histoire l’information et des technologies</li>
+  <li>Logique</li>
+  <li>Mathématique</li>
+  <li>Science</li>
+  <li>Ingénieurie</li>
+  <li>Statistique</li>
+  <li>Philosophie</li>
+</ul>]]></content><author><name>Gautier</name></author><category term="Taxonomie" /><category term="Intelligence Artificielle" /><category term="Taxonomie" /><summary type="html"><![CDATA[Taxonomie et glossaire de l'Intelligence Artificielle.]]></summary></entry></feed>
