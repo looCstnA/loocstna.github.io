@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Les Modèles de Langage Larges, ou LLMs
-subtitle: Le language et l'écriture
-permalink: /large-language-models/
-description: Découverte des Modèles de Langage Large, Large Language Models (LLM) en anglais.
+title: L'Apprentissage Machine (Machine Learning en anglais)
+subtitle: Une machine qui apprend
+permalink: /machine-learning/
+description: Découverte de l'apprentissage machine (Machine learning en anglais)
 author: Gautier
 date: 2025-02-02 18:00:00 +0100
 categories:
@@ -11,7 +11,8 @@ categories:
 tags:
   - Intelligence
   - Artificielle
-  - LLM
+  - Machine
+  - Learning
 top: 
 excerpt_image: /assets/images/icons/backpack_icon.gif
 ---
@@ -38,16 +39,18 @@ Deux types:
 
 Deux phases:
 
-- Entrainement
-- Validation
+- Entrainement (détecter et apprendre des règles)
+- Validation (tester les règles apprises)
 
 Des techniques:
 
-- Arbres de Décision
-- Forêts Aléatoires
+- Arbres de Décision (Decision trees)
+- Forêts Aléatoires (Random Forest)
 - Perceptrons
-- Distance: (Nearest Neighbours)
-- Réseaux Neuronaux
+- Voisins Proches (Nearest Neighbours)
+- Machine de Support Vectoriels (Support Vector Machines)
+- Réseaux Neuronaux (Neural Networks)
+- Transformeurs (Transformers)
 
 ### Linear Algebra
 

@@ -1,55 +1,20 @@
 ---
 layout: post
-title: Taxonomie de l'Intelligence Artificielle
+title: Glossaire de l'Intelligence Artificielle
 subtitle: ""
-permalink: /taxonomie-intelligence-artificielle/
-description: >-
-  Taxonomie et glossaire de l'Intelligence Artificielle.
+permalink: /glossaire-intelligence-artificielle/
+description: Connaître et Comprendre de quoi on parle lorsque l'on parle d'Intelligence Artificielle.
 author: Gautier
 date: 2024-12-01 09:00:00 +0100
-categories: [Taxonomie]
-tags: [Intelligence Artificielle, Taxonomie]
+categories:
+  - Taxonomie
+tags:
+  - Intelligence
+  - Artificielle
+  - Taxonomie
 top: 2
-excerpt_image: "/assets/images/icons/science_icon.gif"
+excerpt_image: /assets/images/icons/science_icon.gif
 ---
-
-<!-- Meta
-	artificial intelligence
-	ai
-	ai art
-	ai chatbot
-	ai education
-	ai project
-	ai resource
-	ai course
-	ai training
-	ai essentials
-	ai techniques
-	ai applications
-	ai ethics
-	ai frameworks
-	ai regulation
-	ai history
-	ai philosophy
-	ai future
-	
-	ai classroom
-	ai readyness
-
-	ai for educators
-	ai in education
-	ai in schools
-
-
-	learn ai
-	teach ai
-
-	learning with ai
-	teaching with ai
-
-	chatgpt
-
--->
 
 ```text
 ⚠️ Cette page est encore en construction.
@@ -83,13 +48,13 @@ Le fait d'automatiser, ou de rendre automatique, un processus, un acte ou une d�
 
 ## Générative (IA)
 
-Les modèles génératifs tels que les modèles GPTs d'OpenAI ou autres modèles d'intelligence artificielle qui servent à générer du contenu.
+Les modèles génératifs tels que les modèles GPTs d'OpenAI ou autres modèles d'intelligence artificielle qui servent à **générer du contenu**.
 
 ## GPT 
 
 Un modèle d'intelligence artificielle générative. GPT est l'acronyme de **Generative Pre-trained Transformer**, un Transformeur Pré-entraîné Génératif.
 
-- Transformeur: un algorithm qui transforme du texte, des phrases, des mots ou des tokens en vecteurs mathématiques et ce afin de pouvoir les comparer.
+- Transformeur: un algorithme qui transforme du texte, des phrases, des mots ou des tokens en vecteurs mathématiques et ce afin de pouvoir les comparer.
 - Pré-entraîné: il a vu, ou "lu" beaucoup de textes, de discussions et de questions et réponses afin de se créer une réprésentation du langage et de nos connaissances explicites.
 - Génératif: comme tout modèle d'intelligence artificielle, on cherche à prédire quelque chose, GPT cherche à prédire les prochains tokens, mots, phrases et textes.
 

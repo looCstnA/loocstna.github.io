@@ -1,16 +1,19 @@
 ---
 layout: post
-title: Le Guide de l'Intelligence Artificielle en Pente Douce
+title: Le Guide de l'Intelligence Non-Artificielle
 subtitle: Le guide pour celles et ceux qui souhaitent découvrir l'Intelligence Artificielle sans trop se casser la tête.
-permalink: /guide-intelligence-artificielle/
-description: >-
-  Cette liste fournit de nombreuses sources d'information et d'éducation en intelligence artificielle à découvrir et à suivre à la maison ou à l'école.
+permalink: /intelligence-non-artificielle/
+description: Cette liste fournit de nombreuses sources d'information et d'éducation en intelligence artificielle à découvrir et à suivre à la maison ou à l'école.
 author: Gautier
 date: 2024-12-21 18:00:00 +0100
-categories: [Liste]
-tags: [Intelligence Artificielle, Education]
+categories:
+  - Liste
+tags:
+  - Intelligence
+  - Artificielle
+  - Education
 top: 1
-excerpt_image: "/assets/images/icons/schoolbus_icon.gif"
+excerpt_image: /assets/images/icons/schoolbus_icon.gif
 ---
 
 
@@ -23,9 +26,13 @@ Gautier
 
 L'intelligence artificielle, ou IA, qu'est-ce que c'est?
 
-L'intelligence artificielle c'est aujourd'hui beaucoup de choses, d'éléments, qui proviennent de domaines différents. De manière générale, c'est reproduire artificiellement, c'est-à-dire créée ou construite par l'humain une certaine forme d'intelligence.
+L'intelligence artificielle c'est aujourd'hui beaucoup de choses, d'éléments, qui proviennent de domaines différents. 
 
-Ce guide en "pente douce" aidera celles et ceux qui souhaitent découvrir l'intelliegence artificielle sans trop se casser la tête. Nous ne parlerons ici ni de programmation, ni trop de mathématiques, mais bien d'intelligence et à cette fin, rien de mieux que de commencer par un casse-tête. Car pour résoudre un casse-tête, c'est bien d'intelligence que nous avons besoin. Nous parlerons alors de raisonment, de logique, ou encore de déduction.
+De manière générale, c'est **reproduire** artificiellement, c'est-à-dire créée ou construite par l'humain une certaine forme d'**intelligence**.
+
+%% Ce guide en "pente douce" aidera celles et ceux qui souhaitent découvrir l'intelliegence artificielle sans trop se casser la tête.  %%
+
+Nous ne parlerons ici ni de programmation, ni trop de mathématiques, mais bien d'intelligence et à cette fin, rien de mieux que de commencer par un casse-tête. Car pour résoudre un casse-tête, c'est bien d'intelligence que nous avons besoin. Nous parlerons alors de raisonment, de logique, ou encore de déduction.
 
 
 <br>
