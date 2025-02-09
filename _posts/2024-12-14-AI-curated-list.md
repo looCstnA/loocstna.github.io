@@ -9,7 +9,7 @@ author: Gautier
 date: 2024-12-14 18:00:00 +0100
 categories: [Liste]
 tags: [Intelligence Artificielle, Education]
-top: 3
+top: 
 excerpt_image: "/assets/images/icons/study_icon.gif"
 ---
 
@@ -60,6 +60,21 @@ Gautier
 <br>
 
 Découvrez l'intelligence artificielle via ces ressources et ces projets à suivre et à faire à l'école ou à la maison.
+
+
+
+<!-- ## Les fondamentaux
+
+- Algèbre linéaire
+- Histoire l'information et des technologies
+- Logique
+- Mathématique
+- Science
+- Ingénieurie
+- Statistique
+- Philosophie
+ -->
+
 
 ## Art
 

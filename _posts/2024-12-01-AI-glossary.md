@@ -12,7 +12,7 @@ tags:
   - Intelligence
   - Artificielle
   - Taxonomie
-top: 2
+top: 
 excerpt_image: /assets/images/icons/science_icon.gif
 ---
 
@@ -64,21 +64,7 @@ Reproduire l'intelligence humaine, ou celle de tout être vivant.
 
 [> Automatiser](#h-automatisation) et [> prédire](#h-prédiction).
 
-## Modèle
-
-Un modèle mathématique, statistique, déterministique ou tout simplement d'intelligence artificielle, sert à résoudre un problème. Nous parlerons souvent de modèle de prédiction.
-
-## Prédiction 
-
-Le fait de prédire quelque chose, peu importe quoi, que ce soit la météo, le nombre d'élève dans une certaine classe l'année prochaine ou le mot à la fin de cette _____.
-
-## Régression Linéaire
-
-Technique mathématique destinée à déterminer la relation entre deux variables.
-
-## Langage
-
-### Marqueur 
+## Marqueur (Language) 
 
 Markup languages en anglais. Il s'agit d'un langage souvent simple à apprendre, qui sert littéralement à marquer du texte. Par exemple, barrer un ~~mot~~.
 
@@ -91,13 +77,22 @@ print("Je suis du code")
 Sont des langages marqueurs:
 
 - **HTML**: le langage "marqueur" du web.
-- [**Markdown**](https://learnmarkdown.com/){:target="_blank"}: le langage marqueur de texte.
+- [**Markdown**](https://www.markdownguide.org/){:target="_blank"}: le langage marqueur de texte.
 
 Il en existe d'autres, plus avancés:
 
 - [LaTeX](https://www.latex-project.org/get/){:target="_blank"}, le langage marqueur scientifique.
 
-### de Programmation 
+
+## Modèle
+
+Un modèle mathématique, statistique, déterministique ou tout simplement d'intelligence artificielle, sert à résoudre un problème. Nous parlerons souvent de modèle de prédiction.
+
+## Prédiction 
+
+Le fait de prédire quelque chose, peu importe quoi, que ce soit la météo, le nombre d'élève dans une certaine classe l'année prochaine ou le mot à la fin de cette _____.
+
+## Programmation (Language de)
 
 Les langages qui permettent de programmer, d'automatiser réellement des chose, comme l'écriture de texte.
 
@@ -109,13 +104,11 @@ Sont des langages de programmation:
 - [**Python**](/python/){:target="_blank"}: le langage de programmation à tout faire.
 - **Scratch**: le langage de programmation informatique visuel pour enfant.
 
-## Les fondamentaux
+## Régression Linéaire
 
-- Algèbre linéaire
-- Histoire l'information et des technologies
-- Logique
-- Mathématique
-- Science
-- Ingénieurie
-- Statistique
-- Philosophie
+Technique mathématique destinée à déterminer la relation entre deux variables.
+
+## Système Expert
+
+Un système capable de reproduire les mécanismes cognitifs d'un expert, dans un domaine particulier.
+

@@ -12,27 +12,25 @@ tags:
   - Intelligence
   - Artificielle
   - Education
-top: 1
+top: 2
 excerpt_image: /assets/images/icons/schoolbus_icon.gif
 ---
 
-
-```text
-⚠️ Cette page est encore en construction.
-📣 N'hésitez pas à me faire parvenir vos commentaires.
-
-Gautier
-```
-
 L'intelligence artificielle, ou IA, qu'est-ce que c'est?
 
-L'intelligence artificielle c'est aujourd'hui beaucoup de choses, d'éléments, qui proviennent de domaines différents. 
+L'intelligence artificielle c'est aujourd'hui beaucoup de choses, d'éléments, qui proviennent de domaines différents et varier qui ensemble forment l'IA d'aujourd'hui. Si vous ne l'avez pas encore fait, je vous invite à lire [l'histoire de l'intelligence artificielle](/ai-history/). 
 
-De manière générale, c'est **reproduire** artificiellement, c'est-à-dire créée ou construite par l'humain une certaine forme d'**intelligence**.
+De manière générale, c'est **reproduire** artificiellement, c'est-à-dire créer ou construire (nous les humains) une certaine forme d'**intelligence**.
 
-%% Ce guide en "pente douce" aidera celles et ceux qui souhaitent découvrir l'intelliegence artificielle sans trop se casser la tête.  %%
+<!-- Ce guide en "pente douce" aidera celles et ceux qui souhaitent découvrir l'intelliegence artificielle sans trop se casser la tête. -->
 
-Nous ne parlerons ici ni de programmation, ni trop de mathématiques, mais bien d'intelligence et à cette fin, rien de mieux que de commencer par un casse-tête. Car pour résoudre un casse-tête, c'est bien d'intelligence que nous avons besoin. Nous parlerons alors de raisonment, de logique, ou encore de déduction.
+Nous ne parlerons ici ni de programmation, ni trop de mathématiques, mais bien d'intelligence et à cette fin, nous passerons rapidement, après avoir rappelé ce que nous définissons être l'intelligence, à un exercice de mise en pratique de l'intelligence, un **casse-tête**.
+
+<!-- Car pour résoudre un casse-tête, c'est bien d'intelligence que nous avons besoin. Nous parlerons alors de raisonment, de logique, ou encore de déduction. -->
+
+Mais d'abord, rappelons ce qu'est cette intelligence que nous voulons automatiser.
+
+> L'intelligence est l'**ensemble des processus** trouvés dans des systèmes, plus ou moins complexes, vivants ou non, qui permettent d'**apprendre**, de **comprendre** ou de **s'adapter** à des **situations nouvelles**. - [Wikipedia](https://fr.wikipedia.org/wiki/Intelligence){:target="_blank"}
 
 
 <br>
