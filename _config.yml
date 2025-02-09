@@ -46,7 +46,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Apprendre l'intelligence artificielle à l'école ou la maison.
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://loocstna.github.io" # the base hostname & protocol for your site, e.g. https://example.com
+url: "https://antscool.org" # the base hostname & protocol for your site, e.g. https://example.com
 favicon: "/assets/images/a-small.png" # the favicon for your site
 brand_image: "/assets/images/antscool.png"
 
