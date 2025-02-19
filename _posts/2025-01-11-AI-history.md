@@ -96,18 +96,18 @@ Creusez un peu plus: [Système expert](https://fr.wikipedia.org/wiki/Syst%C3%A8m
 
 Des sytèmes experts, il y en aura beaucoup d'autres qui apparaîtront par la suite,
 
-- en 2017: DeepBlue, la première machine à battre le champion aux échecs,
+- en 1996: DeepBlue, la première machine à battre le champion aux échecs,
 - en 2012: AlphaGo,  la première machine à battre le champion au jeu de Go,
 
 qui sont ici des sytèmes encore "fermé" dans le sens ou les règles sont prédéfinies.
 
 Les capacités (extrèmes) des machines sont atteintes principalement grâce aux avancées techniques computationnelles. Nous atteinons des sommets plus hauts car nos machines sont plus puissantes.
 
-Pour vous donnez une petite idée de la complexité de ces jeux, voici quelques chiffres qui les décrivant:
+Pour vous donnez une petite idée de la complexité de ces jeux, voici quelques chiffres qui les décrivent:
 
 | | Echecs | GO |
- Nombre de positions | 10^50 | 10^170 |
- Nombre de parties | 10^120 | 10^600 |
+ Nombre de positions possibles | 10^50 | 10^170 |
+ Nombre de parties possibles | 10^120 | 10^600 |
 
 
 Mais la première "machine" qui passera le teste de Turing, bien avant cela, c'est ELIZA, le premier chatbot.

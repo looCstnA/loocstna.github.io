@@ -36,7 +36,7 @@ Mais d'abord, rappelons ce qu'est cette intelligence que nous voulons automatise
 <br>
 
 
-## Vous cassez-vous souvent le tête?
+## Un Problème
 
 L'intelligence artificielle, c'est résoudre des casse-têtes.
 
@@ -60,7 +60,48 @@ Comment faire?
 
 ```
 
-### L'état initial: Conceptualiser
+---
+
+<br>
+
+Avant de nous attaquez à comment faire pour résoudre un problème, 
+nous commençons par voir ce qu'est un problème et comment le définit-on.
+Car dans la pratique, résoudre un problème commencera toujours par sa définition.
+
+> Un problème [...] est **une situation** dans laquelle un **obstacle** empêche de **progresser**, d'**avancer** ou de **réaliser** ce que l'on voulait faire. Un problème naît lorsqu'il y a une **différence entre l'état des choses et celui souhaité**, ou lorsqu'il y a anormalité, c'est le cas en industrie ou en physiologie. - [Wikipedia](https://fr.wikipedia.org/wiki/Probl%C3%A8me){:target="_blank"} 
+
+Nous pouvons reprendre la même représentation faite d'un système expert dans [L'Histoire de l'Intelligence Artificielle](/ai-history/).
+Les systèmes experts ayant pour but de résoudre un (et un seul) problème.
+
+```mermaid!
+flowchart LR
+    A --> B
+```
+
+A est ici une *situation* ou l'*état des choses* et B l'*Etat souhaité* ou *résultat*.
+Avec cependant, un obstacle entre les deux.
+
+```mermaid!
+flowchart LR
+    A[Situation: Etat des choses]
+    B[Résultat: Etat souhaité]
+    A -- Obstacle --> B
+```
+
+Maintenant que nous avons une idée plus précise de ce qu'est un problème, nous pouvons passer à la résolution.
+Comme dit précedement, la résolution d'un problème commence toujours par sa définition.
+
+Ici nous recevons une définition d'un problème et la nature peut être de manière générale plus ou moins explicite que cela.
+Ici se pose la question "que connaissons nous du problème?", nous y reviendrons.
+<!-- Nous ne détectons d'ailleurs pas toujours les problèmes qui nous entourent. -->
+
+Il s'agirat alors de passer par des essais et des erreurs afin de se rendre compte de la réalité du problème, ou la situation, et ensuite d'en apercevoir les résultats possibles, que nous jugerons "souhaités" ou pas.
+
+C'est un principe majeur que nous trouvons dans l'Apprentissage Automatique (Machine Learning en anglais).
+
+Mais avant de passer à l'essais/erreurs, commençons par définir et plus encovre, conceptualiser, les éléments de notre problème.
+
+### Apprendre (Conceptualiser)
 
 > En logique, un concept est un **contenu de pensée**, qui, lorsqu'il est appliqué à un objet, peut former une proposition. [...] Le concept est un terme abstrait qui se distingue donc de la chose désignée par ce concept. Le terme lui-même est introduit au Moyen Âge (conceptus) par Thomas d'Aquin [...]. Il vient du latin conceptus qui signifie « action de contenir, de tenir ensemble, de recevoir », dérivé du verbe concipere signifiant « concevoir ». - [Wikipedia](https://fr.wikipedia.org/wiki/Concept_(philosophie)){:target="_blank"} 
 
@@ -69,6 +110,7 @@ Comment faire plus abstrait? 🤔
 Nous retiendrons que conceptualiser, c'est **définir un contenu de pensée**. 
 
 Un paysan 🧑‍🌾, accompagné d'un renard 🦊, d'une oie 🪿, et d'un sac de haricots 🫘	se retrouve face à une rivière 🛶.
+Voici notre état initial.
 
 ```mermaid!
 flowchart LR
@@ -76,8 +118,39 @@ flowchart LR
     
 ```
 
+Tandis que notre état souhaité ce présente comme ceci.
 
-### La première étape: Schématiser
+```mermaid!
+flowchart LR
+    s_0["🛶 🧑‍🌾 🦊 🪿 🫘 🫘"]
+    
+```
+
+Comme évoqué précedemment, nous reçevons explicitement dans notre problème une série de règles: 
+ne pas laisser le renard et l'oie seuls et ne pas laisser l'oie et les haricots seuls.
+
+Mais que ce passerait-il si nous ne connaissions pas ces règles. Il nous faudrait alors les déterminer.
+Nous en venons pour cela aux essais et erreurs.
+
+- **Essai n°1**: je prend le renard avec moi de l'autre côté de la rivière.
+- **Résultat**: l'oie mange les haricots.
+
+```mermaid!
+flowchart LR
+    s_0["🧑‍🌾 🦊 🪿 🫘   🛶 📍"]
+    s_01["🪿    🛶 🧑‍🌾 🦊"]
+    s_0 -- 🧑‍🌾🦊--x s_01
+    
+```
+
+L'état obtenu n'est pas celui que nous souhaitons car les petits pois ont disparu dans la fenêtre de droite.
+
+Nous apprenons, ou renforçons l'idée, que l'oie ne peut être laissée seule avec les petits pois.
+La règle équivalente entre le renard et l'oie serait apprise si l'on commençait avec les petits pois.
+
+Ce que nous faisons ici, en pratique, avec ces fenêtres et ces flèches, c'est schématiser. 
+
+### Comprendre (Schématiser)
 
 > Le schéma du grec ancien σχῆμα / skhễma (« manière d'être », « forme », « figure », « extérieur », « apparence », « faux-semblant ») est une **représentation** de données **simplifiée** servant de vecteur de communication et souvent **codifié ou symbolisé**. Le mot prend généralement le sens de graphe selon le domaine dont on parle [...] - [Wikipedia](https://fr.wikipedia.org/wiki/Sch%C3%A9ma){:target="_blank"}
 
@@ -88,7 +161,24 @@ On parle en général d'une représentation graphique simplifiée, mais c'est au
 - un certain type de **représentations mentales** en psychologie
 - etc.
 
-Face à la rivière, notre voyageur ne peut laisser seul ni le renard avec l'oie, ni l'oie avec le sac de haricots.
+En commençant avec l'oie, l'état obtenu est acceptable car tous les éléments sont encore là, nous pouvons donc continuer, aller plus loin, dans la résolution de notre problème.
+
+```mermaid!
+flowchart LR
+    s_0["🧑‍🌾 🦊 🪿 🫘   🛶 📍"]
+    s_01["🪿    🛶 🧑‍🌾 🦊"]
+    s_02["🦊    🛶 🧑‍🌾 🫘"]
+    s_0 -- 🧑‍🌾🦊--x s_01
+    s_0 -- 🧑‍🌾🫘--x s_02
+    s_1["🦊 🫘    🛶 🧑‍🌾 🪿📍"]
+    s_2["🧑‍🌾 🦊 🫘     🛶 🪿📍"]
+    s_0 -- 🧑‍🌾🪿--> s_1
+    s_1 -- 🧑‍🌾 --> s_2
+    
+```
+
+Nous pouvons déduire que face à la rivière, notre voyageur ne pouvant laisser seul ni le renard avec l'oie, ni l'oie avec le sac de haricots,
+la seule possibilité qui reste est bien de commencer avec l'oie.
 
 ```mermaid!
 flowchart LR
@@ -100,7 +190,9 @@ flowchart LR
     
 ```
 
-### La deuxième étape: le choix
+Vient ensuite un autre élément important de la résolution de problème et de l'intelligence, la prise de décision.
+
+### La Décision
 
 Ici vient un choix qui, au final, n'aura pas d'incidence sur le résultat.
 
@@ -125,7 +217,7 @@ Nous pouvons ici nous intéresser aux différents éléments que compose cette d
 
 A noter aussi que sans différentes options qui se présentent à nous, nous n'avons pas de choix.
 
-### Le déroulement
+### L'Action
 
 Une foix notre choix effectué, la solution ne reste plus qu'à être déroulée.
 
@@ -224,3 +316,11 @@ En intelligence artificielle, nous étudions et travaillons:
 - l'**analyse**: déduire ou détecter des "vérités".
 - la **synthèse**: définir un problème, déterminer de quoi avons nous réellement besoin, quelles sont nos contraintes et nos solutions.
 
+
+---
+Aller plus loin:
+
+- apprendre vs. comprendre
+- conceptualiser et shématiser
+- abre de décision ou de connaissances
+---
