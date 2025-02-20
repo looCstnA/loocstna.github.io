@@ -42,7 +42,7 @@ Commençons par un problème.
 
 ## Un Problème
 
-L'intelligence artificielle, c'est résoudre des problèmes, que l'on appelle parfois casse-tête.
+L'intelligence artificielle, c'est résoudre des problèmes, que l'on appelle parfois casse-têtes.
 
 <!-- Lorsque que l'on étudie l'intelligence artificielle, on commence généralement par un casse-tête. -->
 
@@ -111,7 +111,7 @@ flowchart LR
     
 ```
 
-Nous savons déjà, car décrit dans l'énoncé du problème que le renard ne peut être laissé seul avec l'oie et que l'oie ne peut être laissée seule avec les haricots.
+Nous savons déjà, car décrit dans l'énoncé du problème, que le renard ne peut être laissé seul avec l'oie et que l'oie ne peut être laissée seule avec les haricots.
 
 Ici nous recevons dans l'énnoncé les règles que nous devons suivre mais dans la nature, les problèmes peuvent se présenter de manière plus ou moins explicite que cela. **Que devrions-nous faire si nous ne connaissions pas ces règles?**
 
@@ -120,7 +120,7 @@ Ici se pose, à peu près toujours, la question "**que connaissons nous vraiment
 
 Il s'agirat alors de passer par des essais et des erreurs afin de se rendre compte de la réalité du problème, ou la situation, et ensuite d'en apercevoir les résultats possibles, que nous jugerons "souhaités" ou pas.
 
-C'est un des principes majeurs de l'Apprentissage Automatique de machines(Machine Learning en anglais), et c'est aussi tout simplement un des processus les plus utiles pour **apprendre**.
+C'est un des principes majeurs de l'Apprentissage Automatique des machines (Machine Learning en anglais), et c'est aussi tout simplement un des processus les plus utiles pour nous, humain, qui est d'**apprendre**.
 
 <!-- Mais avant de passer à l'essais/erreurs, commençons par définir et plus encovre, conceptualiser, les éléments de notre problème. -->
 
@@ -131,7 +131,7 @@ C'est un des principes majeurs de l'Apprentissage Automatique de machines(Machin
 Comme évoqué précedemment, nous reçevons explicitement dans notre problème une série de règles: 
 ne pas laisser le renard et l'oie seuls et ne pas laisser l'oie et les haricots seuls.
 
-Mais que ce passerait-il si nous ne connaissions pas ces règles? Il nous faudrait alors les déterminer. Le processus en question réunnit les essais et et les erreurs.
+Mais que ce passerait-il si nous ne connaissions pas ces règles? Il nous faudrait alors les déterminer. Le processus en question consiste à faire des essais et des erreurs.
 
 - **Essai n°1**: je prend le renard avec moi de l'autre côté de la rivière.
 - **Résultat**: l'oie mange les haricots.
@@ -149,6 +149,9 @@ L'état obtenu n'est pas celui que nous souhaitons car les petits pois ont dispa
 Nous apprenons, ou renforçons l'idée, que l'oie ne peut être laissée seule avec les petits pois.
 La règle équivalente entre le renard et l'oie serait apprise si l'on commençait avec les petits pois.
 
+- **Essai n°2**: je prend les petits pois avec moi de l'autre côté de la rivière.
+- **Résultat**: le renard mange l'oie.
+
 ```mermaid!
 flowchart LR
     s_0["🧑‍🌾 🦊 🪿 🫘   🛶 📍"]
@@ -160,6 +163,9 @@ flowchart LR
 ```
 
 Si l'on continue, nous saisissons qu'en commençant avec l'oie, l'état obtenu est acceptable car tous les éléments sont encore là, et que nous pouvons donc continuer, aller plus loin, dans la résolution de notre problème.
+
+- **Essai n°3**: je prend l'oie avec moi de l'autre côté de la rivière.
+- **Résultat**: l'oie est bien passée de l'autre côté et le renard ne touche pas aux petits pois.
 
 ```mermaid!
 flowchart LR
@@ -174,6 +180,7 @@ flowchart LR
     s_1 -- 🧑‍🌾 --> s_2
     
 ```
+
 Ici, nous saisissons que la seule possibilité au départ, c'est de commencer avec l'oie. Saisir une connaissance, ou un sens, c'est **comprendre**.
 
 ## Comprendre
@@ -206,11 +213,9 @@ flowchart LR
 
 Pour aller plus loin à partir d'ici, il nous faudra apprendre ou comprendre que la seule manière d'atteindre notre état souhaité, c'est de revenir avec des éléments afin que ceux-ci ne se mange pas entre eux.
 
-Une fois que nous avons appris ou compris cela, notre problème devient tout de suite plus facile.
+Une fois que nous avons appris ou compris cela, notre problème devient tout de suite plus facile. Nous avons alors un choix qui s'offre à nous, mais qui au final, n'aura pas réellement d'incidence sur le résultat.
 
 <!-- Vient ensuite un autre élément important de la résolution de problème et de l'intelligence, la prise de **décision**. -->
-
-Ici nous avons un choix qui s'offre à nous, mais qui au final, n'aura pas réellement d'incidence sur le résultat.
 
 ```mermaid!
 flowchart TD
@@ -323,7 +328,7 @@ flowchart TD
 L'intelligence artificielle, ou l'intelligence tout court:
 
 - c'est résoudre des problème
-- c'est apprendre, comprendre et s'adapter
+- c'est **apprendre**, **comprendre** et **s'adapter**
 - représente donc à la fois un **processus** (apprendre) et son **résultat** (comprendre).
 
 <!-- Un agent intelligent est tout individu ou groupe d'individu confronté à un problème.
