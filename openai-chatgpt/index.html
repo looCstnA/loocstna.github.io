@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-translate-customization" content="108d9124921d80c3-80e20d618ff053c8-g4f02ec6f3dba68b7-c">
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>ChatGPT, l’application d’OpenAI qui a pris le monde par surprise | Antscool</title>
+<meta name="generator" content="Jekyll v4.4.1">
+<meta property="og:title" content="ChatGPT, l’application d’OpenAI qui a pris le monde par surprise">
+<meta name="author" content="Gautier">
+<meta property="og:locale" content="fr">
+<meta name="description" content="Découverte de l’application ChatGPT et l’entreprise derrière celle-ci">
+<meta property="og:description" content="Découverte de l’application ChatGPT et l’entreprise derrière celle-ci">
+<link rel="canonical" href="https://antscool.org/openai-chatgpt/">
+<meta property="og:url" content="https://antscool.org/openai-chatgpt/">
+<meta property="og:site_name" content="Antscool">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2024-12-21T17:00:00+00:00">
+<meta name="twitter:card" content="summary">
+<meta property="twitter:title" content="ChatGPT, l’application d’OpenAI qui a pris le monde par surprise">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Gautier"},"dateModified":"2024-12-21T17:00:00+00:00","datePublished":"2024-12-21T17:00:00+00:00","description":"Découverte de l’application ChatGPT et l’entreprise derrière celle-ci","headline":"ChatGPT, l’application d’OpenAI qui a pris le monde par surprise","mainEntityOfPage":{"@type":"WebPage","@id":"https://antscool.org/openai-chatgpt/"},"url":"https://antscool.org/openai-chatgpt/"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="icon" href="/assets/images/a-small.png">
+  <link rel="canonical" href="https://antscool.org">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-noto-sans@0.0.72/index.min.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <script src="/assets/js/main.js"></script><link type="application/atom+xml" rel="alternate" href="https://antscool.org/feed.xml" title="Antscool">
+<!-- Google tag (gtag.js) -->
+<script>
+  function initGoogleAnalytics() {
+    var doNotTrack = (window.doNotTrack === "1" || navigator.doNotTrack === "1" ||
+      navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1");
+    var enableDNT = "false" == "true";
+
+    if (!enableDNT || !doNotTrack) {
+      var measurementId = 'G-5HVYNNFVGW';
+
+      (function(src) {
+        var tag = document.createElement('script');
+        tag.src = src;
+        tag.async = true;
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      })('https://www.googletagmanager.com/gtag/js?id=' + measurementId);
+
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', measurementId);
+    }
+  }
+  window.addEventListener("load", initGoogleAnalytics);
+</script>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
+<!-- and it's easy to individually load additional languages -->
+<script charset="UTF-8" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/languages/go.min.js" async></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+// Init highlight js
+document.addEventListener('DOMContentLoaded', function(event) {
+  var els = document.querySelectorAll('pre code')
+
+  function addLangData(block) {
+    var outer = block.parentElement.parentElement.parentElement;
+    var lang = block.getAttribute('data-lang');
+    var bagde = lang;
+    for (var i = 0; i < outer.classList.length; i++) {
+      var cls = outer.classList[i];
+      if (cls.startsWith('language-')) {
+        lang = cls;
+        break;
+      }
+    }
+    if (!lang) {
+      cls = block.getAttribute('class');
+      lang = cls ? cls.replace('hljs ', '') : '';
+      bagde = '';
+    }
+    if (lang.startsWith('language-')) {
+      lang = lang.substr(9);
+    }
+    if (lang.startsWith('Humain')) {
+      bagde = lang;
+      lang = 'text';
+    }
+    if (lang.startsWith('ChatGPT')) {
+      bagde = lang;
+      lang = 'text';
+    }
+    block.setAttribute('class', 'hljs ' + lang);
+    block.parentNode.setAttribute('data-lang', bagde);
+  }
+
+  function addBadge(block) {
+    var enabled = ('true' || 'true').toLowerCase();
+    if (enabled == 'true') {
+      var pre = block.parentElement;
+      pre.classList.add('badge');
+    }
+  }
+
+  function handle(block) {
+    addLangData(block);
+    addBadge(block)
+    hljs.highlightBlock(block);
+  }
+
+  for (var i = 0; i < els.length; i++) {
+    var el = els[i];
+    handle(el);
+  }
+});
+</script>
+
+<style>
+  /* code language badge */
+  pre.badge::before {
+    content: attr(data-lang);
+    color: #fff;
+    background-color: #ff4e00;
+    padding: 0 .5em;
+    border-radius: 0 2px;
+    text-transform: uppercase;
+    text-align: center;
+    min-width: 32px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+  }
+
+  /* fix wrong badge display for firefox browser */
+  code > table pre::before {
+    display: none;
+  }
+
+  pre {
+    white-space: pre-wrap; // wrap text
+  }
+
+
+</style>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="site-header " role="banner">
+
+  <div class="wrapper">
+    <div class="site-header-inner">
+<span class="site-brand"><a class="site-brand-inner" rel="author" href="/">
+  <img class="site-favicon" title="Antscool" src="/assets/images/antscool.png" onerror="this.style.display='none'">
+  <!-- Antscool -->
+</a>
+</span><nav class="site-nav">
+          <input type="checkbox" id="nav-trigger" class="nav-trigger">
+          <label for="nav-trigger">
+            <span class="menu-icon">
+              <svg viewbox="0 0 18 15" width="18px" height="15px">
+                <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"></path>
+              </svg>
+            </span>
+          </label>
+
+          <div class="trigger">
+<a class="page-link" href="/about.html">A PROPOS</a><a class="page-link" href="/archives.html">ARCHIVES</a><a class="page-link" href="/categories.html">CATEGORIES</a><a class="page-link" href="/">HOME</a><a class="page-link" href="/tags.html">TAGS</a>
+
+
+
+
+</div>
+        </nav>
+</div>
+  </div>
+</header>
+
+<script>
+  function initHeader() {
+    var lastScrollY = getScrollPos().y;
+    var documentElement = document.documentElement;
+
+    function storeScrollData() {
+      var y = getScrollPos().y;var scrollStatus = "";
+
+      if (y <= 0) {
+        scrollStatus = "top";
+      } else if ((window.innerHeight + y) >= document.body.offsetHeight) {
+        scrollStatus = "bottom";
+      } else {
+        var isScrollDown = (y - lastScrollY > 0) ? true : false;
+        scrollStatus = isScrollDown ? "down" : "up";
+      }
+
+      lastScrollY = y;
+      documentElement.setAttribute("data-scroll-status", scrollStatus);
+    }
+
+    window.addEventListener('scroll', function(e) {
+      storeScrollData();
+    });
+
+    storeScrollData();
+  }
+  document.addEventListener('DOMContentLoaded', initHeader);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  function hashLocate(hashValue) {
+    hashValue = hashValue.replace(/^.*#h-/, '');
+    hashValue = decodeURIComponent(hashValue);
+    var element = document.getElementById(hashValue);
+
+    if (!element) {
+      return;
+    }
+
+    var header = document.querySelector('header.site-header');
+    var headerRect = header.getBoundingClientRect();
+    var headerTop = Math.floor(headerRect.top);
+    var headerHeight = Math.floor(headerRect.height);
+    var scrollPos = getScrollPos();
+    var offsetY = element.offsetTop - (headerTop + headerHeight + 20);
+
+    if (offsetY == scrollPos.y) {
+      return;
+    }
+
+    if (headerTop == 0  && offsetY > scrollPos.y) {
+      offsetY += headerHeight + 2;
+    } else if (headerTop < 0  && offsetY < scrollPos.y) {
+      offsetY -= headerHeight - 2;
+    }
+
+    smoothScrollTo(offsetY);
+  }
+
+  // The first event occurred
+  window.addEventListener('load', function(event) {
+    if (window.location.hash) {
+      hashLocate(window.location.hash);
+    }
+  });
+
+  // The first event occurred
+  window.addEventListener('click', function(event) {
+    if (event.target.tagName.toLowerCase() == 'a') {
+      hashLocate(event.target.getAttribute('href'));
+    }
+  });
+</script>
+<div class="theme-toggle">
+  <input type="checkbox" id="theme-switch">
+  <label for="theme-switch">
+    <div class="toggle"></div>
+    <div class="names">
+      <p class="light">Light</p>
+      <p class="dark">Dark</p>
+    </div>
+  </label>
+</div>
+
+
+
+
+<script>
+  (function() {
+    var sw = document.getElementById('theme-switch');
+    var html = document.getElementsByTagName('html')[0];
+    var nightModeOption = ('off' || 'auto').toLowerCase();
+    var storage = nightModeOption === 'manual'
+        ? localStorage
+        : sessionStorage;
+    var themeData = loadThemeData();
+
+    function saveThemeData(data) {
+      storage.setItem('theme', JSON.stringify(data));
+    }
+
+    function loadThemeData() {
+      var data = storage.getItem('theme');
+      try {
+        data = JSON.parse(data ? data : '');
+      } catch(e) {
+        data = { nightShift: undefined, autoToggleAt: 0 };
+        saveThemeData(data);
+      }
+      return data;
+    }
+
+    function handleThemeToggle(nightShift) {
+      themeData.nightShift = nightShift;
+      saveThemeData(themeData);
+      html.dataset.theme = nightShift ? 'dark' : 'light';
+      setTimeout(function() {
+        sw.checked = nightShift ? true : false;
+      }, 50);
+    }
+
+    function autoThemeToggle() {
+      // Next time point of theme toggle
+      var now = new Date();
+      var toggleAt = new Date();
+      var hours = now.getHours();
+      var nightShift = hours >= 19 || hours <=7;
+
+      if (nightShift) {
+        if (hours > 7) {
+          toggleAt.setDate(toggleAt.getDate() + 1);
+        }
+        toggleAt.setHours(7);
+      } else {
+        toggleAt.setHours(19);
+      }
+
+      toggleAt.setMinutes(0);
+      toggleAt.setSeconds(0);
+      toggleAt.setMilliseconds(0)
+
+      var delay = toggleAt.getTime() - now.getTime();
+
+      // auto toggle theme mode
+      setTimeout(function() {
+        handleThemeToggle(!nightShift);
+      }, delay);
+
+      return {
+        nightShift: nightShift,
+        toggleAt: toggleAt.getTime()
+      };
+    }
+
+    // Listen the theme toggle event
+    sw.addEventListener('change', function(event) {
+      handleThemeToggle(event.target.checked);
+    });
+
+    if (nightModeOption == 'auto') {
+      var data = autoThemeToggle();
+
+      // Toggle theme by local setting
+      if (data.toggleAt > themeData.autoToggleAt) {
+        themeData.autoToggleAt = data.toggleAt;
+        handleThemeToggle(data.nightShift);
+      } else {
+        handleThemeToggle(themeData.nightShift);
+      }
+    } else if (nightModeOption == 'manual') {
+      handleThemeToggle(themeData.nightShift);
+    } else {
+      var nightShift = themeData.nightShift;
+      if (nightShift === undefined) {
+        nightShift = nightModeOption === 'on';
+      }
+      handleThemeToggle(nightShift);
+    }
+  })();
+</script>
+<div id="click-to-top" class="click-to-top">
+  <i class="fa fa-arrow-up"></i>
+</div>
+<script>
+  (function () {
+    const clickToTop = document.getElementById('click-to-top');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {
+        clickToTop.classList.add('show')
+      }else {
+        clickToTop.classList.remove('show')
+      }
+    });
+    clickToTop.addEventListener('click', () => {
+      window.smoothScrollTo(0);
+    });
+  })();
+</script>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <div class="framework">
+  <section class="main">
+
+     <div class="post">
+  <section>
+
+
+
+
+
+
+
+
+
+<header class="post-header">
+  <h1 class="post-title p-name" itemprop="name headline">ChatGPT, l'application d'OpenAI qui a pris le monde par surprise</h1>
+  <h2 class="post-subtitle"></h2>
+
+  <div class="post-meta">
+    <time class="dt-published" datetime="2024-12-21T17:00:00+00:00" itemprop="datePublished"><i class="fa fa-calendar"></i> 21/12/2024
+    </time><span class="post-author left-vsplit"><i class="fa fa-pencil"></i> Gautier</span>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> ~ 12 mins</span>
+  </div>
+<div class="post-tags">
+<a class="post-tag" href="/tags.html#Intelligence">#Intelligence</a><a class="post-tag" href="/tags.html#Artificielle">#Artificielle</a><a class="post-tag" href="/tags.html#ChatGPT">#ChatGPT</a>
+</div></header>
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+    <div class="post-content e-content" itemprop="articleBody">
+
+      <pre><code class="language-text">⚠️ Cette page est encore en construction.
+📣 N'hésitez pas à me faire parvenir vos commentaires.
+
+Dernière mise à jour: 30/01/2025
+
+Gautier
+</code></pre>
+
+<p>ChatGPT est une application basé sur GPT, un <a href="/large-language-models">modèle de language large</a> (Large Language Model (LLM) en anglais). Si vous n’avez pas encore découvert ce qu’étaient ceux-cis, passer y jeter un coup d’oeil avant. 😉</p>
+
+<h2 id="chatgpt">ChatGPT</h2>
+
+<p>L’application, qui a pris le monde par surprise, offre par défault tout une série d’applications, ou d’utilisations pour ne pas confondre avec l’application même, de ses modèle GPTX.</p>
+
+<ul>
+  <li>Création d’image</li>
+  <li>Résumer un text ou un document</li>
+  <li>Rédaction de contenu</li>
+  <li>Recommandations ou avis</li>
+  <li>Création de plan</li>
+  <li>Echange d’idées</li>
+</ul>
+
+<p><img src="/assets/images/application_chatgpt.jpg"></p>
+
+<p>Avant toute chose, deux points important à retenir ici:</p>
+
+<ul>
+  <li>ChatGPT peut <strong>halluciner</strong>, c’est-à-dire inventer des choses et ce à chaque instant.</li>
+  <li>ChatGPT, comme beaucoup d’applications, <strong>collecte vos données</strong> et ce à chaque instant aussi.</li>
+</ul>
+
+<p>N’oubliez jamais qu’il a été entrainé sur les données “publiques” trouvées sur internet et sur internet, depuis son avènement commercial en 1993, <a href="https://fr.wikipedia.org/wiki/On_the_Internet,_nobody_knows_you%27re_a_dog" target="_blank">personne ne sait que vous êtes un chien</a>.</p>
+
+<p><img src="https://upload.wikimedia.org/wikipedia/en/f/f8/Internet_dog.jpg"></p>
+
+<p>Sur internet, n’importe qui peut poster n’importe quoi. Ceci reste vrai sur votre téléphone. Il existe aujourd’hui de nombreuses applications de Chat ou autres qui se basent sur les modèles GPT d’OpenAI (voir la capture suivante), et celles-ci ont la main mise sur toutes les données qui transitent entre vous et ChatGPT, veillez donc à sélectionner cautioneusement les applications que vous utilisez.</p>
+
+<p><img src="/assets/images/chatgpt_on_play.jpg"></p>
+
+<h2 id="terrain-de-jeu">Terrain de Jeu</h2>
+
+<p><a href="https://openai.com">OpenAI.com</a>, la société derrière ChatGPT fourni un terrain de jeu pour quiconque (nous verrons que ce n’est pas encore réellement pour n’importe qui) désirant mettre en place diverses fonctions ou applications en lien avec les modèles que OpenAI offre.</p>
+
+<p>Ici, nous pouvons jouer et expérimenter avec ChatGPT. Que trouve-t-on alors dans la platforme mise à disposition par OpenAI?</p>
+
+<p>Nous y trouvons :</p>
+
+<ul>
+  <li>Le <strong>Chat</strong>: L’équivalent technique ou scientifique de ChatGPT.</li>
+  <li>
+<strong>Realtime</strong>: l’équivalent parlé de ChatGPT.</li>
+  <li>
+<strong>Assistants</strong>: qui permet aujourd’hui trois choses: l’interprétation de code, la recherche de fichier, ou recherche sémantique, et l’appel de fonction.</li>
+  <li>
+<strong>TTS</strong>, l’acronyme de Text-To-Speech en anglais, ou la génération de parole (audio) à partir de texte.</li>
+  <li>
+<strong>Completions</strong>, qui n’est finalement que le chat présenté différement et qui est voué à disparaître du playground, cette partie sera néanmoins toujours disponible via l’API de OpenAI.</li>
+</ul>
+
+<p><img src="/assets/images/openAI_playground.png"></p>
+
+<p>Nous développerons ici plus bas le Chat, nous développerons les autres fonctionnalités, plus avancées ou plus technique, dans un un article future.</p>
+
+<p>Nous y trouvons aussi l’accès à un forum de practiciens et ingénieurs et des <a href="https://cookbook.openai.com/">cookbooks</a> ou recettes en français a diverses fins:</p>
+
+<ul>
+  <li>traduction de voix en divers langages</li>
+  <li>Narration de vidéo</li>
+  <li>Créer un moteur de recherche de type sémantique</li>
+  <li>des techniques pour améliorer la fiabilité des résultats</li>
+  <li>comment calibrer des modèles de chat</li>
+  <li>etc.</li>
+</ul>
+
+<p>Ces recettes sont très fortement orientées d’un point de vue technique et s’adressent encore à un public technique lui aussi.</p>
+
+<p>Prenons par exemple cet article, <a href="https://cookbook.openai.com/examples/custom-llm-as-a-judge">Custom LLM as a Judge</a> qui décrit comment utiliser un LLM afin de juger (noter) de la qualité de réponse donnée à des questions prédéfinie. Cette recette décrit le code utilisé afin en mettre en palce des technologies qui elles aussi sont principalement des outils d’ingénieurie technique.</p>
+
+<ul>
+  <li>Parlez vous Python, ou n’importe quel langage de programmation?</li>
+</ul>
+
+<h3 id="chat-ou-discussion">Chat, ou Discussion</h3>
+
+<p>Nous allons donc tout d’abord nous intéresser à l’application principale, qui est le point de départ des autres fonctionalités disponibles, le <strong>chat</strong>.</p>
+
+<p><img src="/assets/images/openAI_playground.png"></p>
+
+<p>Nous y trouvons deux éléments prinicpaux:</p>
+
+<ul>
+  <li>la discussion, au centre de l’écran</li>
+  <li>les paramètres, à droite</li>
+</ul>
+
+<p>Nous ne le voyons pas encore sur la capture d’écran ci-dessus, mais la discussion fait intervernir trois éléments du Chat:</p>
+
+<ul>
+  <li>le système</li>
+  <li>l’utilisateur (nous ici)</li>
+  <li>l’assistant (voir la capture suivante)</li>
+</ul>
+
+<p><img src="/assets/images/openai_chat_assistant.png"></p>
+
+<p>Avez-vous trouvé la différence avec la capture précédente?</p>
+
+<p>Nous nous mettons ici dans le rôle de l’assistant, c’est-à-dire que nous pouvons nous même définir les réponses de ChatGPT aux questions ou éléments de la discussion.</p>
+
+
+    </div>
+
+</article>
+<!--<div class="post-nav"><a class="previous" href="/intelligence-non-artificielle/" title="Le Guide de l&#39;Intelligence Non-Artificielle">Le Guide de l&#39;Intelligence Non-Artificielle</a><a class="next" href="/ai-history/" title="L&#39;Histoire de l&#39;Intelligence Artificielle">L&#39;Histoire de l&#39;Intelligence Artificielle</a></div>-->
+    <br><hr>
+<br><div class="post-related">
+      <div>A suivre</div>
+      <ul>
+        <li class="top-post">
+          <a class="post-link" href="/ai-history/" title="L'Histoire de l'Intelligence Artificielle">
+            L'Histoire de l'Intelligence Artificielle<span class="post-badges">
+  <span class="post-badge badge-top">TOP</span>
+  <span class="post-badge badge-new">NEW</span>
+</span>
+</a>
+        </li>
+<li class="">
+          <a class="post-link" href="/liste-curative-education-ia/" title="Liste Curative de Ressources Educationelles en Intelligence Artificielle">
+            Liste Curative de Ressources Educationelles en Intelligence Artificielle<span class="post-badges">
+  <span class="post-badge badge-top">TOP</span>
+  <span class="post-badge badge-new">NEW</span>
+</span>
+</a>
+        </li>
+<li class="">
+          <a class="post-link" href="/glossaire-intelligence-artificielle/" title="Glossaire de l'Intelligence Artificielle">
+            Glossaire de l'Intelligence Artificielle<span class="post-badges">
+  <span class="post-badge badge-top">TOP</span>
+  <span class="post-badge badge-new">NEW</span>
+</span>
+</a>
+        </li>
+</ul>
+    </div>
+<div class="post-comments"></div></section>
+</div>
+
+
+  </section>
+  <section class="sidebar" style="margin-left: 15px;">
+    <!-- Get sidebar items --><style type="text/css" media="screen">
+.post-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+</style>
+
+<div class="post-menu">
+  <div class="post-menu-title"><!-- TOC --></div>
+  <div class="post-menu-content"></div>
+</div>
+
+<script>
+  function generateContent() {
+    var menu = document.querySelector(".post-menu");
+    var menuContent =  menu.querySelector(".post-menu-content");
+    var headings = document.querySelector(".post-content").querySelectorAll("h2, h3, h4, h5, h6");
+
+    // Hide menu when no headings
+    if (headings.length === 0) {
+      return menu.style.display = "none";
+    }
+
+    // Generate post menu
+    var menuHTML = '';
+    for (var i = 0; i < headings.length; i++) {
+      var h = headings[i];
+      menuHTML += (
+        '<li class="h-' + h.tagName.toLowerCase() + '">'
+        + '<a href="#h-' + h.getAttribute('id') + '">' + h.textContent + '</a></li>');
+    }
+
+    menuContent.innerHTML = '<ul>' + menuHTML + '</ul>';
+
+    // The header element
+    var header = document.querySelector('header.site-header');
+
+    function doMenuCollapse(index, over_items) {
+      var items = menuContent.firstChild.children;
+
+      if (over_items == undefined) {
+        over_items = 20;
+      }
+
+      if (items.length < over_items) {
+        return;
+      }
+
+      var activeItem = items[index];
+      var beginItem = activeItem
+      var endItem = activeItem
+      var beginIndex = index;
+      var endIndex = index + 1;
+      while (beginIndex >= 0
+        && !items[beginIndex].classList.contains('h-h2')) {
+        beginIndex -= 1;
+      }
+      while (endIndex < items.length
+        && !items[endIndex].classList.contains('h-h2')) {
+        endIndex += 1;
+      }
+      for (var i = 0; i < beginIndex; i++) {
+        item = items[i]
+        if (!item.classList.contains('h-h2')) {
+          item.style.display = 'none';
+        }
+      }
+      for (var i = beginIndex + 1; i < endIndex; i++) {
+        item = items[i]
+        // if (!item.classList.contains('h-h2')) {
+          item.style.display = '';
+        // }
+      }
+      for (var i = endIndex; i < items.length; i++) {
+        item = items[i]
+        if (!item.classList.contains('h-h2')) {
+          item.style.display = 'none';
+        }
+      }
+    }
+
+    // Init menu collapsed
+    doMenuCollapse(-1);
+
+    // Active the menu item
+    window.addEventListener('scroll', function (event) {
+      var lastActive = menuContent.querySelector('.active');
+      var changed = true;
+      var activeIndex = -1;
+      for (var i = headings.length - 1; i >= 0; i--) {
+        var h = headings[i];
+        var headingRect = h.getBoundingClientRect();
+        var headerRect = header.getBoundingClientRect();
+        var headerTop = Math.floor(headerRect.top);
+        var headerHeight = Math.floor(headerRect.height);
+        var headerHeight = headerTop + headerHeight + 20;
+        if (headingRect.top <= headerHeight) {
+          var id = 'h-' + h.getAttribute('id');
+          var a = menuContent.querySelector('a[href="#' + id  + '"]');
+          var curActive = a.parentNode;
+          if (curActive) {
+            curActive.classList.add('active');
+            activeIndex = i;
+          }
+          if (lastActive == curActive) {
+            changed = false;
+          }
+          break;
+        }
+      }
+      if (changed) {
+        if (lastActive) {
+          lastActive.classList.remove('active');
+        }
+        doMenuCollapse(activeIndex);
+      }
+      event.preventDefault();
+    });
+  }
+  generateContent();
+</script>
+</section>
+</div>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+    <div class="site-footer-inner">
+<div>Antscool ASBL <span class="copyleft">©</span> 2017-2025 Antscool</div>
+      <div>Powered by <a title="Jekyll is a simple, blog-aware, static site
+      generator." href="https://jekyllrb.com/">Jekyll</a> &amp; <a title="Yat, yet
+      another theme." href="https://github.com/jeffreytse/jekyll-theme-yat">Yat Theme</a>.</div>
+      <!-- <div class="footer-col rss-subscribe">Subscribe <a href="/feed.xml">via RSS</a></div> -->
+    </div>
+  </div>
+</footer>
+</body>
+</html>

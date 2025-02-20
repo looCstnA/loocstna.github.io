@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-translate-customization" content="108d9124921d80c3-80e20d618ff053c8-g4f02ec6f3dba68b7-c">
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>L’Histoire de l’Intelligence Artificielle | Antscool</title>
+<meta name="generator" content="Jekyll v4.4.1">
+<meta property="og:title" content="L’Histoire de l’Intelligence Artificielle">
+<meta name="author" content="Gautier">
+<meta property="og:locale" content="fr">
+<meta name="description" content="De 1950 à nos jours, qu’était-ce et qu’est devenu l’Intelligence Artificielle?">
+<meta property="og:description" content="De 1950 à nos jours, qu’était-ce et qu’est devenu l’Intelligence Artificielle?">
+<link rel="canonical" href="https://antscool.org/ai-history/">
+<meta property="og:url" content="https://antscool.org/ai-history/">
+<meta property="og:site_name" content="Antscool">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2025-01-11T17:00:00+00:00">
+<meta name="twitter:card" content="summary">
+<meta property="twitter:title" content="L’Histoire de l’Intelligence Artificielle">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Gautier"},"dateModified":"2025-01-11T17:00:00+00:00","datePublished":"2025-01-11T17:00:00+00:00","description":"De 1950 à nos jours, qu’était-ce et qu’est devenu l’Intelligence Artificielle?","headline":"L’Histoire de l’Intelligence Artificielle","mainEntityOfPage":{"@type":"WebPage","@id":"https://antscool.org/ai-history/"},"url":"https://antscool.org/ai-history/"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="icon" href="/assets/images/a-small.png">
+  <link rel="canonical" href="https://antscool.org">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-noto-sans@0.0.72/index.min.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <script src="/assets/js/main.js"></script><link type="application/atom+xml" rel="alternate" href="https://antscool.org/feed.xml" title="Antscool">
+<!-- Google tag (gtag.js) -->
+<script>
+  function initGoogleAnalytics() {
+    var doNotTrack = (window.doNotTrack === "1" || navigator.doNotTrack === "1" ||
+      navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1");
+    var enableDNT = "false" == "true";
+
+    if (!enableDNT || !doNotTrack) {
+      var measurementId = 'G-5HVYNNFVGW';
+
+      (function(src) {
+        var tag = document.createElement('script');
+        tag.src = src;
+        tag.async = true;
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      })('https://www.googletagmanager.com/gtag/js?id=' + measurementId);
+
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', measurementId);
+    }
+  }
+  window.addEventListener("load", initGoogleAnalytics);
+</script>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
+<!-- and it's easy to individually load additional languages -->
+<script charset="UTF-8" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/languages/go.min.js" async></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+// Init highlight js
+document.addEventListener('DOMContentLoaded', function(event) {
+  var els = document.querySelectorAll('pre code')
+
+  function addLangData(block) {
+    var outer = block.parentElement.parentElement.parentElement;
+    var lang = block.getAttribute('data-lang');
+    var bagde = lang;
+    for (var i = 0; i < outer.classList.length; i++) {
+      var cls = outer.classList[i];
+      if (cls.startsWith('language-')) {
+        lang = cls;
+        break;
+      }
+    }
+    if (!lang) {
+      cls = block.getAttribute('class');
+      lang = cls ? cls.replace('hljs ', '') : '';
+      bagde = '';
+    }
+    if (lang.startsWith('language-')) {
+      lang = lang.substr(9);
+    }
+    if (lang.startsWith('Humain')) {
+      bagde = lang;
+      lang = 'text';
+    }
+    if (lang.startsWith('ChatGPT')) {
+      bagde = lang;
+      lang = 'text';
+    }
+    block.setAttribute('class', 'hljs ' + lang);
+    block.parentNode.setAttribute('data-lang', bagde);
+  }
+
+  function addBadge(block) {
+    var enabled = ('true' || 'true').toLowerCase();
+    if (enabled == 'true') {
+      var pre = block.parentElement;
+      pre.classList.add('badge');
+    }
+  }
+
+  function handle(block) {
+    addLangData(block);
+    addBadge(block)
+    hljs.highlightBlock(block);
+  }
+
+  for (var i = 0; i < els.length; i++) {
+    var el = els[i];
+    handle(el);
+  }
+});
+</script>
+
+<style>
+  /* code language badge */
+  pre.badge::before {
+    content: attr(data-lang);
+    color: #fff;
+    background-color: #ff4e00;
+    padding: 0 .5em;
+    border-radius: 0 2px;
+    text-transform: uppercase;
+    text-align: center;
+    min-width: 32px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+  }
+
+  /* fix wrong badge display for firefox browser */
+  code > table pre::before {
+    display: none;
+  }
+
+  pre {
+    white-space: pre-wrap; // wrap text
+  }
+
+
+</style>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="site-header " role="banner">
+
+  <div class="wrapper">
+    <div class="site-header-inner">
+<span class="site-brand"><a class="site-brand-inner" rel="author" href="/">
+  <img class="site-favicon" title="Antscool" src="/assets/images/antscool.png" onerror="this.style.display='none'">
+  <!-- Antscool -->
+</a>
+</span><nav class="site-nav">
+          <input type="checkbox" id="nav-trigger" class="nav-trigger">
+          <label for="nav-trigger">
+            <span class="menu-icon">
+              <svg viewbox="0 0 18 15" width="18px" height="15px">
+                <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"></path>
+              </svg>
+            </span>
+          </label>
+
+          <div class="trigger">
+<a class="page-link" href="/about.html">A PROPOS</a><a class="page-link" href="/archives.html">ARCHIVES</a><a class="page-link" href="/categories.html">CATEGORIES</a><a class="page-link" href="/">HOME</a><a class="page-link" href="/tags.html">TAGS</a>
+
+
+
+
+</div>
+        </nav>
+</div>
+  </div>
+</header>
+
+<script>
+  function initHeader() {
+    var lastScrollY = getScrollPos().y;
+    var documentElement = document.documentElement;
+
+    function storeScrollData() {
+      var y = getScrollPos().y;var scrollStatus = "";
+
+      if (y <= 0) {
+        scrollStatus = "top";
+      } else if ((window.innerHeight + y) >= document.body.offsetHeight) {
+        scrollStatus = "bottom";
+      } else {
+        var isScrollDown = (y - lastScrollY > 0) ? true : false;
+        scrollStatus = isScrollDown ? "down" : "up";
+      }
+
+      lastScrollY = y;
+      documentElement.setAttribute("data-scroll-status", scrollStatus);
+    }
+
+    window.addEventListener('scroll', function(e) {
+      storeScrollData();
+    });
+
+    storeScrollData();
+  }
+  document.addEventListener('DOMContentLoaded', initHeader);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  function hashLocate(hashValue) {
+    hashValue = hashValue.replace(/^.*#h-/, '');
+    hashValue = decodeURIComponent(hashValue);
+    var element = document.getElementById(hashValue);
+
+    if (!element) {
+      return;
+    }
+
+    var header = document.querySelector('header.site-header');
+    var headerRect = header.getBoundingClientRect();
+    var headerTop = Math.floor(headerRect.top);
+    var headerHeight = Math.floor(headerRect.height);
+    var scrollPos = getScrollPos();
+    var offsetY = element.offsetTop - (headerTop + headerHeight + 20);
+
+    if (offsetY == scrollPos.y) {
+      return;
+    }
+
+    if (headerTop == 0  && offsetY > scrollPos.y) {
+      offsetY += headerHeight + 2;
+    } else if (headerTop < 0  && offsetY < scrollPos.y) {
+      offsetY -= headerHeight - 2;
+    }
+
+    smoothScrollTo(offsetY);
+  }
+
+  // The first event occurred
+  window.addEventListener('load', function(event) {
+    if (window.location.hash) {
+      hashLocate(window.location.hash);
+    }
+  });
+
+  // The first event occurred
+  window.addEventListener('click', function(event) {
+    if (event.target.tagName.toLowerCase() == 'a') {
+      hashLocate(event.target.getAttribute('href'));
+    }
+  });
+</script>
+<div class="theme-toggle">
+  <input type="checkbox" id="theme-switch">
+  <label for="theme-switch">
+    <div class="toggle"></div>
+    <div class="names">
+      <p class="light">Light</p>
+      <p class="dark">Dark</p>
+    </div>
+  </label>
+</div>
+
+
+
+
+<script>
+  (function() {
+    var sw = document.getElementById('theme-switch');
+    var html = document.getElementsByTagName('html')[0];
+    var nightModeOption = ('off' || 'auto').toLowerCase();
+    var storage = nightModeOption === 'manual'
+        ? localStorage
+        : sessionStorage;
+    var themeData = loadThemeData();
+
+    function saveThemeData(data) {
+      storage.setItem('theme', JSON.stringify(data));
+    }
+
+    function loadThemeData() {
+      var data = storage.getItem('theme');
+      try {
+        data = JSON.parse(data ? data : '');
+      } catch(e) {
+        data = { nightShift: undefined, autoToggleAt: 0 };
+        saveThemeData(data);
+      }
+      return data;
+    }
+
+    function handleThemeToggle(nightShift) {
+      themeData.nightShift = nightShift;
+      saveThemeData(themeData);
+      html.dataset.theme = nightShift ? 'dark' : 'light';
+      setTimeout(function() {
+        sw.checked = nightShift ? true : false;
+      }, 50);
+    }
+
+    function autoThemeToggle() {
+      // Next time point of theme toggle
+      var now = new Date();
+      var toggleAt = new Date();
+      var hours = now.getHours();
+      var nightShift = hours >= 19 || hours <=7;
+
+      if (nightShift) {
+        if (hours > 7) {
+          toggleAt.setDate(toggleAt.getDate() + 1);
+        }
+        toggleAt.setHours(7);
+      } else {
+        toggleAt.setHours(19);
+      }
+
+      toggleAt.setMinutes(0);
+      toggleAt.setSeconds(0);
+      toggleAt.setMilliseconds(0)
+
+      var delay = toggleAt.getTime() - now.getTime();
+
+      // auto toggle theme mode
+      setTimeout(function() {
+        handleThemeToggle(!nightShift);
+      }, delay);
+
+      return {
+        nightShift: nightShift,
+        toggleAt: toggleAt.getTime()
+      };
+    }
+
+    // Listen the theme toggle event
+    sw.addEventListener('change', function(event) {
+      handleThemeToggle(event.target.checked);
+    });
+
+    if (nightModeOption == 'auto') {
+      var data = autoThemeToggle();
+
+      // Toggle theme by local setting
+      if (data.toggleAt > themeData.autoToggleAt) {
+        themeData.autoToggleAt = data.toggleAt;
+        handleThemeToggle(data.nightShift);
+      } else {
+        handleThemeToggle(themeData.nightShift);
+      }
+    } else if (nightModeOption == 'manual') {
+      handleThemeToggle(themeData.nightShift);
+    } else {
+      var nightShift = themeData.nightShift;
+      if (nightShift === undefined) {
+        nightShift = nightModeOption === 'on';
+      }
+      handleThemeToggle(nightShift);
+    }
+  })();
+</script>
+<div id="click-to-top" class="click-to-top">
+  <i class="fa fa-arrow-up"></i>
+</div>
+<script>
+  (function () {
+    const clickToTop = document.getElementById('click-to-top');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {
+        clickToTop.classList.add('show')
+      }else {
+        clickToTop.classList.remove('show')
+      }
+    });
+    clickToTop.addEventListener('click', () => {
+      window.smoothScrollTo(0);
+    });
+  })();
+</script>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <div class="framework">
+  <section class="main">
+
+     <div class="post">
+  <section>
+
+
+
+
+
+
+
+
+
+<header class="post-header">
+  <h1 class="post-title p-name" itemprop="name headline">L'Histoire de l'Intelligence Artificielle</h1>
+  <h2 class="post-subtitle">De 1950 à nos jours, qu'était-ce et qu'est devenu l'Intelligence Artificielle?</h2>
+
+  <div class="post-meta">
+    <time class="dt-published" datetime="2025-01-11T17:00:00+00:00" itemprop="datePublished"><i class="fa fa-calendar"></i> 11/01/2025
+    </time><span class="post-author left-vsplit"><i class="fa fa-pencil"></i> Gautier</span>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> ~ 25 mins</span>
+  </div>
+<div class="post-tags">
+<a class="post-tag" href="/tags.html#Intelligence">#Intelligence</a><a class="post-tag" href="/tags.html#Artificielle">#Artificielle</a><a class="post-tag" href="/tags.html#Histoire">#Histoire</a>
+</div></header>
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+    <div class="post-content e-content" itemprop="articleBody">
+
+      <p>De 1950 à nos jours, le terme Intelligence Artificielle a évolué de <em>machine à réfléchir</em> à <em>machine à tout connaître</em>.</p>
+
+<p>Avant toute chose, l’intelligence c’est quoi?</p>
+
+<blockquote>
+  <p>L’intelligence est l’<strong>ensemble des processus</strong> trouvés dans des systèmes, plus ou moins complexes, vivants ou non, qui permettent d’<strong>apprendre</strong>, de <strong>comprendre</strong> ou de <strong>s’adapter</strong> à des <strong>situations nouvelles</strong>. - <a href="https://fr.wikipedia.org/wiki/Intelligence" target="_blank">Wikipedia</a></p>
+</blockquote>
+
+<p>Le terme est emprunté au latin <em>intellĕgentĭa</em>, lui-même dérivé du latin <em>intellĕgō</em> et qui signifie « discerner, démêler, comprendre, remarquer ».</p>
+
+<p>L’intelligence est un concept encore souvent mal défini. Nous retiendrons ici qu’être intelligent, c’est donc être capable de s’adapter à une situation nouvelle. L’intelligence se distingue de la pensée et des connaissances, nous y reviendrons.</p>
+
+<h2 id="alan-turing-lexpérience-de-pensée-et-le-test-de-turing">Alan Turing, l’Expérience de Pensée et le Test de Turing</h2>
+
+<p><img class="mermaid" src="https://mermaid.ink/svg/eyJjb2RlIjoidGltZWxpbmVcbnRpdGxlIEludGVsbGlnZW5jZSBBcnRpZmljaWVsbGVcbnNlY3Rpb24gTGVzIHByw6ltaXNzZXNcbjE5MzYgOiBBbGFuIFR1cmluZyBldCBsJ0V4cMOpcmllbmNlIGRlIFBlbnPDqWVcbjE5NTAgOiBcIkNvbXB1dGluZyBNYWNoaW5lcnkgYW5kIEludGVsbGlnZW5jZVwiLCBBbGFuIFR1cmluZyA6IExlIFRlc3QgZGUgVHVyaW5nIiwibWVybWFpZCI6bnVsbH0"></p>
+
+<blockquote>
+  <p>Une <strong>expérience de pensée</strong>, expérience par la pensée, expérience mentale ou expérience en imagination, est une <strong>méthode qui permet de résoudre un problème</strong> en utilisant la seule puissance de l’imagination humaine. - <a href="https://fr.wikipedia.org/wiki/Exp%C3%A9rience_de_pens%C3%A9e" target="_blank">Wikipedia</a></p>
+</blockquote>
+
+<p>L’intelligence selon Turing, c’est résoudre un problème. Nous y reviendrons à la fin de cet article. 
+La question qu’il pose: “<strong>Les machines peuvent-elles penser ?</strong>”</p>
+
+<p>Le test de Turing consiste à mettre un humain en confrontation verbale à l’aveugle avec un ordinateur et un autre humain. 
+Si la personne qui engage les conversations n’est pas capable de dire lequel de ses interlocuteurs est un ordinateur, on peut considérer que le logiciel de l’ordinateur a passé avec succès le test.</p>
+
+<p><img class="mermaid" src="https://mermaid.ink/svg/eyJjb2RlIjoiZmxvd2NoYXJ0IFRCXG5VdGlsaXNhdGV1ciAtLT4gSHVtYWluXG5VdGlsaXNhdGV1ciAtLT4gTWFjaGluZSIsIm1lcm1haWQiOm51bGx9"></p>
+
+<p>Alors, bien que certainement visionnaire, les premiers outils dit intelligents et réellement utiles à la société ne passait pas ce teste. En effet, les premières machines “intelligentes” ne sont autre que des systèmes experts.</p>
+
+<h2 id="les-systèmes-experts">Les Systèmes Experts</h2>
+
+<p><img class="mermaid" src="https://mermaid.ink/svg/eyJjb2RlIjoidGltZWxpbmVcbnRpdGxlIEludGVsbGlnZW5jZSBBcnRpZmljaWVsbGVcbnNlY3Rpb24gTGVzIHByw6ltaXNzZXNcbjE5MzYgOiBBbGFuIFR1cmluZyBldCBsJ0V4cMOpcmllbmNlIGRlIFBlbnPDqWVcbjE5NTAgOiBcIkNvbXB1dGluZyBNYWNoaW5lcnkgYW5kIEludGVsbGlnZW5jZVwiLCBBbGFuIFR1cmluZyA6IExlIFRlc3QgZGUgVHVyaW5nXG5zZWN0aW9uIExlcyBzeXN0w6htZXMgZXhwZXJ0c1xuMTk2NSA6IERlbmRyYWwiLCJtZXJtYWlkIjpudWxsfQ"></p>
+
+<p>Un <strong>système expert</strong>, un outil capable de reproduire les mécanismes cognitifs d’un expert, dans un domaine particulier.</p>
+
+<p><a href="https://en.wikipedia.org/wiki/Dendral" target="_blank">Dendral</a>, par exemple, est un système expert qui avait pour but d’aider des chimistes organiques à identifier des molécules chimiques inconnues en analysant leur masse et en utilisant des connaissances en chimie.</p>
+
+<p>De manière générale, un système expert consiste à déterminer un certains nombre de règles à partir de faits, et d’ensuite déterminer ou prédire de nouveaux faits.</p>
+
+<p>On utilise pour cela:</p>
+
+<ul>
+  <li>une base de faits: des connaissances</li>
+  <li>une base de règles: des principes ou “lois”</li>
+  <li>un moteur d’inférence: des raisonnements déductifs</li>
+</ul>
+
+<p><img class="mermaid" src="https://mermaid.ink/svg/eyJjb2RlIjoiZmxvd2NoYXJ0IExSXG5BIC0tPiBCIiwibWVybWFpZCI6bnVsbH0"></p>
+
+<p>Si A est vrai (fait ou prémisse) et que A implique B, alors B est vrai (nouveau fait ou conclusion.)</p>
+
+<hr>
+
+<p>Creusez un peu plus: <a href="https://fr.wikipedia.org/wiki/Syst%C3%A8me_expert" target="_blank">Système expert</a></p>
+
+<hr>
+
+<p>Des sytèmes experts, il y en aura beaucoup d’autres qui apparaîtront par la suite,</p>
+
+<ul>
+  <li>en 1996: DeepBlue, la première machine à battre le champion aux échecs,</li>
+  <li>en 2012: AlphaGo,  la première machine à battre le champion au jeu de Go,</li>
+</ul>
+
+<p>qui sont ici des sytèmes encore “fermé” dans le sens ou les règles sont prédéfinies.</p>
+
+<p>Les capacités (extrèmes) des machines sont atteintes principalement grâce aux avancées techniques computationnelles. Nous atteinons des sommets plus hauts car nos machines sont plus puissantes.</p>
+
+<p>Pour vous donnez une petite idée de la complexité de ces jeux, voici quelques chiffres qui les décrivent:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td>Echecs</td>
+      <td>GO</td>
+    </tr>
+    <tr>
+      <td>Nombre de positions possibles</td>
+      <td>10^50</td>
+      <td>10^170</td>
+    </tr>
+    <tr>
+      <td>Nombre de parties possibles</td>
+      <td>10^120</td>
+      <td>10^600</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Mais la première “machine” qui passera le teste de Turing, bien avant cela, c’est ELIZA, le premier chatbot.</p>
+
+<h3 id="eliza-le-premier-chatbot">ELIZA: Le premier Chatbot</h3>
+
+<p><img class="mermaid" src="https://mermaid.ink/svg/eyJjb2RlIjoidGltZWxpbmVcbnRpdGxlIEludGVsbGlnZW5jZSBBcnRpZmljaWVsbGVcbnNlY3Rpb24gTGVzIHByw6ltaXNzZXNcbjE5MzYgOiBBbGFuIFR1cmluZyBldCBsJ0V4cMOpcmllbmNlIGRlIFBlbnPDqWVcbjE5NTAgOiBcIkNvbXB1dGluZyBNYWNoaW5lcnkgYW5kIEludGVsbGlnZW5jZVwiLCBBbGFuIFR1cmluZyA6IExlIFRlc3QgZGUgVHVyaW5nXG5zZWN0aW9uIExlcyBzeXN0w6htZXMgZXhwZXJ0c1xuMTk2NSA6IERlbmRyYWxcbjE5NjYgOiBFTElaQVxuJSUtIiwibWVybWFpZCI6bnVsbH0"></p>
+
+<p>ELIZA a été le premier chatbot au monde, développé entre 1964 et 1966 par le professeur Joseph Weizenbaum du Massachusetts Institute of Technology (MIT). 
+À l’époque, le programme informatique faisait preuve d’une empathie donnant l’illusion d’une conversation humaine.</p>
+
+<p>ELIZA joue le rôle d’un psychothérapeute rogérien.</p>
+
+<pre><code>ÈLIZA: Quelque chose vous préocupe-t-il?
+YOU: Le monde ne semble pas tourner rond.
+ELIZA: Quel sentiment vous procure-t-il le fait que le monde ne semble pas tourner rond?
+YOU: La peur
+ELIZA: Comment ressentez-vous la peur?
+</code></pre>
+
+<p>Le principe est ici simplement de renvoyer les dires de l’utilisateur. Celui-ci dit <em>A</em>, la machine répond: <em>Que pensez-vous de A?</em> 
+Nous verrons plus loin qu’il ne s’agit en réalité que d’un traitement spécifique et pré-déterminé de la machine. 
+Nous sommes, en effet, encore loin d’une machine réellement capable de penser.</p>
+
+<hr>
+
+<p>En découvrir plus: <a href="https://fr.wikipedia.org/wiki/ELIZA">Eliza (Wikipedia)</a></p>
+
+<hr>
+
+<h2 id="lapprentissage-machine-ou-automatisé">L’Apprentissage Machine ou Automatisé</h2>
+
+<p>Machine Learning en anglais, le terme est conceptualisé pour la première fois en 1950, mais c’est bien dans les années 1980 que la technique apparaît réellement et dans les années 1990 et après qu’elle prendra son essor.</p>
+
+<p><img class="mermaid" src="https://mermaid.ink/svg/eyJjb2RlIjoidGltZWxpbmVcbnRpdGxlIEludGVsbGlnZW5jZSBBcnRpZmljaWVsbGVcbnNlY3Rpb24gTGVzIHByw6ltaXNzZXNcbnNlY3Rpb24gTGVzIHN5c3TDqG1lcyBleHBlcnRzXG4xOTY1IDogRGVuZHJhbFxuMTk2NiA6IEVMSVpBXG4xOTczIDogTXljaW5cbnNlY3Rpb24gTGUgTWFjaGluZSBMZWFybmluZ1xuMTk4MSA6IExlIHByZW1pZXIgcsOpc2VhdSBuZXVyb25uYWwgYXJ0aWZpY2llbFxuMTk5NiA6IERlZXAgQmx1ZSA6IEdvb2dsZVxuMjAxMCA6IERlZXBNaW5kXG4yMDExIDogSUJNIFdhdHNvblxuMjAxMiA6IEFscGhhR28iLCJtZXJtYWlkIjpudWxsfQ"></p>
+
+<p>Il s’agit maintenant d’algorithmes statistiques en opposition au systèmes experts qui étaient de type heuristique.</p>
+
+<p>La machine apprend d’elle-même grâce aux statistiques qu’elle peut calculer sur base de données existantes.</p>
+
+<p>Nous décelons à cette époque différentes branches de l’intelligence artificielle qui émergent; l’apprentissage automatisé qui se détache des systèmes experts, ainsi qu’un problème sociétal qui apparaît avec <strong>internet</strong>, plus spécifiquement <strong>le web</strong> (commercial) et les moteurs de recherche.</p>
+
+<p><img class="mermaid" src="https://mermaid.ink/svg/eyJjb2RlIjoiLS0tXG50aXRsZTogSW50ZWxsaWdlbmNlIEFydGlmaWNpZWxsZVxuLS0tXG5naXRHcmFwaFxuY29tbWl0IGlkOiBcIkV4cMOpcmllbmNlIGRlIFBlbnPDqWVcIiB0YWc6IFwiMTkzNlwiXG5jb21taXQgaWQ6IFwiVGVzdCBkZSBUdXJpbmdcIiB0YWc6IFwiMTk1MFwiXG5icmFuY2ggY2hhdGJvdFxuY2hlY2tvdXQgbWFpblxuY29tbWl0IGlkOiBcIlN5c3TDqG1lIEV4cGVydFwiIHRhZzogXCIxOTY1XCJcbmJyYW5jaCBleHBlcnRcbmNvbW1pdCBpZDogXCJEZW5kcmFsXCIgdGFnOiBcIjE5NjVcIlxuY2hlY2tvdXQgbWFpblxuY2hlY2tvdXQgY2hhdGJvdFxuY29tbWl0IGlkOiBcIkVMSVpBXCIgdGFnOiBcIjE5NjZcIlxuY2hlY2tvdXQgZXhwZXJ0XG5jb21taXQgaWQ6IFwiTXljaW5cIiB0YWc6IFwiMTk3M1wiXG5jb21taXQgaWQ6IFwiLi4uXCJcbmNoZWNrb3V0IG1haW5cbmNvbW1pdCBpZDogXCJNYWNoaW5lIExlYXJuaW5nXCIgdGFnOiBcIjE5ODhcIlxuY2hlY2tvdXQgZXhwZXJ0XG5jb21taXQgaWQ6IFwiU2FjaGVtXCIgdGFnOiBcIjE5OTBcIlxuY2hlY2tvdXQgbWFpblxubWVyZ2UgZXhwZXJ0XG5icmFuY2ggc2VhcmNoXG5jb21taXQgaWQ6IFwiV2ViXCJcbmNoZWNrb3V0IGV4cGVydFxuY29tbWl0IGlkOiBcIkRlZXAgQmx1ZVwiIHRhZzogXCIxOTk2XCJcbmNoZWNrb3V0IG1haW5cbmNvbW1pdCBpZDogXCJCbHVlIEJyYWluIGV0IExlcyByw6lzZWF1eCBOZXVyb25hdXhcIiB0YWc6IFwiMjAwNVwiXG5jb21taXQgaWQ6IFwiRGVlcE1pbmRcIiB0YWc6IFwiMjAxMFwiXG5jaGVja291dCBjaGF0Ym90XG5jb21taXQgaWQ6IFwiV2F0c29uXCIgdGFnOiBcIjIwMTFcIlxuY2hlY2tvdXQgZXhwZXJ0XG5jb21taXQgaWQ6IFwiQWxwaGFHb1wiIHRhZzogXCIyMDEyXCIiLCJtZXJtYWlkIjpudWxsfQ"></p>
+
+<p>Bien que nous voyons des avancées fulgurantes en termes d’avancées technologique et scientifique, il faudra attendre entre 20 et 30 ans avant de voir une révolution dans le monde de l’intelligence artificielle, l’IA générative.</p>
+
+<h2 id="lia-générative">L’IA Générative</h2>
+
+<p>L’intelligence Artificielle Générative, c’est l’intelligence capable de générer quelque chose, du contenu, que ce soit du texte, de l’image ou de la musique.
+Nous nous intéresserons ici principalement aux modèles de language, c’est-à-dire les modèles basés sur du texte.</p>
+
+<p>Nous commençons tout de suite avec les “Grand modèle de language”.</p>
+
+<h3 id="grands-modèles-de-langage">Grands modèles de Langage</h3>
+
+<p>C’est en 2017 qu’est proposé par des ingénieurs de chez Google le premier modèle de transformeur, qui fondera les bases des <strong>grands modèles de langage</strong> (grand modèle linguistique, grand modèle de langue, modèle de langage de grande taille ou encore modèle massif de langage) abrégé <strong>LLM</strong> de l’anglais <em>large language model</em>.</p>
+
+<p><img class="mermaid" src="https://mermaid.ink/svg/eyJjb2RlIjoidGltZWxpbmVcbnRpdGxlIEludGVsbGlnZW5jZSBBcnRpZmljaWVsbGVcbnNlY3Rpb24gTGVzIHByw6ltaXNzZXNcbnNlY3Rpb24gTGVzIHN5c3TDqG1lcyBleHBlcnRzXG5zZWN0aW9uIExlIE1hY2hpbmUgTGVhcm5pbmdcbjIwMTAgOiBEZWVwTWluZFxuMjAxMSA6IElCTSBXYXRzb25cbjIwMTUgOiBPcGVuQUlcbnNlY3Rpb24gSW50ZWxsaWdlbmNlIEFydGlmaWNpZWxsZSBHw6luw6lyYXRpdmVcbjIwMTcgOiBUcmFuc2Zvcm1lcnMgOiBTZW1hbnRpYyBTZWFyY2hcbjIwMjIgOiBDaGF0R1BUIDogRGFsbOKAomUgOiBNaWRKb3VybmV5XG4yMDI0IDogR2VtaW5pIDogR1BULTRvIDogTW9kw6hsZXMgTXVsdGltb2RhbCIsIm1lcm1haWQiOm51bGx9"></p>
+
+<p>Les LLM sont la continuité d’une branche spécifique de l’intelligence artificielle, le traitement de langage naturel, abrégé <strong>NLP</strong> pour natural language processing en anglais.</p>
+
+<p>Il ont pour vocation de traiter du texte afin de créer une représentation de ce texte en se basant sur un réseau neuronnal profond, Deep Neural Network en anglais.</p>
+
+<h3 id="traitement-du-langage-naturel">Traitement du Langage Naturel</h3>
+
+<p>L’histoire du NLP remonte à plus de cent ans maintenant avec un linguiste suisse, professeur de l’université de Genève, Ferdinand de Saussure, qui créat au début du 20 ème siècle, un “Cours de linguistique générale”, publié par ses élèves après sa mort (trois ans plus tôt) en 1916.</p>
+
+<p>Mais ce n’est que dans les années 1950 que la recherche et les travaux aboutiront réellement avec Noam Chomsky qui publia “Syntactic Structures” en 1957 dans lequel il décrit une méthode qui consiste à traduire des phrases de language naturel dans un format utilisable par un ordinateur. En 1958, un premier language de programmation LISP est créé par John McCarthy.</p>
+
+<p><img class="mermaid" src="https://mermaid.ink/svg/eyJjb2RlIjoidGltZWxpbmVcbnRpdGxlIFRyYWl0ZW1lbnQgZGUgTGFuZ2FnZSBOYXR1cmVsXG5zZWN0aW9uIFByw6ltaXNzZXNcbjE5MTYgOiBDb3VycyBkZSBsaW5ndWlzdGlxdWUgZ8OpbsOpcmFsZVxuc2VjdGlvbiBVbmUgZMOpY8OpbmllXG4xOTU3IDogTm9hbSBDaG9tc2t5IDogU3luY3RhY3RpYyBTdHJ1Y3R1cmVzXG4xOTU4IDogSm9obiBNY0NhcnRoeSA6IExJU1BcbjE5NjYgOiBFbGl6YSIsIm1lcm1haWQiOm51bGx9"></p>
+
+<p>Nous voyons apparaître au cours d’une décénie: une <strong>méthode</strong>, un <strong>langage</strong> et une <strong>application</strong>.</p>
+
+<p>Eliza est donc en réalité une experte en traitement de langage naturel, rien de plus. Elle (n’)est capable (que) de manipuler du texte.</p>
+
+<hr>
+
+<p>Creusez un peu plus:</p>
+
+<ul>
+  <li><a href="https://fr.wikipedia.org/wiki/Ferdinand_de_Saussure" target="_blank">Ferdinand de Saussure</a></li>
+</ul>
+
+<hr>
+
+<h2 id="vue-densemble">Vue d’ensemble</h2>
+
+<p>L’évolution ne s’est pas faite de manière linéaire. En effet, différentes branches de l’intelligence artificielle ont poussé dans différentes directions.</p>
+
+<p><img class="mermaid" src="https://mermaid.ink/svg/eyJjb2RlIjoidGltZWxpbmVcbnRpdGxlIEludGVsbGlnZW5jZSBBcnRpZmljaWVsbGVcbnNlY3Rpb24gTGVzIHByw6ltaXNzZXNcbjE5MzYgOiBBbGFuIFR1cmluZyBldCBsJ0V4cMOpcmllbmNlIGRlIFBlbnPDqWVcbjE5NTAgOiBcIkNvbXB1dGluZyBNYWNoaW5lcnkgYW5kIEludGVsbGlnZW5jZVwiLCBBbGFuIFR1cmluZyA6IExlIFRlc3QgZGUgVHVyaW5nXG5zZWN0aW9uIExlcyBzeXN0w6htZXMgZXhwZXJ0c1xuMTk2NSA6IERlbmRyYWxcbjE5NjYgOiBFTElaQVxuMTk3MyA6IE15Y2luXG5zZWN0aW9uIExlIE1hY2hpbmUgTGVhcm5pbmdcbjE5ODEgOiBMZSBwcmVtaWVyIHLDqXNlYXUgbmV1cm9ubmFsIGFydGlmaWNpZWxcbjE5OTYgOiBEZWVwIEJsdWUgOiBsZSB3ZWIgY29tbWVyY2lhbFxuMjAxMCA6IERlZXBNaW5kXG4yMDExIDogSUJNIFdhdHNvblxuMjAxMiA6IEFscGhhR29cbjIwMTUgOiBPcGVuQUlcbnNlY3Rpb24gSW50ZWxsaWdlbmNlIEFydGlmaWNpZWxsZSBHw6luw6lyYXRpdmVcbjIwMTcgOiBUcmFuc2Zvcm1lcnMgOiBTZW1hbnRpYyBTZWFyY2hcbjIwMjIgOiBDaGF0R1BUIDogRGFsbOKAomUgOiBNaWRKb3VybmV5XG4yMDI0IDogR2VtaW5pIDogR1BULTRvIDogTW9kw6hsZXMgTXVsdGltb2RhbCIsIm1lcm1haWQiOm51bGx9"></p>
+
+<p><img class="mermaid" src="https://mermaid.ink/svg/eyJjb2RlIjoiLS0tXG50aXRsZTogSW50ZWxsaWdlbmNlIEFydGlmaWNpZWxsZVxuLS0tXG5naXRHcmFwaFxuY29tbWl0IGlkOiBcIkV4cMOpcmllbmNlIGRlIFBlbnPDqWVcIiB0YWc6IFwiMTkzNlwiXG5jb21taXQgaWQ6IFwiVGVzdCBkZSBUdXJpbmdcIiB0YWc6IFwiMTk1MFwiXG5icmFuY2ggY2hhdGJvdFxuY2hlY2tvdXQgbWFpblxuY29tbWl0IGlkOiBcIlN5c3TDqG1lIEV4cGVydFwiIHRhZzogXCIxOTY1XCJcbmJyYW5jaCBleHBlcnRcbmNvbW1pdCBpZDogXCJEZW5kcmFsXCIgdGFnOiBcIjE5NjVcIlxuY2hlY2tvdXQgbWFpblxuY2hlY2tvdXQgY2hhdGJvdFxuY29tbWl0IGlkOiBcIkVMSVpBXCIgdGFnOiBcIjE5NjZcIlxuY2hlY2tvdXQgZXhwZXJ0XG5jb21taXQgaWQ6IFwiTXljaW5cIiB0YWc6IFwiMTk3M1wiXG5jb21taXQgaWQ6IFwiLi4uXCJcbmNoZWNrb3V0IG1haW5cbmNvbW1pdCBpZDogXCJNYWNoaW5lIExlYXJuaW5nXCIgdGFnOiBcIjE5ODhcIlxuY2hlY2tvdXQgZXhwZXJ0XG5jb21taXQgaWQ6IFwiU2FjaGVtXCIgdGFnOiBcIjE5OTBcIlxuY2hlY2tvdXQgbWFpblxubWVyZ2UgZXhwZXJ0XG5icmFuY2ggc2VhcmNoXG5jb21taXQgaWQ6IFwiV2ViXCJcbmNoZWNrb3V0IGV4cGVydFxuY29tbWl0IGlkOiBcIkRlZXAgQmx1ZVwiIHRhZzogXCIxOTk2XCJcbmNoZWNrb3V0IG1haW5cbmNvbW1pdCBpZDogXCJCbHVlIEJyYWluIGV0IExlcyByw6lzZWF1eCBOZXVyb25hdXhcIiB0YWc6IFwiMjAwNVwiXG5jb21taXQgaWQ6IFwiRGVlcE1pbmRcIiB0YWc6IFwiMjAxMFwiXG5jaGVja291dCBjaGF0Ym90XG5jb21taXQgaWQ6IFwiV2F0c29uXCIgdGFnOiBcIjIwMTFcIlxuY2hlY2tvdXQgZXhwZXJ0XG5jb21taXQgaWQ6IFwiQWxwaGFHb1wiIHRhZzogXCIyMDEyXCJcbmNoZWNrb3V0IG1haW5cbmNvbW1pdCBpZDogXCJPcGVuQUlcIiB0YWc6IFwiMjAxNVwiXG5icmFuY2ggaW1hZ2VcbmNvbW1pdCBpZDogXCJGaWx0cmVzXCJcbmNoZWNrb3V0IG1haW5cbm1lcmdlIGV4cGVydCBpZDogXCJUcmFuc2Zvcm1ldXJzXCIgdGFnOiBcIjIwMTdcIlxubWVyZ2Ugc2VhcmNoXG5tZXJnZSBjaGF0Ym90IGlkOiBcIkNoYXRHUFQsIERhbGzigKJlXCIgdGFnOiBcIjIwMjJcIlxubWVyZ2UgaW1hZ2UgaWQ6IFwiTXVsdGltb2RhbFwiIHRhZzogXCIyMDI0XCIiLCJtZXJtYWlkIjpudWxsfQ"></p>
+
+<p>Les avancées atteintes récemment sont impressionnantes car nous arrivons à l’aboutissement de différentes branches dans un tronc commun réunnissant le language et l’image, après tout, lorsque nous écrivons, nous dessinnons.</p>
+
+<p>Nous pourrions affirmer que les chatbots que nous connaissons aujourd’hui sont, grâce à l’apprentissage automatique, des experts du language.</p>
+
+<h2 id="esprit-critique">Esprit Critique</h2>
+
+<p>Mais alors, comment se distingue l’IA d’aujourd’hui de celle d’il y a trente ans?</p>
+
+<ul>
+  <li>Comment détermine-t-on que quelquechose est vrai?</li>
+  <li>Comment détermine-t-on que l’on sait quelquechose?</li>
+  <li>Une phrase ou un texte peuvent être grammaticalement corrects, avoir un sens ou même plusieurs, mais comment déterminer si le sens est correct?</li>
+  <li>Parler à un LLM, est-ce faire une recherche?</li>
+  <li>Comment évaluer une recherche et son résultat?</li>
+  <li>Comment déterminer si une information est correcte?</li>
+</ul>
+
+
+    </div>
+
+</article>
+<!--<div class="post-nav"><a class="previous" href="/openai-chatgpt/" title="ChatGPT, l&#39;application d&#39;OpenAI qui a pris le monde par surprise">ChatGPT, l&#39;application d&#39;OpenAI qui a pris...</a><a class="next" href="/machine-learning/" title="L&#39;Apprentissage Machine (Machine Learning en anglais)">L&#39;Apprentissage Machine (Machine Learning en anglais)...</a></div>-->
+    <br><hr>
+<br><div class="post-related">
+      <div>A suivre</div>
+      <ul>
+        <li class="">
+          <a class="post-link" href="/liste-curative-education-ia/" title="Liste Curative de Ressources Educationelles en Intelligence Artificielle">
+            Liste Curative de Ressources Educationelles en Intelligence Artificielle<span class="post-badges">
+  <span class="post-badge badge-top">TOP</span>
+  <span class="post-badge badge-new">NEW</span>
+</span>
+</a>
+        </li>
+<li class="">
+          <a class="post-link" href="/comprendre-intelligence-humaine/" title="Comprendre le Fonctionnement Humain grâce à l'Intelligence Artificielle">
+            Comprendre le Fonctionnement Humain grâce à l'Intelligence Artificielle<span class="post-badges">
+  <span class="post-badge badge-top">TOP</span>
+  <span class="post-badge badge-new">NEW</span>
+</span>
+</a>
+        </li>
+<li class="top-post">
+          <a class="post-link" href="/intelligence-non-artificielle/" title="Le Guide de l'Intelligence Non-Artificielle">
+            Le Guide de l'Intelligence Non-Artificielle<span class="post-badges">
+  <span class="post-badge badge-top">TOP</span>
+  <span class="post-badge badge-new">NEW</span>
+</span>
+</a>
+        </li>
+</ul>
+    </div>
+<div class="post-comments"></div></section>
+</div>
+
+
+  </section>
+  <section class="sidebar" style="margin-left: 15px;">
+    <!-- Get sidebar items --><style type="text/css" media="screen">
+.post-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+</style>
+
+<div class="post-menu">
+  <div class="post-menu-title"><!-- TOC --></div>
+  <div class="post-menu-content"></div>
+</div>
+
+<script>
+  function generateContent() {
+    var menu = document.querySelector(".post-menu");
+    var menuContent =  menu.querySelector(".post-menu-content");
+    var headings = document.querySelector(".post-content").querySelectorAll("h2, h3, h4, h5, h6");
+
+    // Hide menu when no headings
+    if (headings.length === 0) {
+      return menu.style.display = "none";
+    }
+
+    // Generate post menu
+    var menuHTML = '';
+    for (var i = 0; i < headings.length; i++) {
+      var h = headings[i];
+      menuHTML += (
+        '<li class="h-' + h.tagName.toLowerCase() + '">'
+        + '<a href="#h-' + h.getAttribute('id') + '">' + h.textContent + '</a></li>');
+    }
+
+    menuContent.innerHTML = '<ul>' + menuHTML + '</ul>';
+
+    // The header element
+    var header = document.querySelector('header.site-header');
+
+    function doMenuCollapse(index, over_items) {
+      var items = menuContent.firstChild.children;
+
+      if (over_items == undefined) {
+        over_items = 20;
+      }
+
+      if (items.length < over_items) {
+        return;
+      }
+
+      var activeItem = items[index];
+      var beginItem = activeItem
+      var endItem = activeItem
+      var beginIndex = index;
+      var endIndex = index + 1;
+      while (beginIndex >= 0
+        && !items[beginIndex].classList.contains('h-h2')) {
+        beginIndex -= 1;
+      }
+      while (endIndex < items.length
+        && !items[endIndex].classList.contains('h-h2')) {
+        endIndex += 1;
+      }
+      for (var i = 0; i < beginIndex; i++) {
+        item = items[i]
+        if (!item.classList.contains('h-h2')) {
+          item.style.display = 'none';
+        }
+      }
+      for (var i = beginIndex + 1; i < endIndex; i++) {
+        item = items[i]
+        // if (!item.classList.contains('h-h2')) {
+          item.style.display = '';
+        // }
+      }
+      for (var i = endIndex; i < items.length; i++) {
+        item = items[i]
+        if (!item.classList.contains('h-h2')) {
+          item.style.display = 'none';
+        }
+      }
+    }
+
+    // Init menu collapsed
+    doMenuCollapse(-1);
+
+    // Active the menu item
+    window.addEventListener('scroll', function (event) {
+      var lastActive = menuContent.querySelector('.active');
+      var changed = true;
+      var activeIndex = -1;
+      for (var i = headings.length - 1; i >= 0; i--) {
+        var h = headings[i];
+        var headingRect = h.getBoundingClientRect();
+        var headerRect = header.getBoundingClientRect();
+        var headerTop = Math.floor(headerRect.top);
+        var headerHeight = Math.floor(headerRect.height);
+        var headerHeight = headerTop + headerHeight + 20;
+        if (headingRect.top <= headerHeight) {
+          var id = 'h-' + h.getAttribute('id');
+          var a = menuContent.querySelector('a[href="#' + id  + '"]');
+          var curActive = a.parentNode;
+          if (curActive) {
+            curActive.classList.add('active');
+            activeIndex = i;
+          }
+          if (lastActive == curActive) {
+            changed = false;
+          }
+          break;
+        }
+      }
+      if (changed) {
+        if (lastActive) {
+          lastActive.classList.remove('active');
+        }
+        doMenuCollapse(activeIndex);
+      }
+      event.preventDefault();
+    });
+  }
+  generateContent();
+</script>
+</section>
+</div>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+    <div class="site-footer-inner">
+<div>Antscool ASBL <span class="copyleft">©</span> 2017-2025 Antscool</div>
+      <div>Powered by <a title="Jekyll is a simple, blog-aware, static site
+      generator." href="https://jekyllrb.com/">Jekyll</a> &amp; <a title="Yat, yet
+      another theme." href="https://github.com/jeffreytse/jekyll-theme-yat">Yat Theme</a>.</div>
+      <!-- <div class="footer-col rss-subscribe">Subscribe <a href="/feed.xml">via RSS</a></div> -->
+    </div>
+  </div>
+</footer>
+</body>
+</html>

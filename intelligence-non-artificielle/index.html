@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-translate-customization" content="108d9124921d80c3-80e20d618ff053c8-g4f02ec6f3dba68b7-c">
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Le Guide de l’Intelligence Non-Artificielle | Antscool</title>
+<meta name="generator" content="Jekyll v4.4.1">
+<meta property="og:title" content="Le Guide de l’Intelligence Non-Artificielle">
+<meta name="author" content="Gautier">
+<meta property="og:locale" content="fr">
+<meta name="description" content="Cette liste fournit de nombreuses sources d’information et d’éducation en intelligence artificielle à découvrir et à suivre à la maison ou à l’école.">
+<meta property="og:description" content="Cette liste fournit de nombreuses sources d’information et d’éducation en intelligence artificielle à découvrir et à suivre à la maison ou à l’école.">
+<link rel="canonical" href="https://antscool.org/intelligence-non-artificielle/">
+<meta property="og:url" content="https://antscool.org/intelligence-non-artificielle/">
+<meta property="og:site_name" content="Antscool">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2024-12-21T17:00:00+00:00">
+<meta name="twitter:card" content="summary">
+<meta property="twitter:title" content="Le Guide de l’Intelligence Non-Artificielle">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Gautier"},"dateModified":"2024-12-21T17:00:00+00:00","datePublished":"2024-12-21T17:00:00+00:00","description":"Cette liste fournit de nombreuses sources d’information et d’éducation en intelligence artificielle à découvrir et à suivre à la maison ou à l’école.","headline":"Le Guide de l’Intelligence Non-Artificielle","mainEntityOfPage":{"@type":"WebPage","@id":"https://antscool.org/intelligence-non-artificielle/"},"url":"https://antscool.org/intelligence-non-artificielle/"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="icon" href="/assets/images/a-small.png">
+  <link rel="canonical" href="https://antscool.org">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-noto-sans@0.0.72/index.min.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <script src="/assets/js/main.js"></script><link type="application/atom+xml" rel="alternate" href="https://antscool.org/feed.xml" title="Antscool">
+<!-- Google tag (gtag.js) -->
+<script>
+  function initGoogleAnalytics() {
+    var doNotTrack = (window.doNotTrack === "1" || navigator.doNotTrack === "1" ||
+      navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1");
+    var enableDNT = "false" == "true";
+
+    if (!enableDNT || !doNotTrack) {
+      var measurementId = 'G-5HVYNNFVGW';
+
+      (function(src) {
+        var tag = document.createElement('script');
+        tag.src = src;
+        tag.async = true;
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      })('https://www.googletagmanager.com/gtag/js?id=' + measurementId);
+
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', measurementId);
+    }
+  }
+  window.addEventListener("load", initGoogleAnalytics);
+</script>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
+<!-- and it's easy to individually load additional languages -->
+<script charset="UTF-8" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/languages/go.min.js" async></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+// Init highlight js
+document.addEventListener('DOMContentLoaded', function(event) {
+  var els = document.querySelectorAll('pre code')
+
+  function addLangData(block) {
+    var outer = block.parentElement.parentElement.parentElement;
+    var lang = block.getAttribute('data-lang');
+    var bagde = lang;
+    for (var i = 0; i < outer.classList.length; i++) {
+      var cls = outer.classList[i];
+      if (cls.startsWith('language-')) {
+        lang = cls;
+        break;
+      }
+    }
+    if (!lang) {
+      cls = block.getAttribute('class');
+      lang = cls ? cls.replace('hljs ', '') : '';
+      bagde = '';
+    }
+    if (lang.startsWith('language-')) {
+      lang = lang.substr(9);
+    }
+    if (lang.startsWith('Humain')) {
+      bagde = lang;
+      lang = 'text';
+    }
+    if (lang.startsWith('ChatGPT')) {
+      bagde = lang;
+      lang = 'text';
+    }
+    block.setAttribute('class', 'hljs ' + lang);
+    block.parentNode.setAttribute('data-lang', bagde);
+  }
+
+  function addBadge(block) {
+    var enabled = ('true' || 'true').toLowerCase();
+    if (enabled == 'true') {
+      var pre = block.parentElement;
+      pre.classList.add('badge');
+    }
+  }
+
+  function handle(block) {
+    addLangData(block);
+    addBadge(block)
+    hljs.highlightBlock(block);
+  }
+
+  for (var i = 0; i < els.length; i++) {
+    var el = els[i];
+    handle(el);
+  }
+});
+</script>
+
+<style>
+  /* code language badge */
+  pre.badge::before {
+    content: attr(data-lang);
+    color: #fff;
+    background-color: #ff4e00;
+    padding: 0 .5em;
+    border-radius: 0 2px;
+    text-transform: uppercase;
+    text-align: center;
+    min-width: 32px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+  }
+
+  /* fix wrong badge display for firefox browser */
+  code > table pre::before {
+    display: none;
+  }
+
+  pre {
+    white-space: pre-wrap; // wrap text
+  }
+
+
+</style>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="site-header " role="banner">
+
+  <div class="wrapper">
+    <div class="site-header-inner">
+<span class="site-brand"><a class="site-brand-inner" rel="author" href="/">
+  <img class="site-favicon" title="Antscool" src="/assets/images/antscool.png" onerror="this.style.display='none'">
+  <!-- Antscool -->
+</a>
+</span><nav class="site-nav">
+          <input type="checkbox" id="nav-trigger" class="nav-trigger">
+          <label for="nav-trigger">
+            <span class="menu-icon">
+              <svg viewbox="0 0 18 15" width="18px" height="15px">
+                <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"></path>
+              </svg>
+            </span>
+          </label>
+
+          <div class="trigger">
+<a class="page-link" href="/about.html">A PROPOS</a><a class="page-link" href="/archives.html">ARCHIVES</a><a class="page-link" href="/categories.html">CATEGORIES</a><a class="page-link" href="/">HOME</a><a class="page-link" href="/tags.html">TAGS</a>
+
+
+
+
+</div>
+        </nav>
+</div>
+  </div>
+</header>
+
+<script>
+  function initHeader() {
+    var lastScrollY = getScrollPos().y;
+    var documentElement = document.documentElement;
+
+    function storeScrollData() {
+      var y = getScrollPos().y;var scrollStatus = "";
+
+      if (y <= 0) {
+        scrollStatus = "top";
+      } else if ((window.innerHeight + y) >= document.body.offsetHeight) {
+        scrollStatus = "bottom";
+      } else {
+        var isScrollDown = (y - lastScrollY > 0) ? true : false;
+        scrollStatus = isScrollDown ? "down" : "up";
+      }
+
+      lastScrollY = y;
+      documentElement.setAttribute("data-scroll-status", scrollStatus);
+    }
+
+    window.addEventListener('scroll', function(e) {
+      storeScrollData();
+    });
+
+    storeScrollData();
+  }
+  document.addEventListener('DOMContentLoaded', initHeader);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  function hashLocate(hashValue) {
+    hashValue = hashValue.replace(/^.*#h-/, '');
+    hashValue = decodeURIComponent(hashValue);
+    var element = document.getElementById(hashValue);
+
+    if (!element) {
+      return;
+    }
+
+    var header = document.querySelector('header.site-header');
+    var headerRect = header.getBoundingClientRect();
+    var headerTop = Math.floor(headerRect.top);
+    var headerHeight = Math.floor(headerRect.height);
+    var scrollPos = getScrollPos();
+    var offsetY = element.offsetTop - (headerTop + headerHeight + 20);
+
+    if (offsetY == scrollPos.y) {
+      return;
+    }
+
+    if (headerTop == 0  && offsetY > scrollPos.y) {
+      offsetY += headerHeight + 2;
+    } else if (headerTop < 0  && offsetY < scrollPos.y) {
+      offsetY -= headerHeight - 2;
+    }
+
+    smoothScrollTo(offsetY);
+  }
+
+  // The first event occurred
+  window.addEventListener('load', function(event) {
+    if (window.location.hash) {
+      hashLocate(window.location.hash);
+    }
+  });
+
+  // The first event occurred
+  window.addEventListener('click', function(event) {
+    if (event.target.tagName.toLowerCase() == 'a') {
+      hashLocate(event.target.getAttribute('href'));
+    }
+  });
+</script>
+<div class="theme-toggle">
+  <input type="checkbox" id="theme-switch">
+  <label for="theme-switch">
+    <div class="toggle"></div>
+    <div class="names">
+      <p class="light">Light</p>
+      <p class="dark">Dark</p>
+    </div>
+  </label>
+</div>
+
+
+
+
+<script>
+  (function() {
+    var sw = document.getElementById('theme-switch');
+    var html = document.getElementsByTagName('html')[0];
+    var nightModeOption = ('off' || 'auto').toLowerCase();
+    var storage = nightModeOption === 'manual'
+        ? localStorage
+        : sessionStorage;
+    var themeData = loadThemeData();
+
+    function saveThemeData(data) {
+      storage.setItem('theme', JSON.stringify(data));
+    }
+
+    function loadThemeData() {
+      var data = storage.getItem('theme');
+      try {
+        data = JSON.parse(data ? data : '');
+      } catch(e) {
+        data = { nightShift: undefined, autoToggleAt: 0 };
+        saveThemeData(data);
+      }
+      return data;
+    }
+
+    function handleThemeToggle(nightShift) {
+      themeData.nightShift = nightShift;
+      saveThemeData(themeData);
+      html.dataset.theme = nightShift ? 'dark' : 'light';
+      setTimeout(function() {
+        sw.checked = nightShift ? true : false;
+      }, 50);
+    }
+
+    function autoThemeToggle() {
+      // Next time point of theme toggle
+      var now = new Date();
+      var toggleAt = new Date();
+      var hours = now.getHours();
+      var nightShift = hours >= 19 || hours <=7;
+
+      if (nightShift) {
+        if (hours > 7) {
+          toggleAt.setDate(toggleAt.getDate() + 1);
+        }
+        toggleAt.setHours(7);
+      } else {
+        toggleAt.setHours(19);
+      }
+
+      toggleAt.setMinutes(0);
+      toggleAt.setSeconds(0);
+      toggleAt.setMilliseconds(0)
+
+      var delay = toggleAt.getTime() - now.getTime();
+
+      // auto toggle theme mode
+      setTimeout(function() {
+        handleThemeToggle(!nightShift);
+      }, delay);
+
+      return {
+        nightShift: nightShift,
+        toggleAt: toggleAt.getTime()
+      };
+    }
+
+    // Listen the theme toggle event
+    sw.addEventListener('change', function(event) {
+      handleThemeToggle(event.target.checked);
+    });
+
+    if (nightModeOption == 'auto') {
+      var data = autoThemeToggle();
+
+      // Toggle theme by local setting
+      if (data.toggleAt > themeData.autoToggleAt) {
+        themeData.autoToggleAt = data.toggleAt;
+        handleThemeToggle(data.nightShift);
+      } else {
+        handleThemeToggle(themeData.nightShift);
+      }
+    } else if (nightModeOption == 'manual') {
+      handleThemeToggle(themeData.nightShift);
+    } else {
+      var nightShift = themeData.nightShift;
+      if (nightShift === undefined) {
+        nightShift = nightModeOption === 'on';
+      }
+      handleThemeToggle(nightShift);
+    }
+  })();
+</script>
+<div id="click-to-top" class="click-to-top">
+  <i class="fa fa-arrow-up"></i>
+</div>
+<script>
+  (function () {
+    const clickToTop = document.getElementById('click-to-top');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {
+        clickToTop.classList.add('show')
+      }else {
+        clickToTop.classList.remove('show')
+      }
+    });
+    clickToTop.addEventListener('click', () => {
+      window.smoothScrollTo(0);
+    });
+  })();
+</script>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <div class="framework">
+  <section class="main">
+
+     <div class="post">
+  <section>
+
+
+
+
+
+
+
+
+
+<header class="post-header">
+  <h1 class="post-title p-name" itemprop="name headline">Le Guide de l'Intelligence Non-Artificielle</h1>
+  <h2 class="post-subtitle">Le guide pour celles et ceux qui souhaitent découvrir l'Intelligence Artificielle sans trop se casser la tête.</h2>
+
+  <div class="post-meta">
+    <time class="dt-published" datetime="2024-12-21T17:00:00+00:00" itemprop="datePublished"><i class="fa fa-calendar"></i> 21/12/2024
+    </time><span class="post-author left-vsplit"><i class="fa fa-pencil"></i> Gautier</span>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> ~ 24 mins</span>
+  </div>
+<div class="post-tags">
+<a class="post-tag" href="/tags.html#Intelligence">#Intelligence</a><a class="post-tag" href="/tags.html#Artificielle">#Artificielle</a><a class="post-tag" href="/tags.html#Education">#Education</a>
+</div></header>
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+    <div class="post-content e-content" itemprop="articleBody">
+
+      <p>L’intelligence artificielle, ou IA, qu’est-ce que c’est?</p>
+
+<p>L’intelligence artificielle c’est aujourd’hui beaucoup de choses, d’éléments, qui proviennent de domaines différents et variés qui ensemble forment l’IA d’aujourd’hui.</p>
+
+<p>Si vous ne l’avez pas encore fait, je vous invite à lire <a href="/ai-history/">l’histoire de l’intelligence artificielle</a>.</p>
+
+<p>De manière générale, c’est <strong>reproduire</strong> artificiellement, c’est-à-dire créer ou construire (nous les humains) une certaine forme d’<strong>intelligence</strong>.</p>
+
+<!-- Ce guide en "pente douce" aidera celles et ceux qui souhaitent découvrir l'intelliegence artificielle sans trop se casser la tête. -->
+
+<p>Nous ne parlerons ici ni de programmation, ni de mathématiques, mais bien d’intelligence et à cette fin, nous passerons rapidement, après avoir rappelé ce que nous définissons être l’intelligence, à un exercice de mise en pratique de l’intelligence, un <strong>problème</strong>.</p>
+
+<!-- Car pour résoudre un casse-tête, c'est bien d'intelligence que nous avons besoin. Nous parlerons alors de raisonment, de logique, ou encore de déduction. -->
+
+<p>Mais d’abord, rappelons ce qu’est cette intelligence que nous voulons automatiser.</p>
+
+<blockquote>
+  <p>L’intelligence est l’<strong>ensemble des processus</strong> trouvés dans des systèmes, plus ou moins complexes, vivants ou non, qui permettent d’<strong>apprendre</strong>, de <strong>comprendre</strong> ou de <strong>s’adapter</strong> à des <strong>situations nouvelles</strong>. - <a href="https://fr.wikipedia.org/wiki/Intelligence" target="_blank">Wikipedia</a></p>
+</blockquote>
+
+<p>Nous allons ici découvrir quels processus permettent d’apprendre, de comprendre et de s’adapter.</p>
+
+<p>Nous ne parlerons ici ni de programmation (bien que nous pouvons évidemment le programmer), ni de machine (bien que l’on en aura souvent besoin), mais bien de reproduire afin de comprendre l’intelligence et plus particulièrement l’intelligence humaine, bien que les animaux, les plantes et tous les systèmes vivant présentent certaine(s) forme(s) d’intelligence qui sont tout aussi intéressante(s) à reproduire et que nous, humains, reproduisons d’ailleur.</p>
+
+<p>Commençons par un problème.</p>
+
+<h2 id="un-problème">Un Problème</h2>
+
+<p>L’intelligence artificielle, c’est résoudre des problèmes, que l’on appelle parfois casse-têtes.</p>
+
+<!-- Lorsque que l'on étudie l'intelligence artificielle, on commence généralement par un casse-tête. -->
+
+<p>Commençons donc par un casse tête. Nous verrons ensuite les outils et les techniques que nous, humains mais aussi êtres vivants, avons créés et développés afin de résoudre les problèmes que nous rencontrons.</p>
+
+<pre><code class="language-markdown">Un paysan part en voyage avec un renard, une oie et un sac de haricots.
+Il arrive face à une rivière qu'il doit traverser à l'aide d'un petit bateau qu'il trouve sur la berge.
+
+Malheureusement, le bateau est trop petit pour acceuillir tous ce petit monde. Il ne peut faire traverser qu'un seul élément à la fois et ce avec deux contraintes: 
+
+- si laissés ensemble, le renard mangera l'oie, 
+- et de la même manière, l'oie mangera les haricots.
+
+Comment faire?
+
+</code></pre>
+
+<hr>
+
+<p><br></p>
+
+<p>Avant de nous attaquez à comment faire pour résoudre un problème, 
+nous commençons par voir ce qu’est un problème et comment le définit-on.
+Nous verrons que dans la pratique, résoudre un problème commencera, et consistera, toujours par sa définition.</p>
+
+<blockquote>
+  <p>Un problème […] est <strong>une situation</strong> dans laquelle un <strong>obstacle</strong> empêche de <strong>progresser</strong>, d’<strong>avancer</strong> ou de <strong>réaliser</strong> ce que l’on voulait faire. Un problème naît lorsqu’il y a une <strong>différence entre l’état des choses et celui souhaité</strong>, ou lorsqu’il y a anormalité, c’est le cas en industrie ou en physiologie. - <a href="https://fr.wikipedia.org/wiki/Probl%C3%A8me" target="_blank">Wikipedia</a></p>
+</blockquote>
+
+<p>La représentation que nous pouvons faire ici ressemble étrangement à la représentation faite d’un système expert dans <a href="/ai-history/">L’Histoire de l’Intelligence Artificielle</a>. Les systèmes experts ayant pour but de résoudre un (et un seul) problème, c’est finalement logique.</p>
+
+<p><img class="mermaid" src="https://mermaid.ink/svg/eyJjb2RlIjoiZmxvd2NoYXJ0IExSXG5BIC0tPiBCIiwibWVybWFpZCI6bnVsbH0"></p>
+
+<p>A est ici une <em>situation</em> ou l’<em>état des choses</em> et B l’<em>Etat souhaité</em> ou <em>résultat</em>.
+Avec cependant, un obstacle entre les deux.</p>
+
+<p><img class="mermaid" src="https://mermaid.ink/svg/eyJjb2RlIjoiZmxvd2NoYXJ0IExSXG5BW1NpdHVhdGlvbjogRXRhdCBkZXMgY2hvc2VzXVxuQltSw6lzdWx0YXQ6IEV0YXQgc291aGFpdMOpXVxuQSAtLSBPYnN0YWNsZSAtLT4gQiIsIm1lcm1haWQiOm51bGx9"></p>
+
+<!-- Maintenant que nous avons une idée plus précise de ce qu'est un problème, nous pouvons passer à la résolution.
+Comme dit précedement, la résolution d'un problème commence toujours par sa définition. -->
+
+<p>Revenons à notre problème et tentons de le définir.</p>
+
+<!-- > En logique, un concept est un **contenu de pensée**, qui, lorsqu'il est appliqué à un objet, peut former une proposition. [...] Le concept est un terme abstrait qui se distingue donc de la chose désignée par ce concept. Le terme lui-même est introduit au Moyen Âge (conceptus) par Thomas d'Aquin [...]. Il vient du latin conceptus qui signifie « action de contenir, de tenir ensemble, de recevoir », dérivé du verbe concipere signifiant « concevoir ». - [Wikipedia](https://fr.wikipedia.org/wiki/Concept_(philosophie)){:target="_blank"} 
+
+Comment faire plus abstrait? 🤔 
+
+Nous retiendrons que conceptualiser, c'est **définir un contenu de pensée**. 
+ -->
+
+<p>Voici, dans la fenêtre de gauche, notre <strong>état initial</strong>: un paysan 🧑‍🌾, accompagné d’un renard 🦊, d’une oie 🪿, et d’un sac de haricots 🫘 se retrouve face à une rivière 🛶. Et dans la fenêtre de droite, l’<strong>état souhaité</strong>.</p>
+
+<p><img class="mermaid" src="https://mermaid.ink/svg/eyJjb2RlIjoiZmxvd2NoYXJ0IExSXG5zXzBbXCLwn6eR4oCN8J-MviDwn6aKIPCfqr8g8J-rmCAgIPCfm7Yg8J-rmFwiXVxuc18xW1wi8J-btiDwn6eR4oCN8J-MviDwn6aKIPCfqr8g8J-rmCDwn6uYXCJdXG5zXzAtLSA_IC0tPnNfMVxuJSUtIiwibWVybWFpZCI6bnVsbH0"></p>
+
+<p>Nous savons déjà, car décrit dans l’énoncé du problème, que le renard ne peut être laissé seul avec l’oie et que l’oie ne peut être laissée seule avec les haricots.</p>
+
+<p>Ici nous recevons dans l’énnoncé les règles que nous devons suivre mais dans la nature, les problèmes peuvent se présenter de manière plus ou moins explicite que cela. <strong>Que devrions-nous faire si nous ne connaissions pas ces règles?</strong></p>
+
+<p>Ici se pose, à peu près toujours, la question “<strong>que connaissons nous vraiment du problème?</strong>”
+<!-- Nous ne détectons d'ailleurs pas toujours les problèmes qui nous entourent. --></p>
+
+<p>Il s’agirat alors de passer par des essais et des erreurs afin de se rendre compte de la réalité du problème, ou la situation, et ensuite d’en apercevoir les résultats possibles, que nous jugerons “souhaités” ou pas.</p>
+
+<p>C’est un des principes majeurs de l’Apprentissage Automatique des machines (Machine Learning en anglais), et c’est aussi tout simplement un des processus les plus utiles pour nous, humain, qui est d’<strong>apprendre</strong>.</p>
+
+<!-- Mais avant de passer à l'essais/erreurs, commençons par définir et plus encovre, conceptualiser, les éléments de notre problème. -->
+
+<h2 id="apprendre">Apprendre</h2>
+
+<blockquote>
+  <p><strong>Acquérir</strong> une <strong>connaissance</strong> […]. - <a href="https://fr.wiktionary.org/wiki/apprendre" target="_blank">Wiktionary</a></p>
+</blockquote>
+
+<p>Comme évoqué précedemment, nous reçevons explicitement dans notre problème une série de règles: 
+ne pas laisser le renard et l’oie seuls et ne pas laisser l’oie et les haricots seuls.</p>
+
+<p>Mais que ce passerait-il si nous ne connaissions pas ces règles? Il nous faudrait alors les déterminer. Le processus en question consiste à faire des essais et des erreurs.</p>
+
+<ul>
+  <li>
+<strong>Essai n°1</strong>: je prend le renard avec moi de l’autre côté de la rivière.</li>
+  <li>
+<strong>Résultat</strong>: l’oie mange les haricots.</li>
+</ul>
+
+<p><img class="mermaid" src="https://mermaid.ink/svg/eyJjb2RlIjoiZmxvd2NoYXJ0IExSXG5zXzBbXCLwn6eR4oCN8J-MviDwn6aKIPCfqr8g8J-rmCAgIPCfm7Yg8J-TjVwiXVxuc18wMVtcIvCfqr8gICAg8J-btiDwn6eR4oCN8J-MviDwn6aKXCJdXG5zXzAgLS0g8J-nkeKAjfCfjL7wn6aKLS14IHNfMDFcbiUlLSIsIm1lcm1haWQiOm51bGx9"></p>
+
+<p>L’état obtenu n’est pas celui que nous souhaitons car les petits pois ont disparu dans la fenêtre de droite.</p>
+
+<p>Nous apprenons, ou renforçons l’idée, que l’oie ne peut être laissée seule avec les petits pois.
+La règle équivalente entre le renard et l’oie serait apprise si l’on commençait avec les petits pois.</p>
+
+<ul>
+  <li>
+<strong>Essai n°2</strong>: je prend les petits pois avec moi de l’autre côté de la rivière.</li>
+  <li>
+<strong>Résultat</strong>: le renard mange l’oie.</li>
+</ul>
+
+<p><img class="mermaid" src="https://mermaid.ink/svg/eyJjb2RlIjoiZmxvd2NoYXJ0IExSXG5zXzBbXCLwn6eR4oCN8J-MviDwn6aKIPCfqr8g8J-rmCAgIPCfm7Yg8J-TjVwiXVxuc18wMVtcIvCfqr8gICAg8J-btiDwn6eR4oCN8J-MviDwn6aKXCJdXG5zXzAyW1wi8J-miiAgICDwn5u2IPCfp5HigI3wn4y-IPCfq5hcIl1cbnNfMCAtLSDwn6eR4oCN8J-MvvCfpootLXggc18wMVxuc18wIC0tIPCfp5HigI3wn4y-8J-rmC0teCBzXzAyXG4lJS0iLCJtZXJtYWlkIjpudWxsfQ"></p>
+
+<p>Si l’on continue, nous saisissons qu’en commençant avec l’oie, l’état obtenu est acceptable car tous les éléments sont encore là, et que nous pouvons donc continuer, aller plus loin, dans la résolution de notre problème.</p>
+
+<ul>
+  <li>
+<strong>Essai n°3</strong>: je prend l’oie avec moi de l’autre côté de la rivière.</li>
+  <li>
+<strong>Résultat</strong>: l’oie est bien passée de l’autre côté et le renard ne touche pas aux petits pois.</li>
+</ul>
+
+<p><img class="mermaid" src="https://mermaid.ink/svg/eyJjb2RlIjoiZmxvd2NoYXJ0IExSXG5zXzBbXCLwn6eR4oCN8J-MviDwn6aKIPCfqr8g8J-rmCAgIPCfm7Yg8J-TjVwiXVxuc18wMVtcIvCfqr8gICAg8J-btiDwn6eR4oCN8J-MviDwn6aKXCJdXG5zXzAyW1wi8J-miiAgICDwn5u2IPCfp5HigI3wn4y-IPCfq5hcIl1cbnNfMCAtLSDwn6eR4oCN8J-MvvCfpootLXggc18wMVxuc18wIC0tIPCfp5HigI3wn4y-8J-rmC0teCBzXzAyXG5zXzFbXCLwn6aKIPCfq5ggICAg8J-btiDwn6eR4oCN8J-MviDwn6q_8J-TjVwiXVxuc18yW1wi8J-nkeKAjfCfjL4g8J-miiDwn6uYICAgICDwn5u2IPCfqr_wn5ONXCJdXG5zXzAgLS0g8J-nkeKAjfCfjL7wn6q_LS0-IHNfMVxuc18xIC0tIPCfp5HigI3wn4y-IC0tPiBzXzJcbiUlLSIsIm1lcm1haWQiOm51bGx9"></p>
+
+<p>Ici, nous saisissons que la seule possibilité au départ, c’est de commencer avec l’oie. Saisir une connaissance, ou un sens, c’est <strong>comprendre</strong>.</p>
+
+<h2 id="comprendre">Comprendre</h2>
+
+<blockquote>
+  <p>Saisir le <strong>sens</strong> […], se faire une <strong>juste idée</strong> […] de quelque chose - <a href="https://fr.wiktionary.org/wiki/comprendre">Wiktionary</a></p>
+</blockquote>
+
+<!-- 
+> Le schéma du grec ancien σχῆμα / skhễma (« manière d'être », « forme », « figure », « extérieur », « apparence », « faux-semblant ») est une **représentation** de données **simplifiée** servant de vecteur de communication et souvent **codifié ou symbolisé**. Le mot prend généralement le sens de graphe selon le domaine dont on parle [...] - [Wikipedia](https://fr.wikipedia.org/wiki/Sch%C3%A9ma){:target="_blank"}
+
+On parle en général d'une représentation graphique simplifiée, mais c'est aussi:
+
+- un **objet** de la géométrie algébrique en mathématiques
+- une **structure** de l'information en informatique
+- un certain type de **représentations mentales** en psychologie
+- etc.
+ -->
+
+<p>Nous pouvons déduire que face à la rivière, notre voyageur ne pouvant laisser seul ni le renard avec l’oie, ni l’oie avec le sac de haricots,
+la seule possibilité qui reste est bien de commencer avec l’oie.</p>
+
+<p><img class="mermaid" src="https://mermaid.ink/svg/eyJjb2RlIjoiZmxvd2NoYXJ0IExSXG5zXzBbXCLwn6eR4oCN8J-MviDwn6aKIPCfqr8g8J-rmFx0IPCfm7Yg8J-TjVwiXVxuc18wMVtcIvCfpoog8J-rmFx0IPCfm7Yg8J-nkeKAjfCfjL4g8J-qv_Cfk41cIl1cbnNfMVtcIvCfp5HigI3wn4y-IPCfpoog8J-rmFx0IPCfm7Yg8J-qv_Cfk41cIl1cbnNfMCAtLSDwn6eR4oCN8J-MvvCfqr8tLT4gc18wMVxuc18wMSAtLSDwn6eR4oCN8J-MviAtLT4gc18xXG4lJS0iLCJtZXJtYWlkIjpudWxsfQ"></p>
+
+<p>Pour aller plus loin à partir d’ici, il nous faudra apprendre ou comprendre que la seule manière d’atteindre notre état souhaité, c’est de revenir avec des éléments afin que ceux-ci ne se mange pas entre eux.</p>
+
+<p>Une fois que nous avons appris ou compris cela, notre problème devient tout de suite plus facile. Nous avons alors un choix qui s’offre à nous, mais qui au final, n’aura pas réellement d’incidence sur le résultat.</p>
+
+<!-- Vient ensuite un autre élément important de la résolution de problème et de l'intelligence, la prise de **décision**. -->
+
+<p><img class="mermaid" src="https://mermaid.ink/svg/eyJjb2RlIjoiZmxvd2NoYXJ0IFREXG5zXzFbXCLwn6eR4oCN8J-MviDwn6aKIPCfq5hcdCDwn5u2IPCfqr_wn5ONXCJdXG5zXzIxW1wiIPCfq5hcdCDwn5u2IPCfp5HigI3wn4y-IPCfporwn6q_8J-TjVwiXVxuc18yMltcIiDwn6aKXHQg8J-btiDwn6eR4oCN8J-MviDwn6uY8J-qv_Cfk41cIl1cbnNfMSAtLSDwn6eR4oCN8J-MvvCfpootLT4gc18yMVxuc18xIC0tIPCfp5HigI3wn4y-8J-rmFx0LS0-IHNfMjIiLCJtZXJtYWlkIjpudWxsfQ"></p>
+
+<!-- Découvrons un peu plus à ce qu'est ou ce que représente réellement un choix.
+
+> Un choix résulte de la **décision** d'un **individu ou d'un groupe** confronté à une **situation ou à un système** offrant une ou plusieurs options. Le terme « choix » pouvant désigner le **processus** par lequel cette opération est menée à bien et/ou le **résultat** de ladite opération. - [Wikipedia](https://fr.wikipedia.org/wiki/Choix){:target="_blank"}
+
+Nous pouvons ici nous intéresser aux différents éléments que compose cette définition:
+
+- L'intelligence artificielle, c'est prendre des décisions, ou tout simplement prend des décisions.
+- Un individu ou un groupe d'invidu, nous appelons ça en intelligence artificielle un ou des agents intelligents. -->
+
+<!-- - L'intelligence artificielle désigne à la fois un processus et son résultat. -->
+
+<!-- A noter aussi que sans différentes options qui se présentent à nous, nous n'avons pas de choix. -->
+
+<!-- ### L'Action -->
+
+<p>Une foix notre choix effectué, la solution ne reste plus qu’à être déroulée.</p>
+
+<p><img class="mermaid" src="https://mermaid.ink/svg/eyJjb2RlIjoiZmxvd2NoYXJ0IFREXG5zXzIxW1wiIPCfq5hcdCDwn5u2IPCfp5HigI3wn4y-IPCfporwn6q_8J-TjVwiXVxuc18yMltcIiDwn6aKXHQg8J-btiDwn6eR4oCN8J-MviDwn6uY8J-qv_Cfk41cIl1cbnNfMzFbXCIg8J-nkeKAjfCfjL7wn6q_8J-rmCDwn5u2IPCfporwn5ONXCJdXG5zXzMyW1wiIPCfp5HigI3wn4y-8J-milx08J-qvyDwn5u2IPCfq5jwn5ONXCJdXG5zXzIxIC0tIPCfp5HigI3wn4y-8J-qvy0tPiBzXzMxXG5zXzIyIC0tIPCfp5HigI3wn4y-8J-qvy0tPiBzXzMyXG5zXzRbXCIg8J-nkeKAjfCfjL7wn6q_IPCfm7Yg8J-mivCfq5jwn5ONXCJdXG5zXzMxIC0tIPCfp5HigI3wn4y-8J-rmC0tPiBzXzRcbnNfMzIgLS0g8J-nkeKAjfCfjL7wn6aKXHQtLT4gc180XG5zXzRbXCIg8J-qvyDwn5u2IPCfp5HigI3wn4y-8J-mivCfq5jwn5ONXCJdXG5zXzVbXCIg8J-nkeKAjfCfjL7wn6q_IPCfm7Yg8J-mivCfq5jwn5ONXCJdXG5zXzQgLS0g8J-nkeKAjfCfjL4tLT4gc181XG5zXzUxW1wiIPCfm7Yg8J-nkeKAjfCfjL7wn6aK8J-qv_Cfq5jwn5ONXCJdXG5zXzUgLS0g8J-nkeKAjfCfjL7wn6q_LS0-IHNfNTEiLCJtZXJtYWlkIjpudWxsfQ"></p>
+
+<!-- En intelligence artificielle, nous travaillons la conceptualisation, la schématisation, l'analyse et la synthèse. Nous développerons ces deux derniers dans la section suivante. -->
+
+<!-- ## Le schéma complet
+
+Visualiser le schéma dans son ensemble nous permet de se rendre compte de quelques spécificités présentes dans notre problème.
+
+<img class="mermaid" src="https://mermaid.ink/svg/eyJjb2RlIjoiZmxvd2NoYXJ0IFREXG5zXzBbXCLwn6eR4oCN8J-MviDwn6aKIPCfqr8g8J-rmFx0IPCfm7Yg8J-TjVwiXVxuc18wMVtcIvCfpoog8J-rmFx0IPCfm7Yg8J-nkeKAjfCfjL4g8J-qv_Cfk41cIl1cbnNfMVtcIvCfp5HigI3wn4y-IPCfpoog8J-rmFx0IPCfm7Yg8J-qv_Cfk41cIl1cbnNfMCAtLSDwn6eR4oCN8J-MvvCfqr8tLT4gc18wMVxuc18wMSAtLSDwn6eR4oCN8J-MviAtLT4gc18xXG5zXzIxW1wiIPCfq5hcdCDwn5u2IPCfp5HigI3wn4y-IPCfporwn6q_8J-TjVwiXVxuc18yMltcIiDwn6aKXHQg8J-btiDwn6eR4oCN8J-MviDwn6uY8J-qv_Cfk41cIl1cbnNfMSAtLSDwn6eR4oCN8J-MvvCfpootLT4gc18yMVxuc18xIC0tIPCfp5HigI3wn4y-8J-rmFx0LS0-IHNfMjJcbnNfMzFbXCIg8J-nkeKAjfCfjL7wn6q_8J-rmCDwn5u2IPCfporwn5ONXCJdXG5zXzMyW1wiIPCfp5HigI3wn4y-8J-milx08J-qvyDwn5u2IPCfq5jwn5ONXCJdXG5zXzIxIC0tIPCfp5HigI3wn4y-8J-qvy0tPiBzXzMxXG5zXzIyIC0tIPCfp5HigI3wn4y-8J-qvy0tPiBzXzMyXG5zXzRbXCIg8J-nkeKAjfCfjL7wn6q_IPCfm7Yg8J-mivCfq5jwn5ONXCJdXG5zXzMxIC0tIPCfp5HigI3wn4y-8J-rmC0tPiBzXzRcbnNfMzIgLS0g8J-nkeKAjfCfjL7wn6aKXHQtLT4gc180XG5zXzRbXCIg8J-qvyDwn5u2IPCfp5HigI3wn4y-8J-mivCfq5jwn5ONXCJdXG5zXzVbXCIg8J-nkeKAjfCfjL7wn6q_IPCfm7Yg8J-mivCfq5jwn5ONXCJdXG5zXzQgLS0g8J-nkeKAjfCfjL4tLT4gc181XG5zXzUxW1wiIPCfm7Yg8J-nkeKAjfCfjL7wn6aK8J-qv_Cfq5jwn5ONXCJdXG5zXzUgLS0g8J-nkeKAjfCfjL7wn6q_LS0-IHNfNTEiLCJtZXJtYWlkIjpudWxsfQ">
+
+- Le paysan effectuera toujours deux trajets seul, le deuxième et l'avant-dernier trajet, il n'en est pas possible autrement.
+- L'étape centrale sera toujours, dans tous les cas, un trajet avec l'oie. Celle-ci est en effet le coeur du problème.
+
+**Le schéma simplifié**
+
+
+Nous pouvons simplier le schéma, car au final, ce qui nous intéresse, ce sont les différents états dans lequel nous nous trouvons à chaque instant.
+
+-->
+<!--
+<img class="mermaid" src="https://mermaid.ink/svg/eyJjb2RlIjoiZmxvd2NoYXJ0IFREXG5zXzBbXCLwn6eR4oCN8J-MviDwn6aKIPCfqr8g8J-rmFx0IPCfm7Yg8J-TjVwiXVxuc18xW1wi8J-nkeKAjfCfjL4g8J-miiDwn6uYXHQg8J-btiDwn6q_8J-TjVwiXVxuc18wIC0tPiBzXzFcbnNfMjFbXCIg8J-rmFx0IPCfm7Yg8J-nkeKAjfCfjL4g8J-mivCfqr_wn5ONXCJdXG5zXzIyW1wiIPCfpopcdCDwn5u2IPCfp5HigI3wn4y-IPCfq5jwn6q_8J-TjVwiXVxuc18xIC0tPiBzXzIxXG5zXzEgLS0-IHNfMjJcbnNfMzFbXCIg8J-nkeKAjfCfjL7wn6q_8J-rmCDwn5u2IPCfporwn5ONXCJdXG5zXzMyW1wiIPCfp5HigI3wn4y-8J-milx08J-qvyDwn5u2IPCfq5jwn5ONXCJdXG5zXzIxIC0tPiBzXzMxXG5zXzIyIC0tPiBzXzMyXG5zXzRbXCIg8J-nkeKAjfCfjL7wn6q_IPCfm7Yg8J-mivCfq5jwn5ONXCJdXG5zXzMxIC0tPiBzXzRcbnNfMzIgLS0-IHNfNFxuc181W1wiIPCfm7Yg8J-nkeKAjfCfjL7wn6aK8J-qv_Cfq5jwn5ONXCJdXG5zXzQgLS0-IHNfNSIsIm1lcm1haWQiOm51bGx9"> 
+-->
+<h2 id="récapitulons">Récapitulons</h2>
+
+<p>L’intelligence artificielle, ou l’intelligence tout court:</p>
+
+<ul>
+  <li>c’est résoudre des problème</li>
+  <li>c’est <strong>apprendre</strong>, <strong>comprendre</strong> et <strong>s’adapter</strong>
+</li>
+  <li>représente donc à la fois un <strong>processus</strong> (apprendre) et son <strong>résultat</strong> (comprendre).</li>
+</ul>
+
+<!-- Un agent intelligent est tout individu ou groupe d'individu confronté à un problème.
+
+En intelligence artificielle, nous étudions et travaillons:
+
+- la **conceptualisation**: définir un contenu de pensée.
+- la **schématisation**: représentation simplifié, codifiée ou symbolisée.
+- l'**analyse**: déduire ou détecter des "vérités".
+- la **synthèse**: définir un problème, déterminer de quoi avons nous réellement besoin, quelles sont nos contraintes et nos solutions.
+ -->
+
+<!-- ---
+Aller plus loin:
+
+- apprendre vs. comprendre
+- conceptualiser et shématiser
+- abre de décision ou de connaissances
+--- -->
+
+
+    </div>
+
+</article>
+<!--<div class="post-nav"><a class="previous" href="/liste-curative-education-ia/" title="Liste Curative de Ressources Educationelles en Intelligence Artificielle">Liste Curative de Ressources Educationelles en...</a><a class="next" href="/openai-chatgpt/" title="ChatGPT, l&#39;application d&#39;OpenAI qui a pris le monde par surprise">ChatGPT, l&#39;application d&#39;OpenAI qui a pris...</a></div>-->
+    <br><hr>
+<br><div class="post-related">
+      <div>A suivre</div>
+      <ul>
+        <li class="">
+          <a class="post-link" href="/comprendre-intelligence-humaine/" title="Comprendre le Fonctionnement Humain grâce à l'Intelligence Artificielle">
+            Comprendre le Fonctionnement Humain grâce à l'Intelligence Artificielle<span class="post-badges">
+  <span class="post-badge badge-top">TOP</span>
+  <span class="post-badge badge-new">NEW</span>
+</span>
+</a>
+        </li>
+<li class="top-post">
+          <a class="post-link" href="/ai-history/" title="L'Histoire de l'Intelligence Artificielle">
+            L'Histoire de l'Intelligence Artificielle<span class="post-badges">
+  <span class="post-badge badge-top">TOP</span>
+  <span class="post-badge badge-new">NEW</span>
+</span>
+</a>
+        </li>
+<li class="">
+          <a class="post-link" href="/liste-curative-education-ia/" title="Liste Curative de Ressources Educationelles en Intelligence Artificielle">
+            Liste Curative de Ressources Educationelles en Intelligence Artificielle<span class="post-badges">
+  <span class="post-badge badge-top">TOP</span>
+  <span class="post-badge badge-new">NEW</span>
+</span>
+</a>
+        </li>
+<li class="">
+          <a class="post-link" href="/openai-chatgpt/" title="ChatGPT, l'application d'OpenAI qui a pris le monde par surprise">
+            ChatGPT, l'application d'OpenAI qui a pris le monde par surprise<span class="post-badges">
+  <span class="post-badge badge-top">TOP</span>
+  <span class="post-badge badge-new">NEW</span>
+</span>
+</a>
+        </li>
+</ul>
+    </div>
+<div class="post-comments"></div></section>
+</div>
+
+
+  </section>
+  <section class="sidebar" style="margin-left: 15px;">
+    <!-- Get sidebar items --><style type="text/css" media="screen">
+.post-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+</style>
+
+<div class="post-menu">
+  <div class="post-menu-title"><!-- TOC --></div>
+  <div class="post-menu-content"></div>
+</div>
+
+<script>
+  function generateContent() {
+    var menu = document.querySelector(".post-menu");
+    var menuContent =  menu.querySelector(".post-menu-content");
+    var headings = document.querySelector(".post-content").querySelectorAll("h2, h3, h4, h5, h6");
+
+    // Hide menu when no headings
+    if (headings.length === 0) {
+      return menu.style.display = "none";
+    }
+
+    // Generate post menu
+    var menuHTML = '';
+    for (var i = 0; i < headings.length; i++) {
+      var h = headings[i];
+      menuHTML += (
+        '<li class="h-' + h.tagName.toLowerCase() + '">'
+        + '<a href="#h-' + h.getAttribute('id') + '">' + h.textContent + '</a></li>');
+    }
+
+    menuContent.innerHTML = '<ul>' + menuHTML + '</ul>';
+
+    // The header element
+    var header = document.querySelector('header.site-header');
+
+    function doMenuCollapse(index, over_items) {
+      var items = menuContent.firstChild.children;
+
+      if (over_items == undefined) {
+        over_items = 20;
+      }
+
+      if (items.length < over_items) {
+        return;
+      }
+
+      var activeItem = items[index];
+      var beginItem = activeItem
+      var endItem = activeItem
+      var beginIndex = index;
+      var endIndex = index + 1;
+      while (beginIndex >= 0
+        && !items[beginIndex].classList.contains('h-h2')) {
+        beginIndex -= 1;
+      }
+      while (endIndex < items.length
+        && !items[endIndex].classList.contains('h-h2')) {
+        endIndex += 1;
+      }
+      for (var i = 0; i < beginIndex; i++) {
+        item = items[i]
+        if (!item.classList.contains('h-h2')) {
+          item.style.display = 'none';
+        }
+      }
+      for (var i = beginIndex + 1; i < endIndex; i++) {
+        item = items[i]
+        // if (!item.classList.contains('h-h2')) {
+          item.style.display = '';
+        // }
+      }
+      for (var i = endIndex; i < items.length; i++) {
+        item = items[i]
+        if (!item.classList.contains('h-h2')) {
+          item.style.display = 'none';
+        }
+      }
+    }
+
+    // Init menu collapsed
+    doMenuCollapse(-1);
+
+    // Active the menu item
+    window.addEventListener('scroll', function (event) {
+      var lastActive = menuContent.querySelector('.active');
+      var changed = true;
+      var activeIndex = -1;
+      for (var i = headings.length - 1; i >= 0; i--) {
+        var h = headings[i];
+        var headingRect = h.getBoundingClientRect();
+        var headerRect = header.getBoundingClientRect();
+        var headerTop = Math.floor(headerRect.top);
+        var headerHeight = Math.floor(headerRect.height);
+        var headerHeight = headerTop + headerHeight + 20;
+        if (headingRect.top <= headerHeight) {
+          var id = 'h-' + h.getAttribute('id');
+          var a = menuContent.querySelector('a[href="#' + id  + '"]');
+          var curActive = a.parentNode;
+          if (curActive) {
+            curActive.classList.add('active');
+            activeIndex = i;
+          }
+          if (lastActive == curActive) {
+            changed = false;
+          }
+          break;
+        }
+      }
+      if (changed) {
+        if (lastActive) {
+          lastActive.classList.remove('active');
+        }
+        doMenuCollapse(activeIndex);
+      }
+      event.preventDefault();
+    });
+  }
+  generateContent();
+</script>
+</section>
+</div>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+    <div class="site-footer-inner">
+<div>Antscool ASBL <span class="copyleft">©</span> 2017-2025 Antscool</div>
+      <div>Powered by <a title="Jekyll is a simple, blog-aware, static site
+      generator." href="https://jekyllrb.com/">Jekyll</a> &amp; <a title="Yat, yet
+      another theme." href="https://github.com/jeffreytse/jekyll-theme-yat">Yat Theme</a>.</div>
+      <!-- <div class="footer-col rss-subscribe">Subscribe <a href="/feed.xml">via RSS</a></div> -->
+    </div>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-translate-customization" content="108d9124921d80c3-80e20d618ff053c8-g4f02ec6f3dba68b7-c">
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Glossaire de l’Intelligence Artificielle | Antscool</title>
+<meta name="generator" content="Jekyll v4.4.1">
+<meta property="og:title" content="Glossaire de l’Intelligence Artificielle">
+<meta name="author" content="Gautier">
+<meta property="og:locale" content="fr">
+<meta name="description" content="Connaître et Comprendre de quoi on parle lorsque l’on parle d’Intelligence Artificielle.">
+<meta property="og:description" content="Connaître et Comprendre de quoi on parle lorsque l’on parle d’Intelligence Artificielle.">
+<link rel="canonical" href="https://antscool.org/glossaire-intelligence-artificielle/">
+<meta property="og:url" content="https://antscool.org/glossaire-intelligence-artificielle/">
+<meta property="og:site_name" content="Antscool">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2024-12-01T08:00:00+00:00">
+<meta name="twitter:card" content="summary">
+<meta property="twitter:title" content="Glossaire de l’Intelligence Artificielle">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Gautier"},"dateModified":"2024-12-01T08:00:00+00:00","datePublished":"2024-12-01T08:00:00+00:00","description":"Connaître et Comprendre de quoi on parle lorsque l’on parle d’Intelligence Artificielle.","headline":"Glossaire de l’Intelligence Artificielle","mainEntityOfPage":{"@type":"WebPage","@id":"https://antscool.org/glossaire-intelligence-artificielle/"},"url":"https://antscool.org/glossaire-intelligence-artificielle/"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="icon" href="/assets/images/a-small.png">
+  <link rel="canonical" href="https://antscool.org">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-noto-sans@0.0.72/index.min.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <script src="/assets/js/main.js"></script><link type="application/atom+xml" rel="alternate" href="https://antscool.org/feed.xml" title="Antscool">
+<!-- Google tag (gtag.js) -->
+<script>
+  function initGoogleAnalytics() {
+    var doNotTrack = (window.doNotTrack === "1" || navigator.doNotTrack === "1" ||
+      navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1");
+    var enableDNT = "false" == "true";
+
+    if (!enableDNT || !doNotTrack) {
+      var measurementId = 'G-5HVYNNFVGW';
+
+      (function(src) {
+        var tag = document.createElement('script');
+        tag.src = src;
+        tag.async = true;
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      })('https://www.googletagmanager.com/gtag/js?id=' + measurementId);
+
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', measurementId);
+    }
+  }
+  window.addEventListener("load", initGoogleAnalytics);
+</script>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
+<!-- and it's easy to individually load additional languages -->
+<script charset="UTF-8" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/languages/go.min.js" async></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+// Init highlight js
+document.addEventListener('DOMContentLoaded', function(event) {
+  var els = document.querySelectorAll('pre code')
+
+  function addLangData(block) {
+    var outer = block.parentElement.parentElement.parentElement;
+    var lang = block.getAttribute('data-lang');
+    var bagde = lang;
+    for (var i = 0; i < outer.classList.length; i++) {
+      var cls = outer.classList[i];
+      if (cls.startsWith('language-')) {
+        lang = cls;
+        break;
+      }
+    }
+    if (!lang) {
+      cls = block.getAttribute('class');
+      lang = cls ? cls.replace('hljs ', '') : '';
+      bagde = '';
+    }
+    if (lang.startsWith('language-')) {
+      lang = lang.substr(9);
+    }
+    if (lang.startsWith('Humain')) {
+      bagde = lang;
+      lang = 'text';
+    }
+    if (lang.startsWith('ChatGPT')) {
+      bagde = lang;
+      lang = 'text';
+    }
+    block.setAttribute('class', 'hljs ' + lang);
+    block.parentNode.setAttribute('data-lang', bagde);
+  }
+
+  function addBadge(block) {
+    var enabled = ('true' || 'true').toLowerCase();
+    if (enabled == 'true') {
+      var pre = block.parentElement;
+      pre.classList.add('badge');
+    }
+  }
+
+  function handle(block) {
+    addLangData(block);
+    addBadge(block)
+    hljs.highlightBlock(block);
+  }
+
+  for (var i = 0; i < els.length; i++) {
+    var el = els[i];
+    handle(el);
+  }
+});
+</script>
+
+<style>
+  /* code language badge */
+  pre.badge::before {
+    content: attr(data-lang);
+    color: #fff;
+    background-color: #ff4e00;
+    padding: 0 .5em;
+    border-radius: 0 2px;
+    text-transform: uppercase;
+    text-align: center;
+    min-width: 32px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+  }
+
+  /* fix wrong badge display for firefox browser */
+  code > table pre::before {
+    display: none;
+  }
+
+  pre {
+    white-space: pre-wrap; // wrap text
+  }
+
+
+</style>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="site-header " role="banner">
+
+  <div class="wrapper">
+    <div class="site-header-inner">
+<span class="site-brand"><a class="site-brand-inner" rel="author" href="/">
+  <img class="site-favicon" title="Antscool" src="/assets/images/antscool.png" onerror="this.style.display='none'">
+  <!-- Antscool -->
+</a>
+</span><nav class="site-nav">
+          <input type="checkbox" id="nav-trigger" class="nav-trigger">
+          <label for="nav-trigger">
+            <span class="menu-icon">
+              <svg viewbox="0 0 18 15" width="18px" height="15px">
+                <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"></path>
+              </svg>
+            </span>
+          </label>
+
+          <div class="trigger">
+<a class="page-link" href="/about.html">A PROPOS</a><a class="page-link" href="/archives.html">ARCHIVES</a><a class="page-link" href="/categories.html">CATEGORIES</a><a class="page-link" href="/">HOME</a><a class="page-link" href="/tags.html">TAGS</a>
+
+
+
+
+</div>
+        </nav>
+</div>
+  </div>
+</header>
+
+<script>
+  function initHeader() {
+    var lastScrollY = getScrollPos().y;
+    var documentElement = document.documentElement;
+
+    function storeScrollData() {
+      var y = getScrollPos().y;var scrollStatus = "";
+
+      if (y <= 0) {
+        scrollStatus = "top";
+      } else if ((window.innerHeight + y) >= document.body.offsetHeight) {
+        scrollStatus = "bottom";
+      } else {
+        var isScrollDown = (y - lastScrollY > 0) ? true : false;
+        scrollStatus = isScrollDown ? "down" : "up";
+      }
+
+      lastScrollY = y;
+      documentElement.setAttribute("data-scroll-status", scrollStatus);
+    }
+
+    window.addEventListener('scroll', function(e) {
+      storeScrollData();
+    });
+
+    storeScrollData();
+  }
+  document.addEventListener('DOMContentLoaded', initHeader);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  function hashLocate(hashValue) {
+    hashValue = hashValue.replace(/^.*#h-/, '');
+    hashValue = decodeURIComponent(hashValue);
+    var element = document.getElementById(hashValue);
+
+    if (!element) {
+      return;
+    }
+
+    var header = document.querySelector('header.site-header');
+    var headerRect = header.getBoundingClientRect();
+    var headerTop = Math.floor(headerRect.top);
+    var headerHeight = Math.floor(headerRect.height);
+    var scrollPos = getScrollPos();
+    var offsetY = element.offsetTop - (headerTop + headerHeight + 20);
+
+    if (offsetY == scrollPos.y) {
+      return;
+    }
+
+    if (headerTop == 0  && offsetY > scrollPos.y) {
+      offsetY += headerHeight + 2;
+    } else if (headerTop < 0  && offsetY < scrollPos.y) {
+      offsetY -= headerHeight - 2;
+    }
+
+    smoothScrollTo(offsetY);
+  }
+
+  // The first event occurred
+  window.addEventListener('load', function(event) {
+    if (window.location.hash) {
+      hashLocate(window.location.hash);
+    }
+  });
+
+  // The first event occurred
+  window.addEventListener('click', function(event) {
+    if (event.target.tagName.toLowerCase() == 'a') {
+      hashLocate(event.target.getAttribute('href'));
+    }
+  });
+</script>
+<div class="theme-toggle">
+  <input type="checkbox" id="theme-switch">
+  <label for="theme-switch">
+    <div class="toggle"></div>
+    <div class="names">
+      <p class="light">Light</p>
+      <p class="dark">Dark</p>
+    </div>
+  </label>
+</div>
+
+
+
+
+<script>
+  (function() {
+    var sw = document.getElementById('theme-switch');
+    var html = document.getElementsByTagName('html')[0];
+    var nightModeOption = ('off' || 'auto').toLowerCase();
+    var storage = nightModeOption === 'manual'
+        ? localStorage
+        : sessionStorage;
+    var themeData = loadThemeData();
+
+    function saveThemeData(data) {
+      storage.setItem('theme', JSON.stringify(data));
+    }
+
+    function loadThemeData() {
+      var data = storage.getItem('theme');
+      try {
+        data = JSON.parse(data ? data : '');
+      } catch(e) {
+        data = { nightShift: undefined, autoToggleAt: 0 };
+        saveThemeData(data);
+      }
+      return data;
+    }
+
+    function handleThemeToggle(nightShift) {
+      themeData.nightShift = nightShift;
+      saveThemeData(themeData);
+      html.dataset.theme = nightShift ? 'dark' : 'light';
+      setTimeout(function() {
+        sw.checked = nightShift ? true : false;
+      }, 50);
+    }
+
+    function autoThemeToggle() {
+      // Next time point of theme toggle
+      var now = new Date();
+      var toggleAt = new Date();
+      var hours = now.getHours();
+      var nightShift = hours >= 19 || hours <=7;
+
+      if (nightShift) {
+        if (hours > 7) {
+          toggleAt.setDate(toggleAt.getDate() + 1);
+        }
+        toggleAt.setHours(7);
+      } else {
+        toggleAt.setHours(19);
+      }
+
+      toggleAt.setMinutes(0);
+      toggleAt.setSeconds(0);
+      toggleAt.setMilliseconds(0)
+
+      var delay = toggleAt.getTime() - now.getTime();
+
+      // auto toggle theme mode
+      setTimeout(function() {
+        handleThemeToggle(!nightShift);
+      }, delay);
+
+      return {
+        nightShift: nightShift,
+        toggleAt: toggleAt.getTime()
+      };
+    }
+
+    // Listen the theme toggle event
+    sw.addEventListener('change', function(event) {
+      handleThemeToggle(event.target.checked);
+    });
+
+    if (nightModeOption == 'auto') {
+      var data = autoThemeToggle();
+
+      // Toggle theme by local setting
+      if (data.toggleAt > themeData.autoToggleAt) {
+        themeData.autoToggleAt = data.toggleAt;
+        handleThemeToggle(data.nightShift);
+      } else {
+        handleThemeToggle(themeData.nightShift);
+      }
+    } else if (nightModeOption == 'manual') {
+      handleThemeToggle(themeData.nightShift);
+    } else {
+      var nightShift = themeData.nightShift;
+      if (nightShift === undefined) {
+        nightShift = nightModeOption === 'on';
+      }
+      handleThemeToggle(nightShift);
+    }
+  })();
+</script>
+<div id="click-to-top" class="click-to-top">
+  <i class="fa fa-arrow-up"></i>
+</div>
+<script>
+  (function () {
+    const clickToTop = document.getElementById('click-to-top');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {
+        clickToTop.classList.add('show')
+      }else {
+        clickToTop.classList.remove('show')
+      }
+    });
+    clickToTop.addEventListener('click', () => {
+      window.smoothScrollTo(0);
+    });
+  })();
+</script>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <div class="framework">
+  <section class="main">
+
+     <div class="post">
+  <section>
+
+
+
+
+
+
+
+
+
+<header class="post-header">
+  <h1 class="post-title p-name" itemprop="name headline">Glossaire de l'Intelligence Artificielle</h1>
+  <h2 class="post-subtitle"></h2>
+
+  <div class="post-meta">
+    <time class="dt-published" datetime="2024-12-01T08:00:00+00:00" itemprop="datePublished"><i class="fa fa-calendar"></i> 01/12/2024
+    </time><span class="post-author left-vsplit"><i class="fa fa-pencil"></i> Gautier</span>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> ~ 10 mins</span>
+  </div>
+<div class="post-tags">
+<a class="post-tag" href="/tags.html#Intelligence">#Intelligence</a><a class="post-tag" href="/tags.html#Artificielle">#Artificielle</a><a class="post-tag" href="/tags.html#Taxonomie">#Taxonomie</a>
+</div></header>
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+    <div class="post-content e-content" itemprop="articleBody">
+
+      <pre><code class="language-text">⚠️ Cette page est encore en construction.
+📣 N'hésitez pas à me faire parvenir vos commentaires.
+
+Gautier
+</code></pre>
+<p><br></p>
+
+<p>Afin de comprendre de quoi nous parlons lorsque nous parlons d’intelligence artificielle, voici une taxonomie (une liste de liste) ou liste (non-exhaustive) de tout ce qui attrait à l’intelligence artificielle.</p>
+
+<p>Nous vous recommandons dans ce labyrinthe de suivre les liens présent dans le texte même ou les flèches <code>&gt;</code> et de commencer ici: <a href="#h-intelligence-artificielle">&gt; Intelligence Artificielle</a></p>
+
+<!--more-->
+
+<h2 id="application">Application</h2>
+
+<p>Terme introduit dans les années 2000 afin de remplacer le terme “programme”. Aujourd’hui, nous entendons principalement le terme “Application”, tandis qu’auparavant, nous parlions de “programmes” informatiques.</p>
+
+<p>Dans le jargon technique, application peut signifier simplement le processus ou l’activité à laquelle est appliqué un modèle. Son application donc, et non une “app” disponible sur nos téléphones.</p>
+
+<h2 id="apprentissage-machine">Apprentissage Machine</h2>
+
+<p>(Machine learning en Anglais)</p>
+
+<p>Ensemble de techniques destinées à apprendre ou déterminer des règles ou des vérités basées sur des données.</p>
+
+<h2 id="automatisation">Automatisation</h2>
+
+<p>Le fait d’automatiser, ou de rendre automatique, un processus, un acte ou une décision.</p>
+
+<h2 id="générative-ia">Générative (IA)</h2>
+
+<p>Les modèles génératifs tels que les modèles GPTs d’OpenAI ou autres modèles d’intelligence artificielle qui servent à <strong>générer du contenu</strong>.</p>
+
+<h2 id="gpt">GPT</h2>
+
+<p>Un modèle d’intelligence artificielle générative. GPT est l’acronyme de <strong>Generative Pre-trained Transformer</strong>, un Transformeur Pré-entraîné Génératif.</p>
+
+<ul>
+  <li>Transformeur: un algorithme qui transforme du texte, des phrases, des mots ou des tokens en vecteurs mathématiques et ce afin de pouvoir les comparer.</li>
+  <li>Pré-entraîné: il a vu, ou “lu” beaucoup de textes, de discussions et de questions et réponses afin de se créer une réprésentation du langage et de nos connaissances explicites.</li>
+  <li>Génératif: comme tout modèle d’intelligence artificielle, on cherche à prédire quelque chose, GPT cherche à prédire les prochains tokens, mots, phrases et textes.</li>
+</ul>
+
+<h2 id="intelligence-artificielle">Intelligence Artificielle</h2>
+
+<p>Reproduire l’intelligence humaine, ou celle de tout être vivant.</p>
+
+<p><a href="#h-automatisation">&gt; Automatiser</a> et <a href="#h-pr%C3%A9diction">&gt; prédire</a>.</p>
+
+<h2 id="marqueur-language">Marqueur (Language)</h2>
+
+<p>Markup languages en anglais. Il s’agit d’un langage souvent simple à apprendre, qui sert littéralement à marquer du texte. Par exemple, barrer un <del>mot</del>.</p>
+
+<p>Ils sont très utiles pour partager du code, ici en du code Python rendu dans du HTML (que compose cette page):</p>
+
+<pre><code class="language-python">print("Je suis du code")
+</code></pre>
+
+<p>Sont des langages marqueurs:</p>
+
+<ul>
+  <li>
+<strong>HTML</strong>: le langage “marqueur” du web.</li>
+  <li>
+<a href="https://www.markdownguide.org/" target="_blank"><strong>Markdown</strong></a>: le langage marqueur de texte.</li>
+</ul>
+
+<p>Il en existe d’autres, plus avancés:</p>
+
+<ul>
+  <li>
+<a href="https://www.latex-project.org/get/" target="_blank">LaTeX</a>, le langage marqueur scientifique.</li>
+</ul>
+
+<h2 id="modèle">Modèle</h2>
+
+<p>Un modèle mathématique, statistique, déterministique ou tout simplement d’intelligence artificielle, sert à résoudre un problème. Nous parlerons souvent de modèle de prédiction.</p>
+
+<h2 id="prédiction">Prédiction</h2>
+
+<p>Le fait de prédire quelque chose, peu importe quoi, que ce soit la météo, le nombre d’élève dans une certaine classe l’année prochaine ou le mot à la fin de cette _____.</p>
+
+<h2 id="programmation-language-de">Programmation (Language de)</h2>
+
+<p>Les langages qui permettent de programmer, d’automatiser réellement des chose, comme l’écriture de texte.</p>
+
+<p>Communément appelé le code.</p>
+
+<p>Sont des langages de programmation:</p>
+
+<ul>
+  <li>
+<strong>Javascript</strong>: le langage de programmation des interfaces web.</li>
+  <li>
+<a href="/python/" target="_blank"><strong>Python</strong></a>: le langage de programmation à tout faire.</li>
+  <li>
+<strong>Scratch</strong>: le langage de programmation informatique visuel pour enfant.</li>
+</ul>
+
+<h2 id="régression-linéaire">Régression Linéaire</h2>
+
+<p>Technique mathématique destinée à déterminer la relation entre deux variables.</p>
+
+<h2 id="système-expert">Système Expert</h2>
+
+<p>Un système capable de reproduire les mécanismes cognitifs d’un expert, dans un domaine particulier.</p>
+
+
+
+    </div>
+
+</article>
+<!--<div class="post-nav"><span></span><a class="next" href="/comprendre-intelligence-humaine/" title="Comprendre le Fonctionnement Humain grâce à l&#39;Intelligence Artificielle">Comprendre le Fonctionnement Humain grâce à...</a></div>-->
+    <br><hr>
+<br><div class="post-related">
+      <div>A suivre</div>
+      <ul>
+        <li class="top-post">
+          <a class="post-link" href="/intelligence-non-artificielle/" title="Le Guide de l'Intelligence Non-Artificielle">
+            Le Guide de l'Intelligence Non-Artificielle<span class="post-badges">
+  <span class="post-badge badge-top">TOP</span>
+  <span class="post-badge badge-new">NEW</span>
+</span>
+</a>
+        </li>
+<li class="">
+          <a class="post-link" href="/machine-learning/" title="L'Apprentissage Machine (Machine Learning en anglais)">
+            L'Apprentissage Machine (Machine Learning en anglais)<span class="post-badges">
+  <span class="post-badge badge-top">TOP</span>
+  <span class="post-badge badge-new">NEW</span>
+</span>
+</a>
+        </li>
+<li class="">
+          <a class="post-link" href="/comprendre-intelligence-humaine/" title="Comprendre le Fonctionnement Humain grâce à l'Intelligence Artificielle">
+            Comprendre le Fonctionnement Humain grâce à l'Intelligence Artificielle<span class="post-badges">
+  <span class="post-badge badge-top">TOP</span>
+  <span class="post-badge badge-new">NEW</span>
+</span>
+</a>
+        </li>
+<li class="top-post">
+          <a class="post-link" href="/ai-history/" title="L'Histoire de l'Intelligence Artificielle">
+            L'Histoire de l'Intelligence Artificielle<span class="post-badges">
+  <span class="post-badge badge-top">TOP</span>
+  <span class="post-badge badge-new">NEW</span>
+</span>
+</a>
+        </li>
+</ul>
+    </div>
+<div class="post-comments"></div></section>
+</div>
+
+
+  </section>
+  <section class="sidebar" style="margin-left: 15px;">
+    <!-- Get sidebar items --><style type="text/css" media="screen">
+.post-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+</style>
+
+<div class="post-menu">
+  <div class="post-menu-title"><!-- TOC --></div>
+  <div class="post-menu-content"></div>
+</div>
+
+<script>
+  function generateContent() {
+    var menu = document.querySelector(".post-menu");
+    var menuContent =  menu.querySelector(".post-menu-content");
+    var headings = document.querySelector(".post-content").querySelectorAll("h2, h3, h4, h5, h6");
+
+    // Hide menu when no headings
+    if (headings.length === 0) {
+      return menu.style.display = "none";
+    }
+
+    // Generate post menu
+    var menuHTML = '';
+    for (var i = 0; i < headings.length; i++) {
+      var h = headings[i];
+      menuHTML += (
+        '<li class="h-' + h.tagName.toLowerCase() + '">'
+        + '<a href="#h-' + h.getAttribute('id') + '">' + h.textContent + '</a></li>');
+    }
+
+    menuContent.innerHTML = '<ul>' + menuHTML + '</ul>';
+
+    // The header element
+    var header = document.querySelector('header.site-header');
+
+    function doMenuCollapse(index, over_items) {
+      var items = menuContent.firstChild.children;
+
+      if (over_items == undefined) {
+        over_items = 20;
+      }
+
+      if (items.length < over_items) {
+        return;
+      }
+
+      var activeItem = items[index];
+      var beginItem = activeItem
+      var endItem = activeItem
+      var beginIndex = index;
+      var endIndex = index + 1;
+      while (beginIndex >= 0
+        && !items[beginIndex].classList.contains('h-h2')) {
+        beginIndex -= 1;
+      }
+      while (endIndex < items.length
+        && !items[endIndex].classList.contains('h-h2')) {
+        endIndex += 1;
+      }
+      for (var i = 0; i < beginIndex; i++) {
+        item = items[i]
+        if (!item.classList.contains('h-h2')) {
+          item.style.display = 'none';
+        }
+      }
+      for (var i = beginIndex + 1; i < endIndex; i++) {
+        item = items[i]
+        // if (!item.classList.contains('h-h2')) {
+          item.style.display = '';
+        // }
+      }
+      for (var i = endIndex; i < items.length; i++) {
+        item = items[i]
+        if (!item.classList.contains('h-h2')) {
+          item.style.display = 'none';
+        }
+      }
+    }
+
+    // Init menu collapsed
+    doMenuCollapse(-1);
+
+    // Active the menu item
+    window.addEventListener('scroll', function (event) {
+      var lastActive = menuContent.querySelector('.active');
+      var changed = true;
+      var activeIndex = -1;
+      for (var i = headings.length - 1; i >= 0; i--) {
+        var h = headings[i];
+        var headingRect = h.getBoundingClientRect();
+        var headerRect = header.getBoundingClientRect();
+        var headerTop = Math.floor(headerRect.top);
+        var headerHeight = Math.floor(headerRect.height);
+        var headerHeight = headerTop + headerHeight + 20;
+        if (headingRect.top <= headerHeight) {
+          var id = 'h-' + h.getAttribute('id');
+          var a = menuContent.querySelector('a[href="#' + id  + '"]');
+          var curActive = a.parentNode;
+          if (curActive) {
+            curActive.classList.add('active');
+            activeIndex = i;
+          }
+          if (lastActive == curActive) {
+            changed = false;
+          }
+          break;
+        }
+      }
+      if (changed) {
+        if (lastActive) {
+          lastActive.classList.remove('active');
+        }
+        doMenuCollapse(activeIndex);
+      }
+      event.preventDefault();
+    });
+  }
+  generateContent();
+</script>
+</section>
+</div>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+    <div class="site-footer-inner">
+<div>Antscool ASBL <span class="copyleft">©</span> 2017-2025 Antscool</div>
+      <div>Powered by <a title="Jekyll is a simple, blog-aware, static site
+      generator." href="https://jekyllrb.com/">Jekyll</a> &amp; <a title="Yat, yet
+      another theme." href="https://github.com/jeffreytse/jekyll-theme-yat">Yat Theme</a>.</div>
+      <!-- <div class="footer-col rss-subscribe">Subscribe <a href="/feed.xml">via RSS</a></div> -->
+    </div>
+  </div>
+</footer>
+</body>
+</html>
